@@ -5,17 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMSOIL Costa Rica | En Construcción</title>
     <meta name="description" content="Sitio oficial de AMSOIL Costa Rica (American Lubricants Supply S.A.). Próximamente disponible.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --amsoil-red: #E31837;
-            --amsoil-blue: #00509E;
-            --bg-dark: #06080B;
-            --border-steel: #1E252E;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -23,31 +13,19 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-dark);
-            color: #FFFFFF;
+            background-color: #06080B;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            padding: 20px 16px;
             background-image: 
-                radial-gradient(circle at 50% 10%, rgba(0, 80, 158, 0.14) 0%, transparent 60%),
-                radial-gradient(circle at 50% 90%, rgba(227, 24, 55, 0.1) 0%, transparent 60%),
+                radial-gradient(circle at 50% 15%, rgba(0, 80, 158, 0.15) 0%, transparent 60%),
+                radial-gradient(circle at 50% 85%, rgba(227, 24, 55, 0.1) 0%, transparent 60%),
                 linear-gradient(180deg, #080A0D 0%, #030406 100%);
         }
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 24px 16px 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 1;
-        }
-
-        /* PIEZA MAESTRA UNIFICADA: BANNER + EN CONSTRUCCIÓN + MOTOR V8 */
         .masterpiece-showcase {
             width: 100%;
             max-width: 1100px;
@@ -72,71 +50,19 @@
             height: auto;
             display: block;
         }
-
-        /* FOOTER DE CUMPLIMIENTO OFICIAL (APPLE APP STORE, GOOGLE PLAY & WINDOWS) */
-        footer {
-            width: 100%;
-            border-top: 1px solid #141A22;
-            padding: 24px 20px;
-            text-align: center;
-            font-size: 13px;
-            color: #64748B;
-            margin-top: auto;
-            background: #040507;
-        }
-        .compliance-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
-        }
-        .compliance-links a {
-            color: #94A3B8;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-        .compliance-links a:hover {
-            color: #E31837;
-            text-decoration: underline;
-        }
-        .copyright-text {
-            font-size: 12px;
-            color: #475569;
-            line-height: 1.5;
-        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- COMPOSICIÓN LIMPIA Y DIRECTA: BANNER OFICIAL + RÓTULO EN CONSTRUCCIÓN + MOTOR V8 CINEMATOGRÁFICO -->
-        <div class="masterpiece-showcase">
-            <img 
-                src="assets/banners/amsoil-cr-completo-en-construccion.jpg?v=4" 
-                alt="AMSOIL Costa Rica - En Construcción"
-                class="masterpiece-img"
-                width="1920"
-                height="1833"
-            >
-        </div>
-    </div>
-
-    <!-- PIE DE PÁGINA LIMPIO CON ENLACES DE CUMPLIMIENTO (APPLE, GOOGLE PLAY & WINDOWS) -->
-    <footer>
-        <div class="compliance-links">
-            <a href="https://jucarsalrd.github.io/jucarsasuite/privacy.html" target="_blank">Política de Privacidad</a>
-            &bull;
-            <a href="https://jucarsalrd.github.io/jucarsasuite/terms.html" target="_blank">Términos y Condiciones</a>
-            &bull;
-            <a href="https://jucarsalrd.github.io/jucarsasuite/support.html" target="_blank">Soporte Técnico</a>
-            &bull;
-            <a href="https://jucarsalrd.github.io/jucarsasuite/delete-account.html" target="_blank">Eliminación de Cuenta</a>
-        </div>
-        <p class="copyright-text">
-            &copy; 2026 <strong>American Lubricants Supply S.A. (ALS)</strong> &bull; Distribuidor Oficial AMSOIL en Costa Rica.
-        </p>
-    </footer>
+    <main class="masterpiece-showcase">
+        <img 
+            src="assets/banners/amsoil-cr-completo-en-construccion.jpg?v=5" 
+            alt="AMSOIL Costa Rica - En Construcción"
+            class="masterpiece-img"
+            width="1920"
+            height="1590"
+        >
+    </main>
 
 </body>
 </html>
