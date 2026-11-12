@@ -3,822 +3,725 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMSOIL Costa Rica | Lubricantes 100% Sintéticos — The First in Synthetics®</title>
-    <meta name="description" content="AMSOIL Costa Rica (American Lubricants Supply S.A.): Lubricantes 100% sintéticos formulados en Estados Unidos para motor, pickups 4x4, motocicletas y transmisión.">
+    <title>AMSOIL Costa Rica | En Construcción — The First in Synthetics®</title>
+    <meta name="description" content="Sitio oficial de AMSOIL Costa Rica (American Lubricants Supply S.A.). Estamos ensamblando la nueva plataforma digital de lubricantes 100% sintéticos.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --amsoil-red: #E31837;
+            --amsoil-red-glow: rgba(227, 24, 55, 0.4);
+            --amsoil-blue: #00509E;
+            --amsoil-blue-light: #1A73E8;
+            --bg-dark: #0A0D10;
+            --bg-card: #12171D;
+            --border-steel: #242D35;
+            --text-main: #FFFFFF;
+            --text-muted: #94A3B8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 50% 20%, rgba(0, 80, 158, 0.15) 0%, transparent 60%),
+                radial-gradient(circle at 80% 80%, rgba(227, 24, 55, 0.1) 0%, transparent 50%),
+                linear-gradient(180deg, #0b0e12 0%, #06080a 100%);
+        }
+
+        /* BARRA SUPERIOR CON FRANJAS DE CARRERAS DE FÁBRICA */
+        .factory-stripes {
+            height: 10px;
+            width: 100%;
+            display: flex;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        .stripe-blue {
+            flex: 1;
+            background: #00509E;
+        }
+        .stripe-white {
+            width: 18px;
+            background: #FFFFFF;
+        }
+        .stripe-red {
+            flex: 1;
+            background: #E31837;
+        }
+
+        /* HEADER CON LOGO ESTILO FACHADA */
+        header {
+            padding: 28px 20px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .factory-logo-badge {
+            background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 100%);
+            padding: 14px 34px;
+            border-radius: 12px;
+            box-shadow: 
+                0 14px 32px rgba(0, 0, 0, 0.6),
+                0 0 0 3px #FFFFFF,
+                0 0 0 6px rgba(0, 80, 158, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            transform: perspective(600px) rotateX(4deg);
+            transition: transform 0.3s ease;
+        }
+        .factory-logo-badge:hover {
+            transform: perspective(600px) rotateX(0deg) scale(1.02);
+        }
+
+        .logo-wordmark {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 56px;
+            letter-spacing: -0.5px;
+            line-height: 0.9;
+            display: flex;
+            align-items: baseline;
+            filter: drop-shadow(2px 3px 0px rgba(0,0,0,0.25));
+        }
+        .logo-am {
+            color: #E31837;
+            position: relative;
+        }
+        .logo-soil {
+            color: #00509E;
+            margin-left: 2px;
+        }
+        .logo-cr-tag {
+            background: #00509E;
+            color: #FFFFFF;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            font-style: italic;
+            font-size: 16px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            border-left: 4px solid #E31837;
+            letter-spacing: 1px;
+            line-height: 1.1;
+            text-align: center;
+        }
+        .logo-cr-tag small {
+            display: block;
+            font-size: 10px;
+            font-style: normal;
+            letter-spacing: 0.5px;
+            color: #E2E8F0;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        main {
+            flex: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(227, 24, 55, 0.12);
+            border: 1px solid rgba(227, 24, 55, 0.35);
+            color: #FFA4B1;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 8px 18px;
+            border-radius: 999px;
+            margin-bottom: 18px;
+        }
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: #E31837;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #E31837;
+            animation: pulse 1.6s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.4); opacity: 0.4; }
+        }
+
+        h1 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: clamp(34px, 5.5vw, 56px);
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.05;
+            margin-bottom: 14px;
+            background: linear-gradient(180deg, #FFFFFF 30%, #CBD5E1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h1 span {
+            color: #E31837;
+            -webkit-text-fill-color: #E31837;
+        }
+
+        .subtitle {
+            font-size: clamp(15px, 2.2vw, 18px);
+            color: var(--text-muted);
+            text-align: center;
+            max-width: 680px;
+            line-height: 1.55;
+            margin-bottom: 28px;
+        }
+
+        /* CONTENEDOR DEL MOTOR V8 GIGANTE Y LOS MECÁNICOS */
+        .stage-container {
+            width: 100%;
+            background: radial-gradient(circle at 50% 65%, #18222d 0%, #0d1217 70%, #090c0f 100%);
+            border: 1px solid var(--border-steel);
+            border-radius: 20px;
+            padding: 30px 20px 24px;
+            box-shadow: 
+                0 25px 60px rgba(0, 0, 0, 0.75),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        /* REJILLA DE TALLER DE ALTA INGENIERÍA EN EL PISO */
+        .stage-container::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: 
+                linear-gradient(transparent, rgba(0,0,0,0.8)),
+                repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0 2px, transparent 2px 40px);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            pointer-events: none;
+        }
+
+        .v8-assembly-stage {
+            width: 100%;
+            max-width: 820px;
+            height: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ANIMACIONES TÉCNICAS */
+        .pulley-spin {
+            animation: spinPulley 6s linear infinite;
+            transform-origin: 400px 330px;
+        }
+        @keyframes spinPulley {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cam-gear-left {
+            animation: spinGearL 4s linear infinite;
+            transform-origin: 320px 220px;
+        }
+        @keyframes spinGearL {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cam-gear-right {
+            animation: spinGearR 4s linear infinite reverse;
+            transform-origin: 480px 220px;
+        }
+        @keyframes spinGearR {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .spark-flash {
+            animation: spark 2.4s infinite ease-in-out;
+            transform-origin: 560px 170px;
+        }
+        @keyframes spark {
+            0%, 80%, 100% { opacity: 0; transform: scale(0.2); }
+            85% { opacity: 1; transform: scale(1.3); }
+            87% { opacity: 0.3; transform: scale(0.8); }
+            90% { opacity: 1; transform: scale(1.1); }
+            93% { opacity: 0; transform: scale(0.4); }
+        }
+
+        .crane-piston-bob {
+            animation: craneBob 4s ease-in-out infinite alternate;
+        }
+        @keyframes craneBob {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(18px); }
+        }
+
+        .mechanic-arm-torque {
+            animation: torqueWrench 1.8s ease-in-out infinite;
+            transform-origin: 228px 185px;
+        }
+        @keyframes torqueWrench {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(-18deg); }
+        }
+
+        /* VIDEO CONTAINER ALTERNATIVO SI CARGA MP4 EN EL FUTURO */
+        .v8-video-replacement {
+            width: 100%;
+            max-width: 820px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: none; /* Se activa si se incluye archivo video */
+        }
+
+        /* BARRA DE PROGRESO DE ENSAMBLE */
+        .assembly-progress-box {
+            width: 100%;
+            max-width: 680px;
+            margin-top: 18px;
+            z-index: 2;
+        }
+        .progress-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            font-weight: 600;
+            color: #CBD5E1;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        .progress-labels span:last-child {
+            color: #E31837;
+            font-weight: 700;
+        }
+        .progress-track {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .progress-fill {
+            width: 85%;
+            height: 100%;
+            background: linear-gradient(90deg, #00509E 0%, #1A73E8 60%, #E31837 100%);
+            border-radius: 999px;
+            position: relative;
+            box-shadow: 0 0 14px var(--amsoil-red-glow);
+        }
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: shimmer 2s infinite;
+        }
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* ACCIONES Y CONTACTO COMERCIAL */
+        .contact-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-steel);
+            border-radius: 16px;
+            padding: 24px 30px;
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .contact-title {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #FFFFFF;
+        }
+        .contact-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .actions-row {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: #052912;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 14px 26px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.2s ease;
+        }
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            background: #20bd5a;
+            box-shadow: 0 12px 26px rgba(37, 211, 102, 0.4);
+        }
+        .btn-phone {
+            background: rgba(255, 255, 255, 0.08);
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 14px 24px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.2s ease;
+        }
+        .btn-phone:hover {
+            background: rgba(255, 255, 255, 0.14);
+            transform: translateY(-2px);
+        }
+
+        /* PIE DE PÁGINA CON CUMPLIMIENTO OFICIAL (APPLE / GOOGLE / WINDOWS) */
+        footer {
+            background: #080A0D;
+            border-top: 1px solid #1A222A;
+            padding: 26px 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #64748B;
+            width: 100%;
+        }
+        .compliance-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+        .compliance-links a {
+            color: #94A3B8;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .compliance-links a:hover {
+            color: #E31837;
+            text-decoration: underline;
+        }
+        .company-info {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 640px) {
+            .logo-wordmark {
+                font-size: 40px;
+            }
+            .factory-logo-badge {
+                padding: 10px 20px;
+                gap: 12px;
+            }
+            .stage-container {
+                padding: 18px 10px;
+            }
+            .btn-whatsapp, .btn-phone {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- NIVEL 1: TOP UTILITY BAR (#0F1416 Bunker + #2C73B7 Blue) -->
-    <div class="amsoil-utility-bar">
-        <div class="container utility-inner">
-            <span class="region-selector">🇨🇷 COSTA RICA</span>
-        </div>
+    <!-- FRANJAS DE FÁBRICA AMSOIL -->
+    <div class="factory-stripes">
+        <div class="stripe-blue"></div>
+        <div class="stripe-white"></div>
+        <div class="stripe-red"></div>
     </div>
 
-    <!-- NIVEL 2: MAIN BRAND HEADER BLANCO (#FFFFFF + Logo Oficial AMSOIL + Buscador Unificado) -->
-    <header class="amsoil-brand-header">
-        <div class="container brand-header-inner">
-            <a href="index.html" class="amsoil-official-logo" aria-label="AMSOIL Costa Rica Inicio">
-                <img src="amsoil-logo.png" alt="AMSOIL Oficial Costa Rica" class="amsoil-logo-svg">
-            </a>
-
-            <form id="headerGlobalSearchForm" class="global-search-form">
-                <input 
-                    type="text" 
-                    id="headerGlobalSearchInput" 
-                    class="global-search-input" 
-                    placeholder="Ingresa tu vehículo, motor, maquinaria, viscosidad (ej. 5W-30, 15W-40) o tipo de aceite..."
-                >
-                <button type="submit" class="global-search-btn" aria-label="Buscar Vehículo o Producto">
-                    <svg class="car-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 16H9m10 0h3v-3.15a1 1 0 00-.84-.99L16 11l-2.7-3.6a1 1 0 00-.8-.4H5.24a2 2 0 00-1.8 1.1l-.8 1.63A6 6 0 002 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
-                    <div class="search-btn-label">
-                        <strong>Buscar Vehículo</strong>
-                        <span>o Viscosidad / Aceite</span>
-                    </div>
-                    <svg class="lupa-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                </button>
-            </form>
-
-            <div class="header-quick-tools">
-                <a href="contacto.html" class="tool-item">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <div class="tool-text">
-                        <strong>Contáctenos</strong>
-                        <span>Puntos de Venta y Mapa</span>
-                    </div>
-                </a>
+    <!-- HEADER CON EL LOGO EMBLEMÁTICO DE LA FACHADA -->
+    <header>
+        <div class="factory-logo-badge" title="AMSOIL Superior, Wisconsin — Oficial Costa Rica">
+            <div class="logo-wordmark">
+                <span class="logo-am">AM</span><span class="logo-soil">SOIL</span>
+            </div>
+            <div class="logo-cr-tag">
+                COSTA RICA
+                <small>DISTRIBUIDOR OFICIAL ALS</small>
             </div>
         </div>
     </header>
 
-    <!-- NIVEL 3: BARRA DE NAVEGACIÓN PRINCIPAL CON MEGA-MENÚS -->
-    <nav class="amsoil-nav-bar" aria-label="Navegación Principal">
-        <div class="container nav-bar-inner">
-            <ul class="primary-nav-list">
-                <li class="nav-item">
-                    <a href="automotriz.html" class="nav-trigger">
-                        <span>Aceite de Motor</span>
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
-                    </a>
-                    <div class="mega-menu">
-                        <div class="container mega-menu-grid">
-                            <div class="mega-col">
-                                <h4>Automotriz Gasolina</h4>
-                                <ul>
-                                    <li><a href="automotriz.html?filter=signature-series">Signature Series 100% Sintético</a></li>
-                                    <li><a href="automotriz.html?filter=xl-synthetic">XL Extended Life 100% Sintético</a></li>
-                                    <li><a href="automotriz.html?filter=oe-synthetic">OE 100% Sintético Motor Oil</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Híbridos & Alto Kilometraje</h4>
-                                <ul>
-                                    <li><a href="automotriz.html?filter=hybrid">AMSOIL Hybrid 100% Sintético</a></li>
-                                    <li><a href="automotriz.html?filter=high-mileage">AMSOIL High-Mileage 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Competencia & Clásicos Alto Zinc</h4>
-                                <ul>
-                                    <li><a href="automotriz.html?filter=dominator">DOMINATOR® Racing 100% Sintético</a></li>
-                                    <li><a href="automotriz.html?filter=z-rod">Z-ROD® Alto Zinc 100% Sintético</a></li>
-                                    <li><a href="automotriz.html?filter=break-in">Break-In Oil</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="diesel.html" class="nav-trigger">
-                        <span>Diesel</span>
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
-                    </a>
-                    <div class="mega-menu">
-                        <div class="container mega-menu-grid">
-                            <div class="mega-col">
-                                <h4>Signature Series Max-Duty</h4>
-                                <ul>
-                                    <li><a href="diesel.html?filter=signature-series-max-duty">Signature Series Max-Duty 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Heavy-Duty</h4>
-                                <ul>
-                                    <li><a href="diesel.html?filter=heavy-duty-ck4">Heavy-Duty 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>100% Synthetic Diesel GM dexosD</h4>
-                                <ul>
-                                    <li><a href="diesel.html?filter=diesel-dexos-d">100% Sintético Diesel GM dexosD</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="european.html" class="nav-trigger">
-                        <span>European Formula</span>
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
-                    </a>
-                    <div class="mega-menu">
-                        <div class="container mega-menu-grid">
-                            <div class="mega-col">
-                                <h4>Low-SAPS (LS)</h4>
-                                <ul>
-                                    <li><a href="european.html?filter=low-saps">European Car Formula Low-SAPS (LS) 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Mid-SAPS (MS)</h4>
-                                <ul>
-                                    <li><a href="european.html?filter=mid-saps">European Car Formula Mid-SAPS (MS) 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Full-SAPS (FS)</h4>
-                                <ul>
-                                    <li><a href="european.html?filter=full-saps">European Car Formula Full-SAPS (FS) 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="motos.html" class="nav-trigger">
-                        <span>Motos & ATV/UTV</span>
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
-                    </a>
-                    <div class="mega-menu">
-                        <div class="container mega-menu-grid">
-                            <div class="mega-col">
-                                <h4>Motocicletas de Calle & V-Twin</h4>
-                                <ul>
-                                    <li><a href="motos.html?filter=metric-motorcycle">Metric Motorcycle Oil 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=v-twin-oil">V-Twin Motorcycle Oil 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=v-twin-primary">V-Twin Primary Fluid 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=v-twin-trans">V-Twin Transmission Fluid 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=4t-performance">4T Performance Motorcycle Oil 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Dirt Bike, 2 Tiempos & Suspensión</h4>
-                                <ul>
-                                    <li><a href="motos.html?filter=dirt-bike-oil">Dirt Bike Oil 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=dirt-bike-trans">Dirt Bike Transmission Fluid 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=dominator-2t">DOMINATOR® 2-Stroke Racing Oil 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=interceptor-2t">INTERCEPTOR® 2-Stroke Oil 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=shock-therapy">Shock Therapy® Suspension Fluid</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>ATV/UTV & Marino</h4>
-                                <ul>
-                                    <li><a href="motos.html?filter=atv-utv-oil">ATV/UTV Motor Oil 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=atv-utv-trans">ATV/UTV Transmission & Differential Fluid 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=atv-utv-dct">ATV/UTV Dual-Clutch (DCT) Fluid 100% Sintético</a></li>
-                                    <li><a href="motos.html?filter=marino">HP Marine™ 2-Stroke Oil 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="transmision.html" class="nav-trigger">
-                        <span>Transmisión / Gear</span>
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
-                    </a>
-                    <div class="mega-menu">
-                        <div class="container mega-menu-grid">
-                            <div class="mega-col">
-                                <h4>Transmisión Automática ATF</h4>
-                                <ul>
-                                    <li><a href="transmision.html?filter=signature-atf">Signature Series ATF 100% Sintético</a></li>
-                                    <li><a href="transmision.html?filter=oe-atf">OE ATF 100% Sintético</a></li>
-                                    <li><a href="transmision.html?filter=torque-drive">Torque-Drive® Heavy-Duty ATF 100% Sintético</a></li>
-                                    <li><a href="transmision.html?filter=super-shift">Super Shift® Racing Transmission Fluid</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>CVT, DCT & Transmisión Manual</h4>
-                                <ul>
-                                    <li><a href="transmision.html?filter=cvt-fluid">100% Sintético CVT Fluid</a></li>
-                                    <li><a href="transmision.html?filter=dct-fluid">100% Sintético DCT Fluid</a></li>
-                                    <li><a href="transmision.html?filter=synchromesh">Manual Synchromesh Transmission Fluid (MTF)</a></li>
-                                    <li><a href="transmision.html?filter=manual-gl4">Manual Transmission & Transaxle Gear Lube (GL-4)</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Diferenciales & Gear Lube</h4>
-                                <ul>
-                                    <li><a href="transmision.html?filter=severe-gear">SEVERE GEAR® EP Gear Lube 100% Sintético</a></li>
-                                    <li><a href="transmision.html?filter=long-life-gear">Long Life Gear Lube 100% Sintético</a></li>
-                                    <li><a href="transmision.html?filter=slip-lock">Slip Lock® Differential Additive</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="aditivos.html" class="nav-trigger">
-                        <span>Aditivos / Coolant</span>
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
-                    </a>
-                    <div class="mega-menu">
-                        <div class="container mega-menu-grid">
-                            <div class="mega-col">
-                                <h4>Aditivos de Combustible & Motor</h4>
-                                <ul>
-                                    <li><a href="aditivos.html?filter=pi-improver">P.i.® Performance Improver Gasoline Additive</a></li>
-                                    <li><a href="aditivos.html?filter=upper-cylinder">Upper Cylinder Lubricant Gasoline Additive</a></li>
-                                    <li><a href="aditivos.html?filter=octane-boost">DOMINATOR® Octane Boost</a></li>
-                                    <li><a href="aditivos.html?filter=moto-octane">Motorcycle Octane Boost</a></li>
-                                    <li><a href="aditivos.html?filter=diesel-injector">Diesel Injector Clean + Cetane Boost</a></li>
-                                    <li><a href="aditivos.html?filter=engine-flush">Engine & Transmission Flush</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Coolant, Frenos & Dirección</h4>
-                                <ul>
-                                    <li><a href="aditivos.html?filter=antpc">Passenger Car & Light Truck Antifreeze & Coolant</a></li>
-                                    <li><a href="aditivos.html?filter=anthd">Heavy-Duty Antifreeze & Coolant</a></li>
-                                    <li><a href="aditivos.html?filter=psaf">Powersports Antifreeze & Coolant</a></li>
-                                    <li><a href="aditivos.html?filter=coolant-boost">DOMINATOR® Coolant Boost</a></li>
-                                    <li><a href="aditivos.html?filter=dot34-brake">DOT 3 & DOT 4 Brake Fluid 100% Sintético</a></li>
-                                    <li><a href="aditivos.html?filter=dominator-brake">DOMINATOR® DOT 4 Racing Brake Fluid 100% Sintético</a></li>
-                                    <li><a href="aditivos.html?filter=power-steering">Multi-Vehicle Power Steering Fluid 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h4>Grasas, Lubricantes & Especialidades</h4>
-                                <ul>
-                                    <li><a href="aditivos.html?filter=off-road-grease">NLGI #2 Polymeric Off-Road Grease 100% Sintético</a></li>
-                                    <li><a href="aditivos.html?filter=multi-purpose-grease">Multi-Purpose Grease NLGI #2 100% Sintético</a></li>
-                                    <li><a href="aditivos.html?filter=red-grease">100% Sintético Red Grease</a></li>
-                                    <li><a href="aditivos.html?filter=chain-lube">Chain Lube Spray</a></li>
-                                    <li><a href="aditivos.html?filter=assembly-lube">Engine Assembly Lube</a></li>
-                                    <li><a href="aditivos.html?filter=compressor-oil">ISO 68 Compressor Oil 100% Sintético</a></li>
-                                    <li><a href="aditivos.html?filter=saber-2t">SABER® Professional 2-Stroke Oil 100% Sintético</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+    <main>
+        <div class="status-pill">
+            <span class="pulse-dot"></span>
+            Ingeniería en Proceso &bull; Sitio en Construcción
         </div>
-    </nav>
 
-    <!-- BANNER TRANSITORIO DE ANUNCIOS E INFORMACIÓN DE PRODUCTOS (CARRUSEL INTERACTIVO) -->
-    <section class="amsoil-hero-carousel" id="amsoilHeroCarousel" aria-label="Anuncios y Productos Destacados">
-        <button type="button" class="carousel-arrow-btn prev" aria-label="Anterior">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-        </button>
+        <h1>Estamos Ensamblando la Nueva Experiencia <span>AMSOIL</span></h1>
+        <p class="subtitle">
+            <strong>The First in Synthetics&reg;</strong> &bull; Muy pronto tendrás a tu alcance el catálogo interactivo más completo de lubricantes sintéticos, fluidos de transmisión y aditivos formulados en Estados Unidos.
+        </p>
 
-        <div class="hero-carousel-track">
-            <!-- DIAPOSITIVA 1: SIGNATURE SERIES -->
-            <div class="hero-carousel-slide active">
-                <div class="hero-slide-inner">
-                    <div class="hero-slide-visual">
-                        <img src="01-motor-gasolina/signature-series/0w-20/recorte-fondo-transparente-ASM.webp" alt="AMSOIL Signature Series 0W-20">
-                        <img src="01-motor-gasolina/signature-series/5w-30/recorte-fondo-transparente-ASL.webp" alt="AMSOIL Signature Series 5W-30" class="featured-center">
-                        <img src="01-motor-gasolina/signature-series/10w-30/recorte-fondo-transparente-ATM.webp" alt="AMSOIL Signature Series 10W-30">
-                    </div>
-                    <div class="hero-slide-content">
-                        <span class="hero-slide-kicker">THE FIRST IN SYNTHETICS®</span>
-                        <h2 class="hero-slide-title">Signature Series 100% Sintético</h2>
-                        <p class="hero-slide-subtitle">75% más protección contra pérdida de potencia y desgaste</p>
-                        <a href="automotriz.html?filter=signature-series" class="hero-slide-cta">VER LÍNEA SIGNATURE</a>
-                        <div class="hero-slide-note">Protección garantizada hasta <strong>25,000 millas / 1 año</strong></div>
-                    </div>
+        <!-- ESCENARIO VISUAL: MOTOR V8 GIGANTE Y MECÁNICOS DIMINUTOS EN ACCIÓN -->
+        <section class="stage-container" aria-label="Animación técnica del motor V8 y mecánicos">
+            
+            <svg class="v8-assembly-stage" viewBox="0 0 800 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#E2E8F0"/>
+                        <stop offset="50%" stop-color="#94A3B8"/>
+                        <stop offset="100%" stop-color="#475569"/>
+                    </linearGradient>
+                    <linearGradient id="engineBlockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#2D3748"/>
+                        <stop offset="50%" stop-color="#1A202C"/>
+                        <stop offset="100%" stop-color="#111827"/>
+                    </linearGradient>
+                    <linearGradient id="headerHotGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#E31837"/>
+                        <stop offset="50%" stop-color="#DD6B20"/>
+                        <stop offset="100%" stop-color="#4A5568"/>
+                    </linearGradient>
+                    <radialGradient id="sparkGlow" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#FFFFFF"/>
+                        <stop offset="40%" stop-color="#F6E05E"/>
+                        <stop offset="100%" stop-color="transparent"/>
+                    </radialGradient>
+                </defs>
+
+                <!-- BASE / BANCO DE PRUEBAS DE TALLER -->
+                <rect x="180" y="380" width="440" height="40" rx="6" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+                <rect x="220" y="420" width="360" height="24" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+                <line x1="200" y1="390" x2="600" y2="390" stroke="#E31837" stroke-width="3" stroke-dasharray="12 8"/>
+
+                <!-- ==========================================
+                     EL MOTOR V8 COLOSAL (PROPORCIONES GIGANTESCAS)
+                     ========================================== -->
+                <!-- Cárter inferior -->
+                <path d="M 310 350 L 490 350 L 470 380 L 330 380 Z" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+                
+                <!-- Bloque V8 principal con cilindros en 90° -->
+                <polygon points="260,350 540,350 590,230 500,160 300,160 210,230" fill="url(#engineBlockGrad)" stroke="#475569" stroke-width="4"/>
+                
+                <!-- Nervaduras de refuerzo del bloque -->
+                <line x1="275" y1="260" x2="525" y2="260" stroke="#334155" stroke-width="2"/>
+                <line x1="290" y1="300" x2="510" y2="300" stroke="#334155" stroke-width="2"/>
+
+                <!-- Bancada Izquierda de Cilindros (Culata V8) -->
+                <polygon points="210,230 300,160 260,110 180,180" fill="#334155" stroke="#64748B" stroke-width="3"/>
+                <!-- Tapas de punterías AMSOIL en rojo -->
+                <polygon points="255,115 185,175 195,190 270,125" fill="#E31837" stroke="#FFF" stroke-width="1.5"/>
+                <text x="215" y="155" fill="#FFF" font-family="'Barlow Condensed', sans-serif" font-weight="900" font-size="14" transform="rotate(-38 215 155)">AMSOIL V8</text>
+
+                <!-- Bancada Derecha de Cilindros (Culata V8) -->
+                <polygon points="590,230 500,160 540,110 620,180" fill="#334155" stroke="#64748B" stroke-width="3"/>
+                <!-- Tapas de punterías AMSOIL en azul -->
+                <polygon points="545,115 615,175 605,190 530,125" fill="#00509E" stroke="#FFF" stroke-width="1.5"/>
+                <text x="548" y="155" fill="#FFF" font-family="'Barlow Condensed', sans-serif" font-weight="900" font-size="14" transform="rotate(38 548 155)">SYNTHETIC</text>
+
+                <!-- Colectores de Escape Gigantes (Headers) a los lados -->
+                <path d="M 180 190 C 130 220 120 280 150 330" fill="none" stroke="url(#headerHotGrad)" stroke-width="12" stroke-linecap="round"/>
+                <path d="M 195 205 C 150 235 140 285 165 330" fill="none" stroke="url(#headerHotGrad)" stroke-width="10" stroke-linecap="round"/>
+                <path d="M 620 190 C 670 220 680 280 650 330" fill="none" stroke="#64748B" stroke-width="12" stroke-linecap="round"/>
+                <path d="M 605 205 C 650 235 660 285 635 330" fill="none" stroke="#64748B" stroke-width="10" stroke-linecap="round"/>
+
+                <!-- Supercargador / Admisión Colosal Arriba (Center Intake) -->
+                <rect x="310" y="110" width="180" height="50" rx="8" fill="url(#chromeGrad)" stroke="#94A3B8" stroke-width="3"/>
+                <!-- Entradas dobles de aire (Air Scoops) cromadas -->
+                <ellipse cx="360" cy="110" rx="32" ry="14" fill="#0F172A" stroke="#E2E8F0" stroke-width="4"/>
+                <ellipse cx="440" cy="110" rx="32" ry="14" fill="#0F172A" stroke="#E2E8F0" stroke-width="4"/>
+                <!-- Mariposas rojas de admisión -->
+                <line x1="335" y1="110" x2="385" y2="110" stroke="#E31837" stroke-width="4"/>
+                <line x1="415" y1="110" x2="465" y2="110" stroke="#E31837" stroke-width="4"/>
+
+                <!-- Engranajes y Poleas Frontales con Animación de Giro -->
+                <!-- Polea Cigüeñal Central -->
+                <g class="pulley-spin">
+                    <circle cx="400" cy="330" r="32" fill="#1E293B" stroke="#94A3B8" stroke-width="6"/>
+                    <circle cx="400" cy="330" r="12" fill="#0F172A"/>
+                    <line x1="375" y1="330" x2="425" y2="330" stroke="#64748B" stroke-width="4"/>
+                    <line x1="400" y1="305" x2="400" y2="355" stroke="#64748B" stroke-width="4"/>
+                </g>
+
+                <!-- Polea Árbol de Levas Izq -->
+                <g class="cam-gear-left">
+                    <circle cx="320" cy="220" r="26" fill="#1E293B" stroke="#64748B" stroke-width="4"/>
+                    <circle cx="320" cy="220" r="8" fill="#00509E"/>
+                    <line x1="300" y1="220" x2="340" y2="220" stroke="#94A3B8" stroke-width="3"/>
+                    <line x1="320" y1="200" x2="320" y2="240" stroke="#94A3B8" stroke-width="3"/>
+                </g>
+
+                <!-- Polea Árbol de Levas Der -->
+                <g class="cam-gear-right">
+                    <circle cx="480" cy="220" r="26" fill="#1E293B" stroke="#64748B" stroke-width="4"/>
+                    <circle cx="480" cy="220" r="8" fill="#E31837"/>
+                    <line x1="460" y1="220" x2="500" y2="220" stroke="#94A3B8" stroke-width="3"/>
+                    <line x1="480" y1="200" x2="480" y2="240" stroke="#94A3B8" stroke-width="3"/>
+                </g>
+
+                <!-- Correa Serpentina / Timing Belt -->
+                <path d="M 320 194 L 480 194 L 498 238 L 428 344 L 372 344 L 302 238 Z" fill="none" stroke="#0F172A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M 320 194 L 480 194 L 498 238 L 428 344 L 372 344 L 302 238 Z" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+
+                <!-- ==========================================
+                     LOS MECÁNICOS DIMINUTOS (ESCALA MINIATURA)
+                     ========================================== -->
+
+                <!-- MECÁNICO 1: Sobre escalera a la izquierda apretando pernos de la culata -->
+                <!-- Escalera miniatura -->
+                <line x1="150" y1="380" x2="200" y2="210" stroke="#E2E8F0" stroke-width="3"/>
+                <line x1="165" y1="380" x2="215" y2="210" stroke="#E2E8F0" stroke-width="3"/>
+                <line x1="157" y1="350" x2="172" y2="350" stroke="#94A3B8" stroke-width="2"/>
+                <line x1="167" y1="310" x2="182" y2="310" stroke="#94A3B8" stroke-width="2"/>
+                <line x1="177" y1="270" x2="192" y2="270" stroke="#94A3B8" stroke-width="2"/>
+                <line x1="187" y1="230" x2="202" y2="230" stroke="#94A3B8" stroke-width="2"/>
+                
+                <!-- Pequeño Mecánico 1 -->
+                <g id="mini-mechanic-1">
+                    <!-- Piernas y cuerpo con overol azul AMSOIL -->
+                    <path d="M 210 230 L 218 200 L 222 185" stroke="#00509E" stroke-width="6" stroke-linecap="round"/>
+                    <!-- Casco de seguridad amarillo -->
+                    <circle cx="220" cy="172" r="6" fill="#FACC15"/>
+                    <path d="M 214 172 Q 220 167 226 172" stroke="#CA8A04" stroke-width="2"/>
+                    <!-- Brazo con llave dinamométrica animada -->
+                    <g class="mechanic-arm-torque">
+                        <line x1="222" y1="185" x2="245" y2="178" stroke="#00509E" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="245" y1="178" x2="260" y2="165" stroke="#E2E8F0" stroke-width="3"/>
+                        <circle cx="260" cy="165" r="4" fill="#94A3B8"/>
+                    </g>
+                </g>
+
+                <!-- MECÁNICO 2: Sobre la parte alta del supercargador con tableta de calibración -->
+                <g id="mini-mechanic-2">
+                    <line x1="410" y1="110" x2="410" y2="92" stroke="#E31837" stroke-width="5" stroke-linecap="round"/>
+                    <circle cx="410" cy="84" r="5.5" fill="#FACC15"/>
+                    <!-- Tableta digital con luz azul -->
+                    <rect x="415" y="88" width="9" height="12" rx="1.5" fill="#38BDF8" stroke="#FFF" stroke-width="1"/>
+                </g>
+
+                <!-- MECÁNICO 3: En andamio derecho soldando/inspeccionando con chispas -->
+                <!-- Mini andamio derecho -->
+                <rect x="650" y="220" width="50" height="160" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+                <line x1="650" y1="220" x2="700" y2="280" stroke="#94A3B8" stroke-width="1.5"/>
+                <line x1="650" y1="280" x2="700" y2="340" stroke="#94A3B8" stroke-width="1.5"/>
+                <rect x="645" y="215" width="60" height="6" fill="#F1F5F9"/>
+
+                <g id="mini-mechanic-3">
+                    <path d="M 660 215 L 664 195 L 660 180" stroke="#E31837" stroke-width="6" stroke-linecap="round"/>
+                    <circle cx="660" cy="172" r="5.5" fill="#FACC15"/>
+                    <!-- Antorcha / herramienta hacia el escape -->
+                    <line x1="660" y1="184" x2="635" y2="192" stroke="#94A3B8" stroke-width="3"/>
+                </g>
+                <!-- Destello de chispas intermitente -->
+                <g class="spark-flash">
+                    <circle cx="633" cy="193" r="16" fill="url(#sparkGlow)"/>
+                    <line x1="633" y1="183" x2="633" y2="203" stroke="#FFF" stroke-width="2"/>
+                    <line x1="623" y1="193" x2="643" y2="193" stroke="#FFF" stroke-width="2"/>
+                </g>
+
+                <!-- MECÁNICO 4 Y MINI GRÚA bajando un pistón colosal -->
+                <g class="crane-piston-bob">
+                    <!-- Cable de grúa -->
+                    <line x1="505" y1="10" x2="505" y2="90" stroke="#FACC15" stroke-width="2" stroke-dasharray="3 3"/>
+                    <path d="M 500 90 L 505 100 L 510 90" stroke="#FACC15" stroke-width="3" fill="none"/>
+                    <!-- Pistón colgante de tamaño enorme -->
+                    <rect x="492" y="100" width="26" height="34" rx="4" fill="url(#chromeGrad)" stroke="#FFF" stroke-width="1.5"/>
+                    <line x1="495" y1="108" x2="515" y2="108" stroke="#334155" stroke-width="1.5"/>
+                    <line x1="495" y1="116" x2="515" y2="116" stroke="#334155" stroke-width="1.5"/>
+                </g>
+                <g id="mini-mechanic-4">
+                    <!-- Mecánico en el suelo operando control remoto de la grúa -->
+                    <path d="M 550 380 L 552 355" stroke="#00509E" stroke-width="6" stroke-linecap="round"/>
+                    <circle cx="552" cy="346" r="5" fill="#FACC15"/>
+                    <circle cx="560" cy="358" r="3" fill="#F87171"/>
+                </g>
+            </svg>
+
+            <!-- BARRA DE ENSAMBLAJE / PROGRESO TÉCNICO -->
+            <div class="assembly-progress-box">
+                <div class="progress-labels">
+                    <span>ESTADO DEL ENSAMBLE Y CALIBRACIÓN</span>
+                    <span>85% COMPLETADO</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill"></div>
                 </div>
             </div>
 
-            <!-- DIAPOSITIVA 2: DIESEL MAX-DUTY & HEAVY-DUTY -->
-            <div class="hero-carousel-slide slide-theme-2">
-                <div class="hero-slide-inner">
-                    <div class="hero-slide-visual">
-                        <img src="02-motor-diesel/signature-series-max-duty/5w-40/recorte-fondo-transparente-DEO.webp" alt="AMSOIL Max-Duty 5W-40 Diesel">
-                        <img src="02-motor-diesel/signature-series-max-duty/15w-40/recorte-fondo-transparente-DME.webp" alt="AMSOIL Max-Duty 15W-40 Diesel" class="featured-center">
-                        <img src="02-motor-diesel/heavy-duty-ck4/15w-40/recorte-fondo-transparente-ADP.webp" alt="AMSOIL Heavy-Duty 15W-40 Diesel">
-                    </div>
-                    <div class="hero-slide-content">
-                        <span class="hero-slide-kicker">POTENCIA Y PROTECCIÓN TURBODIÉSEL</span>
-                        <h2 class="hero-slide-title">Max-Duty & Heavy-Duty Diesel</h2>
-                        <p class="hero-slide-subtitle">6X más protección contra desgaste en motores pesados</p>
-                        <a href="diesel.html" class="hero-slide-cta">EXPLORAR DIESEL</a>
-                        <div class="hero-slide-note">Certificación oficial <strong>API CK-4 & GM dexosD</strong></div>
-                    </div>
-                </div>
-            </div>
+        </section>
 
-            <!-- DIAPOSITIVA 3: EUROPEAN FORMULA & EASY-PACK -->
-            <div class="hero-carousel-slide slide-theme-3">
-                <div class="hero-slide-inner">
-                    <div class="hero-slide-visual">
-                        <img src="01-motor-gasolina/european-car-formula/5w-30-ls/recorte-fondo-transparente-AEL.webp" alt="AMSOIL European Car Formula 5W-30">
-                        <img src="03-transmision-y-diferenciales/severe-gear-y-diferenciales/severe-gear-75w-90/recorte-fondo-transparente-SVG.webp" alt="AMSOIL SEVERE GEAR 75W-90 Easy-Pack" class="featured-center">
-                        <img src="03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/signature-series-multi-vehicle-atf-red/recorte-fondo-transparente-ATF.webp" alt="AMSOIL Signature Series ATF">
-                    </div>
-                    <div class="hero-slide-content">
-                        <span class="hero-slide-kicker">INNOVACIÓN EN CADA CAMBIO</span>
-                        <h2 class="hero-slide-title">European Formula & Easy-Pack®</h2>
-                        <p class="hero-slide-subtitle">Homologaciones OEM europeas y diferenciales 4x4 sin derrames</p>
-                        <a href="european.html" class="hero-slide-cta">VER CATÁLOGO</a>
-                        <div class="hero-slide-note">Disponible en <strong>Talleres y Puntos de Venta en CR</strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <button type="button" class="carousel-arrow-btn next" aria-label="Siguiente">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-        </button>
-
-        <button type="button" class="carousel-pause-btn" aria-label="Pausar banner">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/></svg>
-        </button>
-
-        <div class="carousel-dots-bar">
-            <button type="button" class="carousel-dot active" aria-label="Anuncio 1"></button>
-            <button type="button" class="carousel-dot" aria-label="Anuncio 2"></button>
-            <button type="button" class="carousel-dot" aria-label="Anuncio 3"></button>
-        </div>
-    </section>
-
-    <!-- FRANJA AZUL DE VEHÍCULOS (9 SILUETAS OFICIALES, SIN MOTO DE NIEVE Y SIN "SHOP BY VEHICLE") -->
-    <section class="amsoil-blue-vehicle-strip" aria-label="Categorías de Vehículos">
-        <div class="container">
-            <div class="blue-vehicle-grid">
-                <!-- 1. AUTO / LIGHT TRUCK -->
-                <a href="automotriz.html" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <path d="M10 34L22 31L39 18H76L95 28L111 31V40H99C99 33 93 28 86 28C79 28 73 33 73 40H43C43 33 37 28 30 28C23 28 17 33 17 40H8V36L10 34Z" fill="#D8E6F3"/>
-                            <path d="M42 21H60V29H31L42 21ZM64 21H74L88 29H64V21Z" fill="#00386B"/>
-                            <circle cx="30" cy="40" r="9" fill="#8FB0CC"/>
-                            <circle cx="30" cy="40" r="4.5" fill="#00386B"/>
-                            <circle cx="86" cy="40" r="9" fill="#8FB0CC"/>
-                            <circle cx="86" cy="40" r="4.5" fill="#00386B"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">AUTO/LIGHT<br>TRUCK</span>
+        <!-- TARJETA DE ATENCIÓN DIRECTA Y CONTACTO DE DISTRIBUIDOR OFICIAL -->
+        <div class="contact-card">
+            <h2 class="contact-title">¿Necesitas Lubricantes AMSOIL, Fichas Técnicas o Pedidos de Taller?</h2>
+            <p class="contact-desc">
+                Mientras completamos la plataforma digital, nuestro equipo de asesores técnicos de <strong>American Lubricants Supply S.A. (ALS)</strong> está atendiendo de forma directa a talleres, flotillas y distribuidores autorizados en todo Costa Rica.
+            </p>
+            <div class="actions-row">
+                <a href="https://wa.me/50688888888?text=Hola%20AMSOIL%20Costa%20Rica,%20deseo%20información%20sobre%20productos%20y%20pedidos" target="_blank" rel="noopener" class="btn-whatsapp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Contactar por WhatsApp
                 </a>
-
-                <!-- 2. MOTORCYCLE -->
-                <a href="motos.html?filter=metric-motorcycle" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <circle cx="26" cy="38" r="10.5" stroke="#8FB0CC" stroke-width="4" fill="#00386B"/>
-                            <circle cx="26" cy="38" r="3.5" fill="#D8E6F3"/>
-                            <circle cx="92" cy="38" r="10.5" stroke="#8FB0CC" stroke-width="4" fill="#00386B"/>
-                            <circle cx="92" cy="38" r="3.5" fill="#D8E6F3"/>
-                            <path d="M26 38L42 22H56L68 29H82L72 16H64L70 12H78L92 38" stroke="#D8E6F3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M40 24C45 18 56 18 62 24L74 28L66 37H44L40 24Z" fill="#D8E6F3"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">MOTORCYCLE</span>
-                </a>
-
-                <!-- 3. ATV -->
-                <a href="motos.html?filter=atv-utv" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <path d="M26 26L38 19H54L50 11H43M50 11L58 11M22 28H92L96 34H20L22 28Z" stroke="#D8E6F3" stroke-width="3.5" stroke-linecap="round"/>
-                            <path d="M25 24L42 18H74L92 25L88 35H28L25 24Z" fill="#D8E6F3"/>
-                            <circle cx="34" cy="39" r="10.5" fill="#8FB0CC"/>
-                            <circle cx="34" cy="39" r="5" fill="#00386B"/>
-                            <circle cx="82" cy="39" r="10.5" fill="#8FB0CC"/>
-                            <circle cx="82" cy="39" r="5" fill="#00386B"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">ATV</span>
-                </a>
-
-                <!-- 4. UTV -->
-                <a href="motos.html?filter=atv-utv" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <path d="M34 26L44 10H76L88 26" stroke="#8FB0CC" stroke-width="3.5" stroke-linejoin="round"/>
-                            <path d="M60 10V26" stroke="#8FB0CC" stroke-width="3"/>
-                            <path d="M18 25H40L46 29H76L84 24L102 28V37H18V25Z" fill="#D8E6F3"/>
-                            <circle cx="32" cy="40" r="10" fill="#8FB0CC"/>
-                            <circle cx="32" cy="40" r="4.5" fill="#00386B"/>
-                            <circle cx="86" cy="40" r="10" fill="#8FB0CC"/>
-                            <circle cx="86" cy="40" r="4.5" fill="#00386B"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">UTV</span>
-                </a>
-
-                <!-- 5. MARINE OUTBOARD -->
-                <a href="motos.html?filter=marino" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <path d="M10 27H96L110 27L98 39H22L10 27Z" fill="#D8E6F3"/>
-                            <path d="M44 27L56 18H74L80 27H44Z" fill="#8FB0CC"/>
-                            <path d="M12 22H22L24 31L16 44H11L15 31L12 22Z" fill="#8FB0CC"/>
-                            <path d="M22 32H98" stroke="#00386B" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">MARINE<br>OUTBOARD</span>
-                </a>
-
-                <!-- 6. PWC -->
-                <a href="motos.html?filter=2-stroke" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <path d="M16 35L32 27H58L72 18L82 20L76 27L104 33L94 40H22L16 35Z" fill="#D8E6F3"/>
-                            <path d="M40 27L52 21H68L62 27H40Z" fill="#8FB0CC"/>
-                            <path d="M18 36H98" stroke="#00386B" stroke-width="2.5"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">PWC</span>
-                </a>
-
-                <!-- 7. HEAVY-DUTY ON-ROAD -->
-                <a href="diesel.html?filter=signature-series-max-duty" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <path d="M14 33H52V12C64 12 74 16 78 24L98 26V38H14V33Z" fill="#D8E6F3"/>
-                            <rect x="64" y="18" width="10" height="8" fill="#00386B"/>
-                            <rect x="47" y="8" width="3.5" height="26" fill="#8FB0CC"/>
-                            <circle cx="25" cy="40" r="8" fill="#8FB0CC"/>
-                            <circle cx="25" cy="40" r="3.8" fill="#00386B"/>
-                            <circle cx="43" cy="40" r="8" fill="#8FB0CC"/>
-                            <circle cx="43" cy="40" r="3.8" fill="#00386B"/>
-                            <circle cx="86" cy="40" r="8" fill="#8FB0CC"/>
-                            <circle cx="86" cy="40" r="3.8" fill="#00386B"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">HEAVY-DUTY<br>ON-ROAD</span>
-                </a>
-
-                <!-- 8. HEAVY-DUTY OFF-ROAD -->
-                <a href="diesel.html?filter=heavy-duty-ck4" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <path d="M12 18L72 14L66 32H18L12 18Z" fill="#8FB0CC"/>
-                            <path d="M68 18H90L98 26V36H16V31H66L68 18Z" fill="#D8E6F3"/>
-                            <rect x="74" y="21" width="12" height="7" fill="#00386B"/>
-                            <circle cx="28" cy="40" r="8.5" fill="#8FB0CC"/>
-                            <circle cx="28" cy="40" r="4" fill="#00386B"/>
-                            <circle cx="46" cy="40" r="8.5" fill="#8FB0CC"/>
-                            <circle cx="46" cy="40" r="4" fill="#00386B"/>
-                            <circle cx="84" cy="40" r="8.5" fill="#8FB0CC"/>
-                            <circle cx="84" cy="40" r="4" fill="#00386B"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">HEAVY-DUTY<br>OFF-ROAD</span>
-                </a>
-
-                <!-- 9. AGRICULTURE -->
-                <a href="diesel.html" class="blue-veh-item">
-                    <div class="blue-veh-icon">
-                        <svg viewBox="0 0 120 52" fill="none">
-                            <path d="M18 14H56L64 26H88V36H18V14Z" fill="#D8E6F3"/>
-                            <rect x="34" y="18" width="18" height="10" fill="#00386B"/>
-                            <path d="M64 31H110L106 38H64V31Z" fill="#8FB0CC"/>
-                            <circle cx="32" cy="39" r="11" fill="#8FB0CC"/>
-                            <circle cx="32" cy="39" r="5" fill="#00386B"/>
-                            <circle cx="62" cy="41" r="7.5" fill="#8FB0CC"/>
-                            <circle cx="62" cy="41" r="3.5" fill="#00386B"/>
-                        </svg>
-                    </div>
-                    <span class="blue-veh-label">AGRICULTURE</span>
+                <a href="tel:+50622222222" class="btn-phone">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Atención al Cliente
                 </a>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- DOCK INTERACTIVO COMPACTO -->
-    <section class="vehicle-lookup-dock" id="lookup-widget">
-        <div class="container">
-            <div class="lookup-dock-card">
-                <div class="lookup-tabs-bar">
-                    <button type="button" class="lookup-mode-tab">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 16H9m10 0h3v-3.15a1 1 0 00-.84-.99L16 11l-2.7-3.6a1 1 0 00-.8-.4H5.24a2 2 0 00-1.8 1.1l-.8 1.63A6 6 0 002 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
-                        <span>Encuentra el aceite ideal para tu vehículo</span>
-                    </button>
-                </div>
-
-                <div class="lookup-dock-body">
-                    <form id="aiAdvisorForm" class="lookup-Step-grid">
-                        <div class="lookup-field">
-                            <label for="selectEquipType">Tipo de Vehículo</label>
-                            <select id="selectEquipType" class="lookup-select">
-                                <option value="">Todos los vehículos</option>
-                                <option value="Pickup 4x4 Turbodiésel">Pickup 4x4 / SUV Diésel</option>
-                                <option value="Automóvil / SUV Gasolina">Auto / SUV Gasolina</option>
-                                <option value="Vehículo Híbrido HEV">Vehículo Híbrido</option>
-                                <option value="Motocicleta 4T / Enduro">Motocicleta / ATV</option>
-                            </select>
-                        </div>
-
-                        <div class="lookup-field">
-                            <label for="aiVehicleQuery">Marca, Modelo y Año</label>
-                            <input 
-                                type="text" 
-                                id="aiVehicleQuery" 
-                                class="lookup-input" 
-                                placeholder="Ej: Toyota Hilux 2.8 2023, Honda CR-V 1.5..."
-                                required
-                            >
-                        </div>
-
-                        <div class="lookup-field">
-                            <label for="aiVehicleMileage">Kilometraje (Opcional)</label>
-                            <input 
-                                type="number" 
-                                id="aiVehicleMileage" 
-                                class="lookup-input" 
-                                placeholder="Ej: 85000 km"
-                                min="0"
-                                step="1000"
-                            >
-                        </div>
-
-                        <div class="lookup-field">
-                            <button type="submit" class="btn btn-red btn-block" style="height:44px;">
-                                BUSCAR →
-                            </button>
-                        </div>
-                    </form>
-
-                    <div class="lookup-quick-strip">
-                        <span class="quick-strip-title">Consultas frecuentes:</span>
-                        <button type="button" class="cr-vehicle-pill preset-chip" data-query="Toyota Hilux 2.8L 1GD-FTV Diesel 2023" data-km="85000">Toyota Hilux 2.8</button>
-                        <button type="button" class="cr-vehicle-pill preset-chip" data-query="Isuzu D-Max 3.0L 4JJ3-TCX Diesel 2022" data-km="115000">Isuzu D-Max 3.0</button>
-                        <button type="button" class="cr-vehicle-pill preset-chip" data-query="Toyota RAV4 Hybrid 2.5L A25A-FXS 2024" data-km="25000">Toyota RAV4 Híbrido</button>
-                        <button type="button" class="cr-vehicle-pill preset-chip" data-query="Honda CR-V 1.5L VTEC Turbo Gasolina 2022" data-km="65000">Honda CR-V Turbo</button>
-                    </div>
-
-                    <div id="aiLoadingState" style="display:none; padding:16px; margin-top:14px; background:#F9FAFB; border-left:3px solid #CC262F; font-size:0.9rem;">
-                        Consultando especificaciones para tu vehículo...
-                    </div>
-
-                    <div id="aiResultPanel" class="amsoil-guide-results" style="display: none;">
-                        <div class="guide-results-header">
-                            <div>
-                                <div style="display:flex; gap:8px; margin-bottom:6px; flex-wrap:wrap;">
-                                    <span id="resCategoryBadge" class="tier-kicker" style="background:#CC262F; margin:0;">GUÍA DE APLICACIÓN AMSOIL</span>
-                                    <span id="resMileageBadge" class="tier-kicker" style="background:#2C73B7; color:#FFFFFF; margin:0; display:none;">ALTO KILOMETRAJE</span>
-                                </div>
-                                <h3 id="resVehicleTitle" class="guide-veh-title">Toyota Hilux 2.8L Diesel</h3>
-                                <p id="resVehicleSubtitle" class="guide-veh-sub">Especificación OEM y fluidos recomendados</p>
-                            </div>
-                            <button type="button" class="btn btn-outline-dark" style="padding:6px 12px; font-size:0.82rem;" onclick="document.getElementById('aiResultPanel').style.display='none'">
-                                ✕ Cerrar
-                            </button>
-                        </div>
-
-                        <div class="guide-specs-bar">
-                            <div class="guide-spec-tile highlight">
-                                <span>Viscosidad SAE Recomendada</span>
-                                <strong id="resViscosity">5W-30</strong>
-                            </div>
-                            <div class="guide-spec-tile">
-                                <span>Capacidad de Cárter</span>
-                                <strong id="resCapacity">7.5 Litros</strong>
-                            </div>
-                            <div class="guide-spec-tile">
-                                <span>Especificación OEM</span>
-                                <strong id="resNorm">API CK-4 / ACEA C3</strong>
-                            </div>
-                            <div class="guide-spec-tile">
-                                <span>Filtro de Referencia</span>
-                                <strong id="resFilter">90915-YZZD2</strong>
-                            </div>
-                        </div>
-
-                        <div class="guide-alerts-row">
-                            <div class="guide-alert">
-                                <strong>Nota Técnica OEM</strong>
-                                <span id="resWarning"></span>
-                            </div>
-                            <div id="resMileageBox" class="guide-alert mileage-note" style="display:none;">
-                                <strong>Recomendación por Kilometraje</strong>
-                                <span id="resMileageAdvice"></span>
-                            </div>
-                        </div>
-
-                        <div class="guide-sub-heading">
-                            <span>Aceites de Motor Recomendados</span>
-                        </div>
-                        <div id="resAmsoilTiersGrid" class="guide-tiers-grid"></div>
-
-                        <div class="guide-sub-heading">
-                            <span>Fluidos de Transmisión, Diferenciales y Aditivos</span>
-                        </div>
-                        <div id="resFluidPackageGrid" class="guide-fluids-grid"></div>
-                    </div>
-
-                </div>
-            </div>
+    <!-- FOOTER OFICIAL DE CUMPLIMIENTO LEGAL (APPLE APP STORE, GOOGLE PLAY & WINDOWS) -->
+    <footer>
+        <div class="compliance-links">
+            <a href="https://jucarsalrd.github.io/jucarsasuite/privacy.html" target="_blank">Política de Privacidad</a>
+            &bull;
+            <a href="https://jucarsalrd.github.io/jucarsasuite/terms.html" target="_blank">Términos y Condiciones</a>
+            &bull;
+            <a href="https://jucarsalrd.github.io/jucarsasuite/support.html" target="_blank">Soporte Técnico</a>
+            &bull;
+            <a href="https://jucarsalrd.github.io/jucarsasuite/delete-account.html" target="_blank">Eliminación de Cuenta</a>
         </div>
-    </section>
-
-    <!-- 4 PRODUCTOS DESTACADOS EN UNA SOLA FILA LIMPIA -->
-    <section class="section-block-gray">
-        <div class="container">
-            <div class="amsoil-sec-header">
-                <h2 class="amsoil-sec-title">Productos Destacados</h2>
-                <a href="automotriz.html" class="amsoil-sec-link">Ver Catálogo Completo →</a>
-            </div>
-
-            <div class="amsoil-product-grid" style="grid-template-columns: repeat(4, 1fr);">
-
-                <article class="amsoil-prod-tile" data-product-id="asl-5w-30" data-subcat="signature-series 5w30">
-                    <span class="prod-viscosity-pill">5W-30</span>
-                    <div class="prod-tile-image">
-                        <img src="01-motor-gasolina/signature-series/5w-30/recorte-fondo-transparente-ASL.webp" alt="AMSOIL Signature Series 5W-30 100% Synthetic Motor Oil" class="prod-tile-photo" loading="lazy">
-                    </div>
-                    <div class="prod-tile-body">
-                        <div class="prod-tile-code">Código ASL • SAE 5W-30</div>
-                        <h3 class="prod-tile-title">AMSOIL Signature Series 5W-30 100% Synthetic Motor Oil</h3>
-                        <p class="prod-tile-desc">El aceite insignia de máximo rendimiento de AMSOIL. Desarrollado para entusiastas y conductores que exigen la máxima protección existente en la industria automotriz.</p>
-                        <div class="prod-presentations-bar">
-                            <button type="button" class="pres-switch-btn active" data-img-src="01-motor-gasolina/signature-series/5w-30/recorte-fondo-transparente-ASL.webp" data-sku="ASL">Vista Principal</button><button type="button" class="pres-switch-btn " data-img-src="01-motor-gasolina/signature-series/5w-30/cuarto-1qt-ASLQT.jpg" data-sku="ASLQT">1 Cuarto</button><button type="button" class="pres-switch-btn " data-img-src="01-motor-gasolina/signature-series/5w-30/botella-cn-ASLCN.jpg" data-sku="ASLCN">Envase Individual</button><button type="button" class="pres-switch-btn " data-img-src="01-motor-gasolina/signature-series/5w-30/galon-1gal-ASL1G.jpg" data-sku="ASL1G">1 Galón</button>
-                        </div>
-                    </div>
-                    <div class="prod-tile-footer">
-                        <button type="button" class="btn-pds-trigger" data-open-pds="asl-5w-30">
-                            Ver Ficha Técnica y Envases →
-                        </button>
-                    </div>
-                </article>
-
-                <article class="amsoil-prod-tile" data-product-id="dme-15w-40" data-subcat="signature-series-max-duty 15w40">
-                    <span class="prod-viscosity-pill">15W-40</span>
-                    <div class="prod-tile-image">
-                        <img src="02-motor-diesel/signature-series-max-duty/15w-40/recorte-fondo-transparente-DME.webp" alt="AMSOIL Signature Series Max-Duty 15W-40 100% Synthetic Diesel Oil" class="prod-tile-photo" loading="lazy">
-                    </div>
-                    <div class="prod-tile-body">
-                        <div class="prod-tile-code">Código DME • SAE 15W-40</div>
-                        <h3 class="prod-tile-title">AMSOIL Signature Series Max-Duty 15W-40 100% Synthetic Diesel Oil</h3>
-                        <p class="prod-tile-desc">La máxima tecnología de AMSOIL en lubricación diésel de servicio pesado. Ofrece 6 veces más protección contra el desgaste del motor que el estándar Detroit Diesel DD13.</p>
-                        <div class="prod-presentations-bar">
-                            <button type="button" class="pres-switch-btn active" data-img-src="02-motor-diesel/signature-series-max-duty/15w-40/recorte-fondo-transparente-DME.webp" data-sku="DME">Vista Principal</button><button type="button" class="pres-switch-btn " data-img-src="02-motor-diesel/signature-series-max-duty/15w-40/cuarto-1qt-DMEQT.jpg" data-sku="DMEQT">1 Cuarto</button><button type="button" class="pres-switch-btn " data-img-src="02-motor-diesel/signature-series-max-duty/15w-40/galon-1gal-DME1G.jpg" data-sku="DME1G">1 Galón</button><button type="button" class="pres-switch-btn " data-img-src="02-motor-diesel/signature-series-max-duty/15w-40/garrafa-2.5gal-DMETP.jpg" data-sku="DMETP">Garrafa 2.5 Gal</button>
-                        </div>
-                    </div>
-                    <div class="prod-tile-footer">
-                        <button type="button" class="btn-pds-trigger" data-open-pds="dme-15w-40">
-                            Ver Ficha Técnica y Envases →
-                        </button>
-                    </div>
-                </article>
-
-                <article class="amsoil-prod-tile" data-product-id="svg-severe-gear-75w-90" data-subcat="severe-gear-y-diferenciales 75w90  severe-gear">
-                    <span class="prod-viscosity-pill">75W-90</span>
-                    <div class="prod-tile-image">
-                        <img src="03-transmision-y-diferenciales/severe-gear-y-diferenciales/severe-gear-75w-90/recorte-fondo-transparente-SVG.webp" alt="AMSOIL SEVERE GEAR 75W-90 100% Synthetic Gear Lube" class="prod-tile-photo" loading="lazy">
-                    </div>
-                    <div class="prod-tile-body">
-                        <div class="prod-tile-code">Código SVG • SAE 75W-90</div>
-                        <h3 class="prod-tile-title">AMSOIL SEVERE GEAR 75W-90 100% Synthetic Gear Lube</h3>
-                        <p class="prod-tile-desc">Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.</p>
-                        <div class="prod-presentations-bar">
-                            <button type="button" class="pres-switch-btn active" data-img-src="03-transmision-y-diferenciales/severe-gear-y-diferenciales/severe-gear-75w-90/recorte-fondo-transparente-SVG.webp" data-sku="SVG">Vista Principal</button><button type="button" class="pres-switch-btn " data-img-src="03-transmision-y-diferenciales/severe-gear-y-diferenciales/severe-gear-75w-90/cuarto-1qt-SVGQT.jpg" data-sku="SVGQT">1 Cuarto</button><button type="button" class="pres-switch-btn " data-img-src="03-transmision-y-diferenciales/severe-gear-y-diferenciales/severe-gear-75w-90/easy-pack-1qt-SVGPK.jpg" data-sku="SVGPK">Easy-Pack 1 Qt</button><button type="button" class="pres-switch-btn " data-img-src="03-transmision-y-diferenciales/severe-gear-y-diferenciales/severe-gear-75w-90/cubeta-5gal-SVG05.jpg" data-sku="SVG05">Cubeta 5 Gal</button>
-                        </div>
-                    </div>
-                    <div class="prod-tile-footer">
-                        <button type="button" class="btn-pds-trigger" data-open-pds="svg-severe-gear-75w-90">
-                            Ver Ficha Técnica y Envases →
-                        </button>
-                    </div>
-                </article>
-
-                <article class="amsoil-prod-tile" data-product-id="mcf-10w-40" data-subcat="metric-motorcycle 10w40  metric-motorcycle">
-                    <span class="prod-viscosity-pill">10W-40</span>
-                    <div class="prod-tile-image">
-                        <img src="04-motocicletas-atv-marino/metric-motorcycle/10w-40/recorte-fondo-transparente-MCF.webp" alt="AMSOIL 10W-40 100% Synthetic Metric Motorcycle Oil" class="prod-tile-photo" loading="lazy">
-                    </div>
-                    <div class="prod-tile-body">
-                        <div class="prod-tile-code">Código MCF • SAE 10W-40</div>
-                        <h3 class="prod-tile-title">AMSOIL 10W-40 100% Synthetic Metric Motorcycle Oil</h3>
-                        <p class="prod-tile-desc">Diseñado para motocicletas métricas de altas RPM (Honda, Yamaha, Kawasaki, Suzuki, BMW, Triumph, Ducati, KTM) que exigen máxima protección contra el desgaste de caja y motor.</p>
-                        <div class="prod-presentations-bar">
-                            <button type="button" class="pres-switch-btn active" data-img-src="04-motocicletas-atv-marino/metric-motorcycle/10w-40/recorte-fondo-transparente-MCF.webp" data-sku="MCF">Vista Principal</button><button type="button" class="pres-switch-btn " data-img-src="04-motocicletas-atv-marino/metric-motorcycle/10w-40/cuarto-1qt-MCFQT.jpg" data-sku="MCFQT">1 Cuarto</button><button type="button" class="pres-switch-btn " data-img-src="04-motocicletas-atv-marino/metric-motorcycle/10w-40/galon-1gal-MCF1G.jpg" data-sku="MCF1G">1 Galón</button><button type="button" class="pres-switch-btn " data-img-src="04-motocicletas-atv-marino/metric-motorcycle/10w-40/estanon-55gal-MCF55.jpg" data-sku="MCF55">Estañón 55 Gal</button>
-                        </div>
-                    </div>
-                    <div class="prod-tile-footer">
-                        <button type="button" class="btn-pds-trigger" data-open-pds="mcf-10w-40">
-                            Ver Ficha Técnica y Envases →
-                        </button>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOQUE DIVIDIDO "WHY AMSOIL" EN MODO CLARO -->
-    <section class="section-block-white">
-        <div class="container">
-            <div class="why-amsoil-split">
-                <div class="why-left-content">
-                    <span class="kicker">INGENIERÍA SINTÉTICA</span>
-                    <h2>¿POR QUÉ ELEGIR AMSOIL?</h2>
-                    <p>
-                        AMSOIL formula con bases 100% sintéticas puras que resisten la evaporación por calor extremo, mantienen los pistones limpios y protegen los turbocompresores frente al desgaste prematuro.
-                    </p>
-                    <div style="display:flex; gap:12px; flex-wrap:wrap;">
-                        <a href="ingenieria.html" class="btn btn-red">VER PRUEBAS Y FICHAS TÉCNICAS</a>
-                        <a href="contacto.html" class="btn btn-outline-dark">PUNTOS DE VENTA EN CR</a>
-                    </div>
-                </div>
-
-                <div class="why-right-chart">
-                    <span style="font-family:var(--font-heading); font-weight:800; color:#2C73B7; font-size:0.82rem; letter-spacing:1px;">PRUEBA DE DESGASTE ASTM SEQUENCE IVA</span>
-                    <h3 style="font-family:var(--font-heading); font-size:1.5rem; margin:6px 0 18px; color:#0F1416; text-transform:uppercase;">Menor Desgaste = Mayor Vida del Motor</h3>
-
-                    <div class="astm-bar-item">
-                        <div class="astm-bar-label" style="color:#374151;">
-                            <span>Límite Máximo Permitido API SP</span>
-                            <strong>90 µm</strong>
-                        </div>
-                        <div class="astm-track"><div class="astm-fill" style="width:90%; background:#D1D5DB;"></div></div>
-                    </div>
-
-                    <div class="astm-bar-item">
-                        <div class="astm-bar-label" style="color:#374151;">
-                            <span>Sintético Comercial Promedio</span>
-                            <strong>48 µm</strong>
-                        </div>
-                        <div class="astm-track"><div class="astm-fill" style="width:52%; background:#2C73B7;"></div></div>
-                    </div>
-
-                    <div class="astm-bar-item" style="margin-bottom:0;">
-                        <div class="astm-bar-label" style="color:#0F1416;">
-                            <span>★ AMSOIL Signature Series 100% Synthetic</span>
-                            <strong style="color:#CC262F;">20 µm (75% Más Protección)</strong>
-                        </div>
-                        <div class="astm-track"><div class="astm-fill" style="width:22%; background:#CC262F;"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER CORPORATIVO OFICIAL -->
-    <footer class="amsoil-footer">
-        <div class="container">
-            <div class="footer-cols">
-                <div>
-                    <img src="amsoil-logo.png" alt="AMSOIL Oficial Costa Rica" style="height:48px; width:auto; margin-bottom:14px; background:#FFFFFF; padding:6px 12px; border-radius:2px; display:inline-block;">
-                    <p style="font-size:0.86rem; color:#CACACD; max-width:320px;">
-                        Portal informativo oficial de lubricantes, fluidos y aditivos 100% sintéticos AMSOIL en Costa Rica (American Lubricants Supply S.A.). The First in Synthetics® desde 1972.
-                    </p>
-                </div>
-
-                <div>
-                    <h4>Categorías del Catálogo (104 Productos)</h4>
-                    <ul>
-                        <li><a href="automotriz.html">Aceite de Motor Gasolina & Híbrido (26)</a></li>
-                        <li><a href="diesel.html">Diesel 100% Sintético (9)</a></li>
-                        <li><a href="european.html">European Car Formula (7)</a></li>
-                        <li><a href="motos.html">Motocicletas, Enduro, ATV/UTV & Marino (25)</a></li>
-                        <li><a href="transmision.html">Transmisión Automática, CVT & Diferenciales Gear (17)</a></li>
-                        <li><a href="aditivos.html">Aditivos, Coolant, Frenos & Grasas (20)</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Herramientas & Ubicaciones</h4>
-                    <ul>
-                        <li><a href="index.html#lookup-widget">Buscador de Vehículos con IA</a></li>
-                        <li><a href="ingenieria.html">¿Por qué AMSOIL? Índice de las 104 Fichas Técnicas</a></li>
-                        <li><a href="contacto.html#puntos-de-venta">Dónde Encontrar Talleres y Puntos de Venta</a></li>
-                        <li><a href="contacto.html#formulario-contacto">Contáctenos</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Contacto Oficial CR</h4>
-                    <ul>
-                        <li><a href="contacto.html">📍 American Lubricants Supply S.A. • Costa Rica</a></li>
-                        <li><a href="contacto.html">📞 +506 2200-0000</a></li>
-                        <li><a href="contacto.html">💬 WhatsApp: +506 8800-0000</a></li>
-                        <li><a href="https://www.amsoil.com" target="_blank" rel="noopener">Sitio Corporativo AMSOIL USA ↗</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-copy">
-                <span>© 2026 AMSOIL Costa Rica (American Lubricants Supply S.A.). Todas las marcas registradas pertenecen a AMSOIL INC., Superior, Wisconsin, USA.</span>
-                <span>Catálogo Oficial Verificado: 104 Referencias 100% Sintéticas</span>
-            </div>
-        </div>
+        <p class="company-info">
+            &copy; 2026 <strong>American Lubricants Supply S.A. (ALS)</strong> &bull; Cédula Jurídica Oficial. Todos los derechos reservados.<br>
+            Distribuidor Oficial Autorizado de AMSOIL INC. en la República de Costa Rica.
+        </p>
     </footer>
 
-    <script src="catalogo-datos.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
