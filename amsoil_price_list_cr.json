@@ -1,0 +1,610 @@
+{
+  "distributor": "American Lubricants Supply S.A.",
+  "contact": {
+    "phone": "2238-1642",
+    "fax": "2238-0872"
+  },
+  "effective_date": "2026-07-06",
+  "currency": "CRC",
+  "tax_included": false,
+  "drum_volume_liters": 208.2,
+  "drum_volume_gallons": 55,
+  "products": [
+    {
+      "code": "AM28012",
+      "name": "AMSOIL 100% Synthetic OE 0W-20 SP",
+      "category": "Engine Gasoline OE",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 79050.00,
+      "unit_price_crc": 6587.50
+    },
+    {
+      "code": "AM29012",
+      "name": "AMSOIL 100% Synthetic OE 5W-20 SP",
+      "category": "Engine Gasoline OE",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 79050.00,
+      "unit_price_crc": 6587.50
+    },
+    {
+      "code": "AM86012",
+      "name": "AMSOIL 100% Synthetic OE 5W-30 SP",
+      "category": "Engine Gasoline OE",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 77170.00,
+      "unit_price_crc": 6430.83
+    },
+    {
+      "code": "AM86004",
+      "name": "AMSOIL 100% Synthetic OE 5W-30 SP Galón",
+      "category": "Engine Gasoline OE",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 93120.00,
+      "unit_price_crc": 23280.00
+    },
+    {
+      "code": "AM86055",
+      "name": "AMSOIL 100% Synthetic OE 5W-30 SP Estañón",
+      "category": "Engine Gasoline OE",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 806200.00,
+      "unit_price_crc": 806200.00,
+      "price_per_liter_crc": 3872.24
+    },
+    {
+      "code": "AM87012",
+      "name": "AMSOIL 100% Synthetic OE 5W-40 SP",
+      "category": "Engine Gasoline OE",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 77170.00,
+      "unit_price_crc": 6430.83
+    },
+    {
+      "code": "AM06012",
+      "name": "AMSOIL 100% Synthetic OE 10W-30 SP",
+      "category": "Engine Gasoline OE",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 77170.00,
+      "unit_price_crc": 6430.83
+    },
+    {
+      "code": "AM06004",
+      "name": "AMSOIL 100% Synthetic OE 10W-30 SP Galón",
+      "category": "Engine Gasoline OE",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 93120.00,
+      "unit_price_crc": 23280.00
+    },
+    {
+      "code": "AM06055",
+      "name": "AMSOIL 100% Synthetic OE 10W-30 SP Estañón",
+      "category": "Engine Gasoline OE",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 806200.00,
+      "unit_price_crc": 806200.00,
+      "price_per_liter_crc": 3872.24
+    },
+    {
+      "code": "AM24012",
+      "name": "AMSOIL 100% Synthetic OE 10W-40 SP+",
+      "category": "Engine Gasoline OE",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 77170.00,
+      "unit_price_crc": 6430.83
+    },
+    {
+      "code": "AM02012",
+      "name": "AMSOIL 100% Synthetic OE 20W-50 SP+",
+      "category": "Engine Gasoline OE",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 59740.00,
+      "unit_price_crc": 4978.33
+    },
+    {
+      "code": "AM02055",
+      "name": "AMSOIL 100% Synthetic OE 20W-50 SP+ Estañón",
+      "category": "Engine Gasoline OE",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 806200.00,
+      "unit_price_crc": 806200.00,
+      "price_per_liter_crc": 3872.24
+    },
+    {
+      "code": "AMX0612",
+      "name": "AMSOIL 100% Synthetic XL 10W-30",
+      "category": "Engine Gasoline XL",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 92680.00,
+      "unit_price_crc": 7723.33
+    },
+    {
+      "code": "AMX8612",
+      "name": "AMSOIL 100% Synthetic XL 5W-30",
+      "category": "Engine Gasoline XL",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 92680.00,
+      "unit_price_crc": 7723.33
+    },
+    {
+      "code": "AML8612",
+      "name": "AMSOIL 100% Synthetic European Car Formula LS 5W-30",
+      "category": "Engine European",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 106300.00,
+      "unit_price_crc": 8858.33
+    },
+    {
+      "code": "AML86004",
+      "name": "AMSOIL 100% Synthetic European 5W-30 LS Galón",
+      "category": "Engine European",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 127560.00,
+      "unit_price_crc": 31890.00
+    },
+    {
+      "code": "AML86055",
+      "name": "AMSOIL 100% Synthetic European 5W-30 LS Estañón",
+      "category": "Engine European",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 1015000.00,
+      "unit_price_crc": 1015000.00,
+      "price_per_liter_crc": 4875.12
+    },
+    {
+      "code": "AMF8712",
+      "name": "AMSOIL 100% Synthetic European Car Formula FS 5W-40",
+      "category": "Engine European",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 96080.00,
+      "unit_price_crc": 8006.67
+    },
+    {
+      "code": "AME8712",
+      "name": "AMSOIL 100% Synthetic European Car Formula MS 5W-40 ACEA C3",
+      "category": "Engine European",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 90320.00,
+      "unit_price_crc": 7526.67
+    },
+    {
+      "code": "AME2812",
+      "name": "AMSOIL 100% Synthetic European 0W-20",
+      "category": "Engine European",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 98550.00,
+      "unit_price_crc": 8212.50
+    },
+    {
+      "code": "AME8812",
+      "name": "AMSOIL 100% Synthetic European 0W-40 FS",
+      "category": "Engine European",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 96080.00,
+      "unit_price_crc": 8006.67
+    },
+    {
+      "code": "AME8912",
+      "name": "AMSOIL 100% Synthetic European 0W-30 MS",
+      "category": "Engine European",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 111520.00,
+      "unit_price_crc": 9293.33
+    },
+    {
+      "code": "AMH27012",
+      "name": "AMSOIL 100% Synthetic SP 0W-16 Hybrid",
+      "category": "Engine Hybrid",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 79170.00,
+      "unit_price_crc": 6597.50
+    },
+    {
+      "code": "AMH28012",
+      "name": "AMSOIL 100% Synthetic SP 0W-20 Hybrid",
+      "category": "Engine Hybrid",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 79170.00,
+      "unit_price_crc": 6597.50
+    },
+    {
+      "code": "AMS2812",
+      "name": "AMSOIL 100% Synthetic Signature Series 0W-20",
+      "category": "Engine Signature Gasoline",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 114010.00,
+      "unit_price_crc": 9500.83
+    },
+    {
+      "code": "AMS4012",
+      "name": "AMSOIL 100% Synthetic Signature Series 0W-40",
+      "category": "Engine Signature Gasoline",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 114010.00,
+      "unit_price_crc": 9500.83
+    },
+    {
+      "code": "AMS4112",
+      "name": "AMSOIL 100% Synthetic Signature Series 5W-20",
+      "category": "Engine Signature Gasoline",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 114010.00,
+      "unit_price_crc": 9500.83
+    },
+    {
+      "code": "AMS8612",
+      "name": "AMSOIL 100% Synthetic Signature Series 5W-30",
+      "category": "Engine Signature Gasoline",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 114010.00,
+      "unit_price_crc": 9500.83
+    },
+    {
+      "code": "AMS8604",
+      "name": "AMSOIL 100% Synthetic Signature Series 5W-30 Galón",
+      "category": "Engine Signature Gasoline",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 136880.00,
+      "unit_price_crc": 34220.00
+    },
+    {
+      "code": "AMS86055",
+      "name": "AMSOIL 100% Synthetic Signature Series 5W-30 Estañón",
+      "category": "Engine Signature Gasoline",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 1218000.00,
+      "unit_price_crc": 1218000.00,
+      "price_per_liter_crc": 5850.14
+    },
+    {
+      "code": "AMM88012",
+      "name": "AMSOIL 100% Synthetic Signature Series 5W-50",
+      "category": "Engine Signature Gasoline",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 114010.00,
+      "unit_price_crc": 9500.83
+    },
+    {
+      "code": "AMS0612",
+      "name": "AMSOIL 100% Synthetic Signature Series 10W-30",
+      "category": "Engine Signature Gasoline",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 114010.00,
+      "unit_price_crc": 9500.83
+    },
+    {
+      "code": "AM30012",
+      "name": "AMSOIL 100% Synthetic HD 5W-40 CK-4",
+      "category": "Engine HD Diesel",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 79840.00,
+      "unit_price_crc": 6653.33
+    },
+    {
+      "code": "AM30004",
+      "name": "AMSOIL 100% Synthetic HD 5W-40 CK-4 Galones",
+      "category": "Engine HD Diesel",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 96230.00,
+      "unit_price_crc": 24057.50
+    },
+    {
+      "code": "AM30055",
+      "name": "AMSOIL 100% Synthetic HD 5W-40 CK-4 Estañón",
+      "category": "Engine HD Diesel",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 846800.00,
+      "unit_price_crc": 846800.00,
+      "price_per_liter_crc": 4067.24
+    },
+    {
+      "code": "AM26012",
+      "name": "AMSOIL 100% Synthetic HD 10W-30 CK-4",
+      "category": "Engine HD Diesel",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 79840.00,
+      "unit_price_crc": 6653.33
+    },
+    {
+      "code": "AM26004",
+      "name": "AMSOIL 100% Synthetic HD 10W-30 CK-4 Galones",
+      "category": "Engine HD Diesel",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 96230.00,
+      "unit_price_crc": 24057.50
+    },
+    {
+      "code": "AM26002",
+      "name": "AMSOIL 100% Synthetic HD 10W-30 CK-4 (2x2.5GL)",
+      "category": "Engine HD Diesel",
+      "package": "5 Galones (2x2.5GL)",
+      "units_per_pack": 1,
+      "price_pack_crc": 107770.00,
+      "unit_price_crc": 107770.00
+    },
+    {
+      "code": "AM26055",
+      "name": "AMSOIL 100% Synthetic HD 10W-30 CK-4 Estañón",
+      "category": "Engine HD Diesel",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 846800.00,
+      "unit_price_crc": 846800.00,
+      "price_per_liter_crc": 4067.24
+    },
+    {
+      "code": "AM84012",
+      "name": "AMSOIL 100% Synthetic HD 15W-40 CK-4 Cuartos",
+      "category": "Engine HD Diesel",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 63800.00,
+      "unit_price_crc": 5316.67
+    },
+    {
+      "code": "AM84004",
+      "name": "AMSOIL 100% Synthetic HD 15W-40 CK-4 Galones",
+      "category": "Engine HD Diesel",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 79460.00,
+      "unit_price_crc": 19865.00
+    },
+    {
+      "code": "AM84002",
+      "name": "AMSOIL 100% Synthetic HD 15W-40 CK-4 Garrafa (2x2.5GL)",
+      "category": "Engine HD Diesel",
+      "package": "5 Galones (2x2.5GL)",
+      "units_per_pack": 1,
+      "price_pack_crc": 93960.00,
+      "unit_price_crc": 93960.00
+    },
+    {
+      "code": "AM84055",
+      "name": "AMSOIL 100% Synthetic HD 15W-40 CK-4 Estañón",
+      "category": "Engine HD Diesel",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 846800.00,
+      "unit_price_crc": 846800.00,
+      "price_per_liter_crc": 4067.24
+    },
+    {
+      "code": "AM05055",
+      "name": "AMSOIL Synthetic Blend 15W-40 Diesel CK-4 Estañón",
+      "category": "Engine Commercial Blend",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 765600.00,
+      "unit_price_crc": 765600.00,
+      "price_per_liter_crc": 3677.23
+    },
+    {
+      "code": "AMM86012",
+      "name": "AMSOIL 100% Synthetic Max-Duty 5W-30 CK-4",
+      "category": "Engine Max-Duty Diesel",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 109620.00,
+      "unit_price_crc": 9135.00
+    },
+    {
+      "code": "AMM86004",
+      "name": "AMSOIL 100% Synthetic Max-Duty 5W-30 CK-4 Galones",
+      "category": "Engine Max-Duty Diesel",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 133400.00,
+      "unit_price_crc": 33350.00
+    },
+    {
+      "code": "AMM86055",
+      "name": "AMSOIL 100% Synthetic Max-Duty 5W-30 CK-4 Estañón",
+      "category": "Engine Max-Duty Diesel",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 1218000.00,
+      "unit_price_crc": 1218000.00,
+      "price_per_liter_crc": 5850.14
+    },
+    {
+      "code": "AMM30012",
+      "name": "AMSOIL 100% Synthetic Max-Duty 5W-40 Diesel Cuartos",
+      "category": "Engine Max-Duty Diesel",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 109620.00,
+      "unit_price_crc": 9135.00
+    },
+    {
+      "code": "AMM30002",
+      "name": "AMSOIL 100% Synthetic Max-Duty 5W-40 Diesel (2x2.5GL)",
+      "category": "Engine Max-Duty Diesel",
+      "package": "5 Galones (2x2.5GL)",
+      "units_per_pack": 1,
+      "price_pack_crc": 148925.00,
+      "unit_price_crc": 148925.00
+    },
+    {
+      "code": "AMM06012",
+      "name": "AMSOIL 100% Synthetic Max-Duty 10W-30 Cuartos",
+      "category": "Engine Max-Duty Diesel",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 109620.00,
+      "unit_price_crc": 9135.00
+    },
+    {
+      "code": "AMM06004",
+      "name": "AMSOIL 100% Synthetic Max-Duty 10W-30 Galones",
+      "category": "Engine Max-Duty Diesel",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 133400.00,
+      "unit_price_crc": 33350.00
+    },
+    {
+      "code": "AMM07012",
+      "name": "AMSOIL 100% Synthetic Max-Duty 15W-40 CK-4 Cuartos",
+      "category": "Engine Max-Duty Diesel",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 109620.00,
+      "unit_price_crc": 9135.00
+    },
+    {
+      "code": "AMM07004",
+      "name": "AMSOIL 100% Synthetic Max-Duty 15W-40 CK-4 Galones",
+      "category": "Engine Max-Duty Diesel",
+      "package": "4 Galones",
+      "units_per_pack": 4,
+      "price_pack_crc": 135720.00,
+      "unit_price_crc": 33930.00
+    },
+    {
+      "code": "AM66012",
+      "name": "AMSOIL 100% Synthetic Severe Gear 75W-90 GL-5",
+      "category": "Gear & Differential",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 137750.00,
+      "unit_price_crc": 11479.17
+    },
+    {
+      "code": "AM64012",
+      "name": "AMSOIL 100% Synthetic Severe Gear 75W-140 GL-5",
+      "category": "Gear & Differential",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 137750.00,
+      "unit_price_crc": 11479.17
+    },
+    {
+      "code": "AM20055",
+      "name": "AMSOIL 100% Synthetic Torque Drive ATF Estañón",
+      "category": "Automatic Transmission",
+      "package": "Estañón (55 Gal)",
+      "units_per_pack": 1,
+      "price_pack_crc": 1270200.00,
+      "unit_price_crc": 1270200.00,
+      "price_per_liter_crc": 6100.86
+    },
+    {
+      "code": "AMS22012",
+      "name": "AMSOIL 100% Synthetic Signature MV ATF Red Cuartos",
+      "category": "Automatic Transmission",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 118900.00,
+      "unit_price_crc": 9908.33
+    },
+    {
+      "code": "AMFS22012",
+      "name": "AMSOIL 100% Synthetic Signature Series ATF Fuel Efficient Blue",
+      "category": "Automatic Transmission",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 118900.00,
+      "unit_price_crc": 9908.33
+    },
+    {
+      "code": "AM61012",
+      "name": "AMSOIL 100% Synthetic CVT Fluid Cuartos",
+      "category": "Automatic Transmission",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 115260.00,
+      "unit_price_crc": 9605.00
+    },
+    {
+      "code": "AMDCT012",
+      "name": "AMSOIL 100% Synthetic Multi-Vehicle DCT Cuartos",
+      "category": "Automatic Transmission",
+      "package": "12 Cuartos",
+      "units_per_pack": 12,
+      "price_pack_crc": 134870.00,
+      "unit_price_crc": 11239.17
+    },
+    {
+      "code": "AM162-012",
+      "name": "AMSOIL Engine & Transmission Flush",
+      "category": "Maintenance Flush",
+      "package": "12 x 473 ML",
+      "units_per_pack": 12,
+      "price_pack_crc": 74240.00,
+      "unit_price_crc": 6186.67
+    },
+    {
+      "code": "AM165-012",
+      "name": "AMSOIL P.i. Performance Improver Gasoline",
+      "category": "Fuel Additive",
+      "package": "12 x 12 oz",
+      "units_per_pack": 12,
+      "price_pack_crc": 81380.00,
+      "unit_price_crc": 6781.67
+    },
+    {
+      "code": "AM161-012",
+      "name": "AMSOIL Injector Clean + Cetane Boost Diesel",
+      "category": "Fuel Additive",
+      "package": "12 x 473 ML",
+      "units_per_pack": 12,
+      "price_pack_crc": 66000.00,
+      "unit_price_crc": 5500.00
+    },
+    {
+      "code": "AM47010",
+      "name": "AMSOIL Synthetic Polymeric Off Road Grease Tubos",
+      "category": "Grease",
+      "package": "Caja 10 tubos",
+      "units_per_pack": 10,
+      "price_pack_crc": 91470.00,
+      "unit_price_crc": 9147.00
+    },
+    {
+      "code": "AM52120",
+      "name": "AMSOIL 100% Synthetic Red Grease 120 LBS",
+      "category": "Grease Cuñete",
+      "package": "Cuñete 120 LBS",
+      "units_per_pack": 1,
+      "price_pack_crc": 525730.00,
+      "unit_price_crc": 525730.00
+    }
+  ]
+}

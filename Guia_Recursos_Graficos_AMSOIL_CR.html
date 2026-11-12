@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Guía de Requerimientos Gráficos y Documentales — AMSOIL Costa Rica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --amsoil-red: #CC262F;
+            --amsoil-dark: #0F1416;
+            --amsoil-charcoal: #1C2329;
+            --amsoil-blue: #2C73B7;
+            --amsoil-gold: #B8860B;
+            --border-gray: #D5DCE2;
+            --bg-light: #F6F8FA;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @page {
+            size: letter;
+            margin: 14mm 14mm 16mm 14mm;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #1a2026;
+            background: #ffffff;
+            line-height: 1.45;
+            font-size: 9.8pt;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        /* Encabezado Corporativo */
+        .doc-header {
+            background: var(--amsoil-dark);
+            color: #ffffff;
+            padding: 22px 26px;
+            border-bottom: 5px solid var(--amsoil-red);
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            flex-direction: column;
+            background: var(--amsoil-red);
+            padding: 6px 14px;
+            border-left: 4px solid #ffffff;
+            transform: skewX(-8deg);
+        }
+
+        .logo-badge .brand {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            font-style: italic;
+            font-size: 22pt;
+            line-height: 0.95;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            transform: skewX(8deg);
+        }
+
+        .logo-badge .sub {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 7.5pt;
+            letter-spacing: 3px;
+            background: #ffffff;
+            color: var(--amsoil-dark);
+            text-align: center;
+            margin-top: 3px;
+            padding: 1px 4px;
+            transform: skewX(8deg);
+        }
+
+        .header-title-block {
+            text-align: right;
+        }
+
+        .header-kicker {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 9pt;
+            letter-spacing: 1.8px;
+            color: #ff6b72;
+            text-transform: uppercase;
+        }
+
+        .header-title-block h1 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            font-size: 19pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            margin-top: 2px;
+        }
+
+        .header-meta {
+            font-size: 8.2pt;
+            color: #b0bac4;
+            margin-top: 4px;
+        }
+
+        /* Introducción */
+        .intro-box {
+            background: var(--bg-light);
+            border-left: 4px solid var(--amsoil-blue);
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin-bottom: 18px;
+            font-size: 9.4pt;
+        }
+
+        .intro-box strong {
+            color: var(--amsoil-dark);
+        }
+
+        /* Secciones */
+        .section-block {
+            margin-bottom: 18px;
+            break-inside: avoid;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--amsoil-charcoal);
+            color: #ffffff;
+            padding: 7px 14px;
+            border-left: 5px solid var(--amsoil-red);
+            border-radius: 4px 4px 0 0;
+        }
+
+        .section-header h2 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            font-size: 13pt;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .adobe-tag {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 8.5pt;
+            letter-spacing: 1px;
+            background: rgba(255,255,255,0.14);
+            padding: 2px 8px;
+            border-radius: 3px;
+            color: #f7d560;
+        }
+
+        /* Tablas de Checklist */
+        table.asset-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid var(--border-gray);
+            font-size: 8.9pt;
+        }
+
+        table.asset-table th {
+            background: #eaeff4;
+            color: var(--amsoil-dark);
+            text-align: left;
+            font-weight: 700;
+            padding: 7px 10px;
+            border-bottom: 2px solid var(--border-gray);
+            font-size: 8.3pt;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        table.asset-table td {
+            padding: 7px 10px;
+            border-bottom: 1px solid var(--border-gray);
+            vertical-align: top;
+        }
+
+        table.asset-table tr:nth-child(even) td {
+            background: #fafbfc;
+        }
+
+        .check-cell {
+            width: 28px;
+            text-align: center;
+            font-size: 11pt;
+            color: var(--amsoil-red);
+            font-weight: bold;
+        }
+
+        .code-pill {
+            font-family: monospace;
+            font-size: 8pt;
+            background: #eef2f6;
+            border: 1px solid #cfd8e0;
+            padding: 1px 5px;
+            border-radius: 3px;
+            color: #b01e26;
+            white-space: nowrap;
+        }
+
+        .spec-badge {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 7.8pt;
+            padding: 1px 6px;
+            border-radius: 3px;
+            background: #e6f0fa;
+            color: #17528c;
+        }
+
+        /* Grid de Carpetas y Flujo Adobe */
+        .two-col-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 14px;
+            break-inside: avoid;
+        }
+
+        .info-card {
+            border: 1px solid var(--border-gray);
+            border-top: 3px solid var(--amsoil-red);
+            border-radius: 4px;
+            padding: 12px 14px;
+            background: #ffffff;
+        }
+
+        .info-card h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            font-size: 12pt;
+            text-transform: uppercase;
+            color: var(--amsoil-dark);
+            margin-bottom: 8px;
+        }
+
+        .folder-tree {
+            font-family: monospace;
+            font-size: 8.2pt;
+            background: var(--amsoil-dark);
+            color: #e2e8f0;
+            padding: 10px 12px;
+            border-radius: 4px;
+            line-height: 1.5;
+        }
+
+        .folder-tree .hl {
+            color: #ff6b72;
+            font-weight: bold;
+        }
+
+        .folder-tree .comment {
+            color: #8a99ad;
+        }
+
+        .tips-list {
+            list-style: none;
+            font-size: 8.8pt;
+        }
+
+        .tips-list li {
+            margin-bottom: 6px;
+            padding-left: 14px;
+            position: relative;
+        }
+
+        .tips-list li::before {
+            content: '■';
+            position: absolute;
+            left: 0;
+            color: var(--amsoil-red);
+            font-size: 7pt;
+            top: 2px;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .doc-footer {
+            margin-top: 18px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-gray);
+            display: flex;
+            justify-content: space-between;
+            font-size: 8pt;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="doc-header">
+        <div class="logo-badge">
+            <span class="brand">AMSOIL</span>
+            <span class="sub">COSTA RICA</span>
+        </div>
+        <div class="header-title-block">
+            <div class="header-kicker">MANUAL DE PRODUCCIÓN & CHECKLIST DE RECURSOS</div>
+            <h1>REQUERIMIENTOS GRÁFICOS, LOGOS Y DOCUMENTOS</h1>
+            <div class="header-meta">Estándar Visual: AMSOIL INC. (USA) • Flujo de Trabajo: Adobe Creative Cloud</div>
+        </div>
+    </header>
+
+    <div class="intro-box">
+        <strong>Objetivo de este documento:</strong> Esta guía detalla exactamente todas las imágenes, logotipos, fotografías de productos, fichas técnicas (PDF) y textos corporativos que necesitamos reunir o exportar desde <strong>Adobe Illustrator, Photoshop y Acrobat Pro</strong> para alimentar el sitio web de <strong>AMSOIL Costa Rica</strong> con la misma calidad gráfica de <em>amsoil.com</em>.
+    </div>
+
+    <!-- SECCIÓN 1: LOGOTIPOS E IDENTIDAD DE MARCA -->
+    <section class="section-block">
+        <div class="section-header">
+            <h2>1. Logotipos Oficiales e Insignias de Marca</h2>
+            <span class="adobe-tag">PREPARAR EN ADOBE ILLUSTRATOR (.SVG / .PNG)</span>
+        </div>
+        <table class="asset-table">
+            <thead>
+                <tr>
+                    <th style="width: 28px;">✓</th>
+                    <th style="width: 24%;">Recurso / Archivo</th>
+                    <th style="width: 38%;">Descripción y Uso en la Web</th>
+                    <th style="width: 18%;">Formato y Tamaño</th>
+                    <th style="width: 20%;">Nombre Sugerido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Logo Principal AMSOIL (Fondo Oscuro)</strong></td>
+                    <td>Logo oficial horizontal para el Header (menú superior) y Footer sobre fondo negro carbón (<span class="code-pill">#0F1416</span>).</td>
+                    <td><span class="spec-badge">SVG Vectorial</span> o PNG transparente (600×160 px)</td>
+                    <td><span class="code-pill">logo-amsoil-cr-dark.svg</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Logo AMSOIL (Versión Fondo Claro)</strong></td>
+                    <td>Versión para encabezados de fichas técnicas descargables, cotizaciones y documentos PDF.</td>
+                    <td><span class="spec-badge">SVG Vectorial</span> o PNG (600×160 px)</td>
+                    <td><span class="code-pill">logo-amsoil-light.svg</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Sello "The First in Synthetics®"</strong></td>
+                    <td>Emblema oficial de herencia de marca (1972) para el Hero Banner y la sección de Ingeniería.</td>
+                    <td><span class="spec-badge">SVG</span> o PNG transparente (400×120 px)</td>
+                    <td><span class="code-pill">badge-first-in-synthetics.svg</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Insignia Distribuidor / Oficial CR</strong></td>
+                    <td>Sello gráfico indicando "Representación / Distribuidor Autorizado Costa Rica" para generar confianza local.</td>
+                    <td><span class="spec-badge">SVG</span> o PNG transparente (300×300 px)</td>
+                    <td><span class="code-pill">badge-oficial-cr.svg</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Favicon e Ícono Web (App Icon)</strong></td>
+                    <td>Ícono cuadrado que aparece en la pestaña del navegador en computadoras y teléfonos móviles.</td>
+                    <td><span class="spec-badge">PNG / ICO</span> (512×512 px y 64×64 px)</td>
+                    <td><span class="code-pill">favicon.png</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SECCIÓN 2: BANNERS HERO Y FOTOGRAFÍA DE AMBIENTE (ESTILO USA) -->
+    <section class="section-block">
+        <div class="section-header">
+            <h2>2. Banners "Hero" y Fotografías de Categoría (Alto Impacto)</h2>
+            <span class="adobe-tag">EDITAR EN ADOBE PHOTOSHOP (.WEBP / .JPG)</span>
+        </div>
+        <table class="asset-table">
+            <thead>
+                <tr>
+                    <th style="width: 28px;">✓</th>
+                    <th style="width: 24%;">Recurso / Imagen</th>
+                    <th style="width: 38%;">Estilo Visual (Estética AMSOIL USA + Contexto CR)</th>
+                    <th style="width: 18%;">Dimensiones</th>
+                    <th style="width: 20%;">Nombre Sugerido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Banner Hero Principal (Escritorio)</strong></td>
+                    <td>Fondo oscuro industrial o vehículo 4x4/deportivo en ruta de montaña/barro en CR, con degradado negro a la izquierda para que el texto blanco resalte.</td>
+                    <td><span class="spec-badge">1920 × 900 px</span> WebP/JPG (&lt; 250 KB)</td>
+                    <td><span class="code-pill">hero-bg-cr-desktop.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Banner Hero Principal (Vertical Móvil)</strong></td>
+                    <td>Versión adaptada para pantallas de celular, centrando la acción en la parte inferior y dejando limpio el texto superior.</td>
+                    <td><span class="spec-badge">1080 × 1350 px</span> WebP/JPG (&lt; 180 KB)</td>
+                    <td><span class="code-pill">hero-bg-cr-mobile.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Tarjeta 1: Automotriz & SUV</strong></td>
+                    <td>Primer plano de motor moderno Turbo-GDI o SUV moderno en carretera (alto contraste, tonos oscuros y rojos).</td>
+                    <td><span class="spec-badge">900 × 600 px</span> WebP/JPG</td>
+                    <td><span class="code-pill">cat-automotriz.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Tarjeta 2: Pickups 4x4 & Diesel Pesado</strong></td>
+                    <td>Pickup 4x4 (estilo Hilux, Ranger, L200, D-Max) o camión diesel trabajando en cuesta/barro de Costa Rica.</td>
+                    <td><span class="spec-badge">900 × 600 px</span> WebP/JPG</td>
+                    <td><span class="code-pill">cat-diesel-4x4.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Tarjeta 3: Motocicletas & ATV/UTV</strong></td>
+                    <td>Moto de Enduro/Motocross, alta cilindrada o cuadraciclo/Side-by-Side en ruta exigente.</td>
+                    <td><span class="spec-badge">900 × 600 px</span> WebP/JPG</td>
+                    <td><span class="code-pill">cat-motos-atv.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Tarjeta 4: Transmisión, Gear & Marino</strong></td>
+                    <td>Engranajes de diferencial, bolsa <em>Easy-Pack</em> en acción o lancha deportiva con motores fuera de borda en costa tica.</td>
+                    <td><span class="spec-badge">900 × 600 px</span> WebP/JPG</td>
+                    <td><span class="code-pill">cat-transmision-marino.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Fondo Sección Talleres / B2B</strong></td>
+                    <td>Fotografía de taller mecánico limpio y profesional, elevador hidráulico o flotilla comercial.</td>
+                    <td><span class="spec-badge">1400 × 600 px</span> WebP/JPG</td>
+                    <td><span class="code-pill">banner-talleres-b2b.webp</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SALTO DE PÁGINA PARA IMPRESIÓN LIMPIA -->
+    <div class="page-break"></div>
+
+    <!-- SECCIÓN 3: FOTOGRAFÍAS DE PRODUCTOS (RECORTADAS SIN FONDO) -->
+    <section class="section-block">
+        <div class="section-header">
+            <h2>3. Fotografías de Envases de Producto (Fondo Transparente)</h2>
+            <span class="adobe-tag">RECORTAR EN PHOTOSHOP (.PNG / .WEBP TRANSPARENTE)</span>
+        </div>
+        <table class="asset-table">
+            <thead>
+                <tr>
+                    <th style="width: 28px;">✓</th>
+                    <th style="width: 25%;">Línea de Producto AMSOIL</th>
+                    <th style="width: 37%;">Presentación Recomendada en Foto</th>
+                    <th style="width: 18%;">Tamaño Lienzo</th>
+                    <th style="width: 20%;">Nombre Sugerido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>1. Signature Series Motor Oil</strong></td>
+                    <td>Composición de botella de 1 Cuarto (946 mL) + Galón (puedes usar 5W-30 o 0W-20 como portada).</td>
+                    <td><span class="spec-badge">800 × 1000 px</span> Transparente</td>
+                    <td><span class="code-pill">prod-signature-5w30.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>2. Max-Duty Synthetic Diesel</strong></td>
+                    <td>Galón o Cuarto de etiqueta plateada/roja <em>Signature Series Max-Duty</em> (15W-40 o 5W-40).</td>
+                    <td><span class="spec-badge">800 × 1000 px</span> Transparente</td>
+                    <td><span class="code-pill">prod-max-duty-15w40.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>3. European Car Formula</strong></td>
+                    <td>Envase de 1 Cuarto o Galón de <em>European Motor Oil</em> (5W-40 o 5W-30).</td>
+                    <td><span class="spec-badge">800 × 1000 px</span> Transparente</td>
+                    <td><span class="code-pill">prod-european-5w40.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>4. Synthetic Motorcycle Oil 4T</strong></td>
+                    <td>Botella de 10W-40 Metric Motorcycle Oil y/o 20W-50 V-Twin junto a <em>DIRT 4T</em>.</td>
+                    <td><span class="spec-badge">800 × 1000 px</span> Transparente</td>
+                    <td><span class="code-pill">prod-moto-10w40.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>5. SEVERE GEAR® Gear Lube</strong></td>
+                    <td>Empaque flexible <strong>Easy-Pack</strong> de 75W-90 o 75W-140 (es muy visual y diferenciador de AMSOIL).</td>
+                    <td><span class="spec-badge">800 × 1000 px</span> Transparente</td>
+                    <td><span class="code-pill">prod-severe-gear-75w90.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>6. Signature ATF & Synthetic CVT</strong></td>
+                    <td>Envase de Cuarto o Easy-Pack de <em>Multi-Vehicle Synthetic ATF</em> y <em>Synthetic CVT Fluid</em>.</td>
+                    <td><span class="spec-badge">800 × 1000 px</span> Transparente</td>
+                    <td><span class="code-pill">prod-atf-cvt.webp</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>7. Aditivos y Filtros (Opcional)</strong></td>
+                    <td>Botella de <em>P.i.® Performance Improver</em>, <em>Diesel All-In-One</em> y Filtros de Aceite AMSOIL.</td>
+                    <td><span class="spec-badge">800 × 1000 px</span> Transparente</td>
+                    <td><span class="code-pill">prod-aditivos-filtros.webp</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SECCIÓN 4: DOCUMENTOS PDF Y DATOS CORPORATIVOS -->
+    <section class="section-block">
+        <div class="section-header">
+            <h2>4. Fichas Técnicas (PDF) y Datos Oficiales de Costa Rica</h2>
+            <span class="adobe-tag">OPTIMIZAR EN ADOBE ACROBAT PRO (.PDF)</span>
+        </div>
+        <table class="asset-table">
+            <thead>
+                <tr>
+                    <th style="width: 28px;">✓</th>
+                    <th style="width: 25%;">Documento / Información</th>
+                    <th style="width: 52%;">Detalle Requerido</th>
+                    <th style="width: 23%;">Ubicación / Archivo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Fichas Técnicas Oficiales (PDS)</strong></td>
+                    <td>Archivos PDF oficiales de AMSOIL con tabla de viscosidad cinemática (cSt a 40°C y 100°C), índice de viscosidad, punto de inflamación, TBN y volatilidad NOACK.</td>
+                    <td><span class="code-pill">docs/pds-signature.pdf</span><br><span class="code-pill">docs/pds-max-duty.pdf</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Catálogo General / B2B (Opcional)</strong></td>
+                    <td>Brochure en PDF para enviar a talleres mecánicos, lubricentros y encargados de flotillas en Costa Rica.</td>
+                    <td><span class="code-pill">docs/catalogo-amsoil-cr.pdf</span></td>
+                </tr>
+                <tr>
+                    <td class="check-cell">☐</td>
+                    <td><strong>Datos de Contacto Oficiales CR</strong></td>
+                    <td>
+                        • Número de WhatsApp Técnico / Comercial (ej. <span class="code-pill">+506 8888-8888</span>)<br>
+                        • Correo electrónico oficial (ej. <span class="code-pill">info@amsoil.co.cr</span>)<br>
+                        • Dirección física o bodega/cobertura en Costa Rica y horario de atención<br>
+                        • Enlaces a Redes Sociales (Instagram, Facebook, YouTube)
+                    </td>
+                    <td>Integración directa en <span class="code-pill">index.html</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ESTRUCTURA DE CARPETAS Y TIPS DE EXPORTACIÓN -->
+    <div class="two-col-grid">
+        <div class="info-card">
+            <h3>Estructura de Carpetas en tu Proyecto</h3>
+            <p style="font-size: 8.5pt; margin-bottom: 8px; color: #475569;">Guarda tus archivos dentro de la carpeta del sitio para que Dreamweaver los vincule automáticamente:</p>
+            <div class="folder-tree">
+amsoil-costa-rica/<br>
+├── index.html<br>
+├── css/styles.css<br>
+├── js/main.js<br>
+├── <span class="hl">assets/</span><br>
+│   ├── <span class="hl">logos/</span> <span class="comment">(Archivos .svg de Illustrator)</span><br>
+│   ├── <span class="hl">banners/</span> <span class="comment">(Banners Hero y Categorías .webp)</span><br>
+│   └── <span class="hl">productos/</span> <span class="comment">(Botellas sin fondo .webp/.png)</span><br>
+└── <span class="hl">docs/</span> <span class="comment">(Fichas técnicas .pdf de Acrobat)</span>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>Reglas de Oro al Exportar desde Adobe</h3>
+            <ul class="tips-list">
+                <li><strong>En Photoshop (Guardar para Web):</strong> Usa <em>Archivo &gt; Exportar &gt; Exportar como...</em> y elige formato <strong>WebP</strong> o <strong>PNG-24</strong> para botellas sin fondo. Mantén cada foto por debajo de <strong>250 KB</strong> para que la web vuele en celulares.</li>
+                <li><strong>Iluminación estilo AMSOIL USA:</strong> En las fotos de fondo (banners), aplica en Photoshop una capa de <em>Exposición / Curvas</em> oscureciendo los bordes para que el texto blanco y rojo tenga contraste 100% legible.</li>
+                <li><strong>En Illustrator (Logos e Íconos):</strong> Exporta siempre como <strong>SVG</strong> (con texto convertido a contornos / <em>Create Outlines</em>) para nitidez infinita en pantallas Retina y 4K.</li>
+                <li><strong>En Dreamweaver:</strong> Simplemente coloca las imágenes en la carpeta <span class="code-pill">assets/</span> y avísame para conectarlas en el código o arrástralas en <em>Live View</em>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="doc-footer">
+        <span>AMSOIL Costa Rica — Guía de Producción Gráfica y Documental</span>
+        <span>Ruta del proyecto: /Users/Osito/.gemini/antigravity/scratch/amsoil-costa-rica</span>
+    </footer>
+
+</body>
+</html>

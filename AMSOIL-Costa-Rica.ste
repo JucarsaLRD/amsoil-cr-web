@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site SitePrefVersionMajor="12" SitePrefVersionMinor="2">
+    <localinfo sitename="AMSOIL Costa Rica" localroot="Macintosh HD:Users:Osito:Documents:Antigravity:Amsoil Web:" imagefolder="Macintosh HD:Users:Osito:Documents:Antigravity:Amsoil Web:assets:" assetfolder="Macintosh HD:Users:Osito:Documents:Antigravity:Amsoil Web:assets:" relativeTo="DOCUMENT" caseSensitiveLinks="FALSE" cache="TRUE" httpaddress="http://localhost:8088/"/>
+    <designnotes usedesignnotes="TRUE" sharedesignnotes="FALSE"/>
+    <sitemap homepage="Macintosh HD:Users:Osito:Documents:Antigravity:Amsoil Web:index.html" pagesperrow="200" columnwidth="125" showdependentfiles="FALSE" showpagetitles="FALSE" showhiddenfiles="FALSE"/>
+</site>

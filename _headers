@@ -1,0 +1,41 @@
+# Reglas de encabezados HTTP para Cloudflare Pages - Amsoil Costa Rica (amsoilcr.com)
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+# Cache para páginas HTML (siempre frescas)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Cache inmutable para assets estáticos
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/01-motor-gasolina/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/02-motor-diesel/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/03-transmision-y-diferenciales/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/04-motocicletas-atv-marino/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/05-aditivos-grasas-coolant-varios/*
+  Cache-Control: public, max-age=31536000, immutable
