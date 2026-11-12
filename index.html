@@ -12,53 +12,44 @@
             box-sizing: border-box;
         }
 
-        body {
-            background-color: #06080B;
+        html, body {
+            width: 100%;
             min-height: 100vh;
+            background-color: #06080B;
+            overflow-x: hidden;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            padding: 20px 16px;
-            background-image: 
-                radial-gradient(circle at 50% 15%, rgba(0, 80, 158, 0.15) 0%, transparent 60%),
-                radial-gradient(circle at 50% 85%, rgba(227, 24, 55, 0.1) 0%, transparent 60%),
-                linear-gradient(180deg, #080A0D 0%, #030406 100%);
+            justify-content: flex-start;
         }
 
-        .masterpiece-showcase {
+        /* ANCHO TOTAL DE LA PANTALLA (EDGE TO EDGE - 100% FULL WIDTH) */
+        .fullwidth-showcase {
             width: 100%;
-            max-width: 1100px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 
-                0 25px 65px rgba(0, 0, 0, 0.9),
-                0 0 0 1px rgba(255, 255, 255, 0.12),
-                0 0 45px rgba(0, 80, 158, 0.25);
-            background: #000000;
-            transition: box-shadow 0.3s ease;
-        }
-        .masterpiece-showcase:hover {
-            box-shadow: 
-                0 30px 75px rgba(0, 0, 0, 0.95),
-                0 0 0 1px rgba(255, 255, 255, 0.2),
-                0 0 55px rgba(227, 24, 55, 0.3);
+            margin: 0;
+            padding: 0;
+            display: block;
         }
 
-        .masterpiece-img {
+        .fullwidth-img {
             width: 100%;
             height: auto;
             display: block;
+            object-fit: cover;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
 
-    <main class="masterpiece-showcase">
+    <main class="fullwidth-showcase">
         <img 
-            src="assets/banners/amsoil-cr-completo-en-construccion.jpg?v=5" 
+            src="assets/banners/amsoil-cr-completo-en-construccion.jpg?v=6" 
             alt="AMSOIL Costa Rica - En Construcción"
-            class="masterpiece-img"
+            class="fullwidth-img"
             width="1920"
             height="1590"
         >
