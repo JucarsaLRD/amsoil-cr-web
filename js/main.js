@@ -1,14 +1,21 @@
 /**
- * AMSOIL COSTA RICA — INTERACTIVIDAD OFICIAL CON CATÁLOGO REAL (105 PRODUCTOS / 627 IMÁGENES)
- * Incluye:
- * 1. Selector Interactivo de Envases Reales en Cada Tarjeta (Cuarto, Easy-Pack, Galón, Cubeta, Estañón, Tote)
- * 2. Modal de Ficha Técnica Oficial (PDS) en Español + Galería de Envases + Códigos ALS Costa Rica
- * 3. Buscador Global del Header y Filtro en Tiempo Real de las 105 Referencias
- * 4. Recomendador de Vehículos con IA + Fotografías Reales de Envases
- * 5. Filtro de Categorías y Directorio Interactivo de Puntos de Venta / Talleres en Contáctenos
+ * AMSOIL COSTA RICA — INTERACTIVIDAD OFICIAL BAJO MANUAL DE MARCA AMSOIL INC.
+ * Fuente: AMSOIL_BrandStyleGuide_7-26.pdf
+ *
+ * Cumplimiento estricto:
+ * - Paleta oficial: #005BAA (Pantone 286), #ED1C24 (Pantone 485), #BCBEC0 (Cool Gray 6), #000000, #FFFFFF
+ * - Tipografía digital oficial: Open Sans (Bold 700, Regular 400, Light 300)
+ * - Nomenclatura oficial de productos + símbolos ® y cero códigos de almacén frente al cliente
+ * - Máximo 1 logotipo AMSOIL por superficie visual (sin logos duplicados en modales o placeholders)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    const CATALOG_HOME = 'index-catalogo.html';
+    const TRANSPARENT_PIXEL = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
+    const ICON_DOC_SVG = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>';
+    const ICON_BOTTLE_SVG = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v3l3 4v10a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V10l3-4V3z"/></svg>';
+
     const CATALOG = Array.isArray(window.AMSOIL_CATALOG) ? window.AMSOIL_CATALOG : [];
     const CATALOG_BY_ID = {};
     const CATALOG_BY_CODE = {};
@@ -20,8 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    function cleanPresentationLabel(rawLabel) {
+        if (!rawLabel) return 'Envase Oficial';
+        return rawLabel
+            .replace(/\s*\([A-Z0-9-]{2,12}\)\s*/g, '')
+            .replace('Vista Recorte PNG/WebP', 'Envase Oficial')
+            .replace('Recorte con Fondo Transparente (WebP)', 'Envase Oficial AMSOIL')
+            .trim();
+    }
+
     function getPrimaryPhotoForCode(codeStr) {
-        if (!codeStr || CATALOG.length === 0) return 'amsoil-logo.png';
+        if (!codeStr || CATALOG.length === 0) {
+            return '01-motor-gasolina/signature-series/5w-30/recorte-fondo-transparente-ASL.webp';
+        }
         const parts = codeStr.split(/[\/,\s]+/).map((s) => s.trim().toUpperCase()).filter(Boolean);
         for (const p of parts) {
             const found = CATALOG_BY_CODE[p];
@@ -41,8 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         if (titleStr) {
-            const t = titleStr.toLowerCase();
-            const match = CATALOG.find((it) => it.display_name.toLowerCase().includes(t) || t.includes(it.amsoil_code.toLowerCase()));
+            const t = titleStr.toLowerCase().replace(/®/g, '');
+            const match = CATALOG.find((it) => {
+                const dn = (it.display_name || '').toLowerCase().replace(/®/g, '');
+                return dn.includes(t) || t.includes(dn);
+            });
             if (match) return match;
         }
         return CATALOG_BY_ID['asl-5w-30'] || CATALOG[0];
@@ -53,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================================================
     document.addEventListener('click', (e) => {
         const presBtn = e.target.closest('.pres-switch-btn');
-        if (presBtn) {
+        if (presBtn && presBtn.dataset.imgSrc) {
             e.preventDefault();
             const tile = presBtn.closest('.amsoil-prod-tile');
             if (!tile) return;
@@ -79,23 +100,23 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="pds-modal-box" role="dialog" aria-modal="true" aria-labelledby="pdsModalTitle">
                 <div class="pds-modal-top">
                     <div>
-                        <span class="kicker" id="pdsModalCategory">FICHA TÉCNICA OFICIAL (PDS)</span>
+                        <span class="kicker" id="pdsModalCategory">Ficha Técnica Oficial (PDS)</span>
                         <h3 id="pdsModalTitle">AMSOIL Product Data Sheet</h3>
-                        <div id="pdsModalCode" style="font-size:0.86rem; color:#CACACD; margin-top:4px; font-weight:600;"></div>
+                        <div id="pdsModalMeta" style="font-size:0.85rem; color:var(--amsoil-cool-gray); margin-top:4px; font-weight:400;"></div>
                     </div>
                     <button type="button" class="pds-modal-close" id="pdsModalCloseBtn" aria-label="Cerrar Ficha Técnica">✕</button>
                 </div>
                 <div class="pds-modal-body">
                     <div class="pds-modal-hero-grid">
                         <div class="pds-modal-img-stage">
-                            <img id="pdsModalMainImg" src="amsoil-logo.png" alt="Envase Oficial AMSOIL">
-                            <div id="pdsModalImgCaption" style="font-size:0.78rem; font-weight:700; color:var(--amsoil-bunker); margin-top:8px; text-align:center;"></div>
+                            <img id="pdsModalMainImg" src="${TRANSPARENT_PIXEL}" alt="Envase Oficial AMSOIL">
+                            <div id="pdsModalImgCaption" style="font-size:0.78rem; font-weight:700; color:var(--text-primary); margin-top:8px; text-align:center;"></div>
                             <div id="pdsModalThumbs" class="pds-modal-thumbs"></div>
                         </div>
                         <div>
-                            <p id="pdsModalSummary" style="font-size:0.95rem; color:#0F1416; margin-bottom:12px; line-height:1.55;"></p>
-                            <h4 style="font-family:var(--font-heading); font-weight:800; font-size:1.08rem; text-transform:uppercase; color:var(--amsoil-red); margin-bottom:6px;">
-                                Beneficios Técnicos Comprobados
+                            <p id="pdsModalSummary" style="font-size:0.95rem; font-weight:300; color:var(--text-primary); margin-bottom:14px; line-height:1.6;"></p>
+                            <h4 style="font-family:var(--font-heading); font-weight:700; font-size:1.02rem; color:var(--amsoil-red); margin-bottom:6px;">
+                                Protección y Beneficios Técnicos Comprobados
                             </h4>
                             <ul id="pdsModalBenefits" class="pds-benefits-list"></ul>
                             <div class="pds-norm-box" style="margin-bottom:10px;">
@@ -103,23 +124,23 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span id="pdsModalNorms"></span>
                             </div>
                             <div class="pds-norm-box" style="border-left-color:var(--amsoil-red); margin-bottom:0;">
-                                <strong>Intervalo de Servicio Recomendado (Vida Útil)</strong>
+                                <strong>Intervalo de Servicio Recomendado</strong>
                                 <span id="pdsModalServiceLife"></span>
                             </div>
                         </div>
                     </div>
 
-                    <h4 style="font-family:var(--font-heading); font-weight:800; font-size:1.18rem; text-transform:uppercase; color:#0F1416; margin-bottom:10px;">
-                        Presentaciones y Códigos Oficiales en Costa Rica (American Lubricants Supply S.A.)
+                    <h4 style="font-family:var(--font-heading); font-weight:700; font-size:1.08rem; color:var(--text-primary); margin-bottom:10px;">
+                        Presentaciones y Envases Disponibles en Costa Rica
                     </h4>
                     <div class="table-clean-wrap">
                         <table class="amsoil-clean-table" style="min-width:100%;">
                             <thead>
                                 <tr>
-                                    <th>Código / SKU</th>
-                                    <th>Presentación / Envase</th>
-                                    <th>Descripción Técnica Oficial</th>
-                                    <th>Vista de Envase</th>
+                                    <th>Presentación</th>
+                                    <th>Formato de Envase</th>
+                                    <th>Disponibilidad</th>
+                                    <th>Vista</th>
                                 </tr>
                             </thead>
                             <tbody id="pdsModalTableBody"></tbody>
@@ -146,10 +167,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!item) return;
 
         const tech = item.tech_sheet || {};
-        const alsCodes = (item.als_codes || []).join(', ');
-        document.getElementById('pdsModalCategory').textContent = `FICHA TÉCNICA OFICIAL (PDS) • ${item.category_name.toUpperCase()} • ${item.line_name.toUpperCase()}`;
+        const gradePart = item.viscosity && item.viscosity !== 'N/A' ? ` • Grado: ${item.viscosity}` : '';
+        document.getElementById('pdsModalCategory').textContent = `Ficha Técnica Oficial (PDS) • ${item.category_short || item.category_name}`;
         document.getElementById('pdsModalTitle').textContent = item.display_name;
-        document.getElementById('pdsModalCode').textContent = `CÓDIGO AMSOIL: ${item.amsoil_code} • GRADO: ${item.viscosity || 'N/A'}${alsCodes ? ' • CÓDIGO ALS COSTA RICA: ' + alsCodes : ''}`;
+        document.getElementById('pdsModalMeta').textContent = `${item.line_name}${gradePart}`;
         document.getElementById('pdsModalSummary').textContent = tech.summary || '';
         document.getElementById('pdsModalNorms').textContent = tech.specs || 'Especificación Oficial AMSOIL INC.';
         document.getElementById('pdsModalServiceLife').textContent = tech.service_life || 'Consultar manual del fabricante o guía técnica AMSOIL.';
@@ -171,7 +192,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const primaryImg = images.find((im) => im.filename.includes('recorte-fondo-transparente')) || images[0];
         if (primaryImg) {
             mainImg.src = primaryImg.rel_path;
-            imgCaption.textContent = `${primaryImg.presentation || primaryImg.short_label} (${primaryImg.sku})`;
+            mainImg.alt = item.display_name;
+            imgCaption.textContent = cleanPresentationLabel(primaryImg.short_label || primaryImg.presentation);
         }
 
         images.forEach((im) => {
@@ -179,10 +201,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = document.createElement('button');
             btn.type = 'button';
             btn.className = 'pds-thumb-btn' + (primaryImg && im.rel_path === primaryImg.rel_path ? ' active' : '');
-            btn.textContent = im.filename.includes('recorte-fondo-transparente') ? 'Recorte PNG' : (im.short_label || im.sku);
+            btn.textContent = im.filename.includes('recorte-fondo-transparente')
+                ? 'Vista Principal'
+                : cleanPresentationLabel(im.short_label || im.presentation);
             btn.addEventListener('click', () => {
                 mainImg.src = im.rel_path;
-                imgCaption.textContent = `${im.presentation || im.short_label} (${im.sku})`;
+                imgCaption.textContent = cleanPresentationLabel(im.presentation || im.short_label);
                 thumbsWrap.querySelectorAll('.pds-thumb-btn').forEach((b) => b.classList.remove('active'));
                 btn.classList.add('active');
             });
@@ -192,27 +216,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const tbody = document.getElementById('pdsModalTableBody');
         tbody.innerHTML = '';
 
-        // Mostrar primero códigos oficiales de Costa Rica (ALS)
+        // Presentaciones disponibles en Costa Rica (sin exponer códigos de almacén)
         (item.als_presentations || []).forEach((als) => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td><strong style="color:var(--amsoil-red);">${als.code}</strong> <span style="font-size:0.75rem; color:var(--amsoil-blue);">(CR)</span></td>
-                <td><strong>${als.presentation}</strong></td>
-                <td>${als.description_pdf}</td>
-                <td><span style="font-size:0.78rem; font-weight:700; color:var(--amsoil-shark);">Stock Costa Rica</span></td>
+                <td><strong style="color:var(--amsoil-blue);">${als.presentation}</strong></td>
+                <td>${item.display_name}</td>
+                <td><span style="font-size:0.8rem; font-weight:700; color:var(--text-primary);">Distribución Oficial CR</span></td>
+                <td><span style="font-size:0.78rem; color:var(--text-muted);">Empaque Oficial</span></td>
             `;
             tbody.appendChild(tr);
         });
 
-        // Mostrar también todas las presentaciones fotográficas disponibles de AMSOIL USA
+        // Presentaciones fotográficas oficiales AMSOIL INC.
         images.forEach((im) => {
             if (!im.is_container || im.filename.includes('envase-principal')) return;
+            const cleanShort = cleanPresentationLabel(im.short_label || im.presentation);
+            const cleanFull = cleanPresentationLabel(im.presentation);
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td><strong>${im.sku}</strong></td>
-                <td>${im.short_label || im.presentation}</td>
-                <td>${im.presentation}</td>
-                <td><button type="button" class="pres-switch-btn" data-modal-preview="${im.rel_path}" data-modal-caption="${im.presentation} (${im.sku})">👁️ Ver Foto</button></td>
+                <td><strong>${cleanShort}</strong></td>
+                <td>${cleanFull}</td>
+                <td><span style="font-size:0.8rem; color:var(--text-secondary);">Envase AMSOIL INC.</span></td>
+                <td><button type="button" class="pres-switch-btn" data-modal-preview="${im.rel_path}" data-modal-caption="${cleanFull}">${ICON_BOTTLE_SVG} Ver Envase</button></td>
             `;
             tbody.appendChild(tr);
         });
@@ -236,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // =========================================================================
-    // 3. BUSCADOR GLOBAL DEL HEADER Y FILTRO DE TABLA DE 105 PRODUCTOS
+    // 3. BUSCADOR GLOBAL DEL HEADER Y FILTRO DE DIRECTORIO TÉCNICO
     // =========================================================================
     const headerGlobalSearchForm = document.getElementById('headerGlobalSearchForm');
     const headerGlobalSearchInput = document.getElementById('headerGlobalSearchInput');
@@ -249,19 +275,17 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const q = headerGlobalSearchInput.value.trim();
 
-            // Si el cliente hace clic en el botón sin haber escrito texto, llevarlo directo al buscador de vehículo
             if (!q) {
                 const dock = document.getElementById('lookup-widget');
                 if (dock) {
                     dock.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     if (aiVehicleQuery) aiVehicleQuery.focus();
                 } else {
-                    window.location.href = 'index.html#lookup-widget';
+                    window.location.href = `${CATALOG_HOME}#lookup-widget`;
                 }
                 return;
             }
 
-            // 1. Si estamos en la tabla de las 105 referencias (ingenieria.html), filtrar en vivo
             const catalogTableSearchInput = document.getElementById('catalogTableSearchInput');
             if (catalogTableSearchInput) {
                 catalogTableSearchInput.value = q;
@@ -270,7 +294,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // 2. Si estamos en una página de categoría con tarjetas y la búsqueda coincide con productos de esa página
             const catTiles = document.querySelectorAll('.cat-page-layout .amsoil-prod-tile');
             if (catTiles.length > 0) {
                 const qLower = q.toLowerCase();
@@ -291,18 +314,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     return;
                 }
-                // Si no coincidió con tarjetas de la categoría (ej. escribió un vehículo), restaurar y enviar al buscador general
                 catTiles.forEach((tile) => { tile.style.display = 'flex'; });
             }
 
-            // 3. Ejecutar búsqueda unificada (Vehículo, Motor, Maquinaria, Viscosidad o Tipo de Aceite)
             if (aiVehicleQuery) {
                 aiVehicleQuery.value = q;
                 const dock = document.getElementById('lookup-widget');
                 if (dock) dock.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 executeAiLookup(q, aiVehicleMileage ? aiVehicleMileage.value : '');
             } else {
-                window.location.href = `index.html?q=${encodeURIComponent(q)}#lookup-widget`;
+                window.location.href = `${CATALOG_HOME}?q=${encodeURIComponent(q)}#lookup-widget`;
             }
         });
     }
@@ -319,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================================================
-    // 4. RECOMENDADOR DE VEHÍCULOS Y BUSCADOR DE VISCOSIDAD / ACEITE AMSOIL
+    // 4. RECOMENDADOR TÉCNICO DE VEHÍCULOS Y APLICACIONES AMSOIL
     // =========================================================================
     const aiAdvisorForm = document.getElementById('aiAdvisorForm');
     const aiLoadingState = document.getElementById('aiLoadingState');
@@ -346,15 +367,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const km = mileage ? parseInt(mileage, 10) : null;
         const isHighMileage = km !== null && km >= 100000;
 
-        // Si el cliente buscó directamente una viscosidad, código o tipo de aceite en el catálogo (ej. "5W-30", "75W-90", "ATF", "CVT", "DOT 4", "DME")
         const catalogMatches = CATALOG.filter((it) => {
             const viscNorm = (it.viscosity || '').toLowerCase().replace(/[-\s]/g, '');
-            const codeLower = (it.amsoil_code || '').toLowerCase();
             const nameLower = (it.display_name || '').toLowerCase();
             const lineLower = (it.line_name || '').toLowerCase();
             return (
                 (viscNorm && viscNorm === qNorm) ||
-                codeLower === q ||
                 nameLower.includes(q) ||
                 lineLower.includes(q)
             );
@@ -367,27 +385,29 @@ document.addEventListener('DOMContentLoaded', () => {
             const topThree = catalogMatches.slice(0, 3);
             const restMatches = catalogMatches.slice(3, 9);
             return {
-                title: `Resultados de Catálogo: "${query.toUpperCase()}" (${catalogMatches.length} productos)`,
+                title: `Resultados del Catálogo: "${query}" (${catalogMatches.length} productos)`,
                 subtitle: `${firstMatch.category_name} • ${firstMatch.line_name}`,
-                categoryLabel: 'BÚSQUEDA DIRECTA DE PRODUCTO / VISCOSIDAD',
+                categoryLabel: 'Búsqueda Directa de Viscosidad o Línea',
                 viscosity: firstMatch.viscosity || 'Múltiples',
                 capacity: `${catalogMatches.length} Referencias Oficiales`,
                 norm: (firstMatch.tech_sheet && firstMatch.tech_sheet.specs ? firstMatch.tech_sheet.specs.split(',')[0] : 'API / OEM'),
-                filter: `Código: ${firstMatch.amsoil_code}`,
-                warning: firstMatch.tech_sheet?.summary || 'Haz clic en "Ver Ficha PDS" en cualquiera de los productos encontrados para revisar sus presentaciones y ficha técnica.',
+                filter: firstMatch.category_short || 'AMSOIL INC.',
+                warning: firstMatch.tech_sheet?.summary || 'Selecciona "Ver Ficha Técnica" en cualquiera de los productos encontrados para revisar sus especificaciones ASTM y envases.',
                 isHighMileage: false,
                 reportedMileage: null,
                 mileageAdvice: null,
                 tiers: topThree.map((it, idx) => ({
-                    badge: idx === 0 ? 'COINCIDENCIA PRINCIPAL' : it.category_short.toUpperCase(),
+                    badge: idx === 0 ? 'Coincidencia Principal' : it.category_short,
                     title: it.display_name,
                     code: it.amsoil_code,
-                    interval: it.viscosity !== 'N/A' ? `SAE ${it.viscosity}` : '100% Sintético',
+                    lineSubtitle: it.line_name,
+                    interval: it.viscosity !== 'N/A' ? `SAE ${it.viscosity}` : 'Formulación Especializada',
                     rationale: it.tech_sheet?.summary || ''
                 })),
                 fluids: restMatches.map((it) => ({
-                    category: `${it.category_short} • SAE ${it.viscosity}`,
-                    product: `${it.display_name} (${it.amsoil_code})`,
+                    category: `${it.category_short} • ${it.viscosity}`,
+                    product: it.display_name,
+                    code: it.amsoil_code,
                     note: it.tech_sheet?.specs || ''
                 }))
             };
@@ -396,12 +416,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let spec = {
             title: query,
             subtitle: 'Especificación Técnica Analizada • AMSOIL Costa Rica',
-            categoryLabel: 'AUTOMOTRIZ GASOLINA / TURBO',
+            categoryLabel: 'Automotriz Gasolina / Turbo',
             viscosity: '5W-30',
             capacity: '4.7 Litros (5.0 Qt)',
             norm: 'API SP / ILSAC GF-6A',
             filter: 'OEM / Equivalente Sintético',
-            warning: 'Utilizar lubricante 100% sintético para evitar formación de lodos en tráfico severo y proteger el tren de válvulas.',
+            warning: 'Diseñado con bases 100% sintéticas para máxima protección contra depósitos térmicos y desgaste del tren de válvulas.',
             tiers: [],
             fluids: []
         };
@@ -410,202 +430,216 @@ document.addEventListener('DOMContentLoaded', () => {
             spec = {
                 title: query,
                 subtitle: 'Motor Turbodiésel Toyota 1GD-FTV / 2GD-FTV Common-Rail Intercooler',
-                categoryLabel: 'PICKUP / SUV TURBODIÉSEL 4X4',
+                categoryLabel: 'Pickup / SUV Turbodiésel 4x4',
                 viscosity: '5W-30 / 15W-40',
                 capacity: '7.5 Litros (7.9 Qt) con filtro',
-                norm: 'API CK-4 / ACEA C2/C3 (Si equipa DPF)',
+                norm: 'API CK-4 / ACEA C2/C3 (Unidades con DPF)',
                 filter: '90915-YZZD2 / Donaldson P550388',
-                warning: 'En unidades con Filtro de Partículas Diésel (DPF Euro V/VI), emplear formulación Low-SAPS (5W-30) para evitar saturación de cenizas. En modelos sin DPF o trabajo pesado extremo, usar 15W-40 Max-Duty.'
+                warning: 'En unidades con Filtro de Partículas Diésel (DPF Euro V/VI), emplear formulación Low-SAPS 5W-30 para proteger el postratamiento. En modelos sin DPF bajo remolque pesado, emplear 15W-40 Max-Duty.'
             };
         } else if (q.includes('d-max') || q.includes('dmax') || q.includes('isuzu') || q.includes('4jj')) {
             spec = {
                 title: query,
                 subtitle: 'Motor Isuzu 3.0L / 2.5L Turbodiésel VGS Common-Rail',
-                categoryLabel: 'PICKUP 4X4 TRABAJO PESADO',
+                categoryLabel: 'Pickup 4x4 Trabajo Pesado',
                 viscosity: '15W-40 / 5W-30',
                 capacity: '7.6 Litros (8.0 Qt) con filtro',
                 norm: 'API CK-4 / JASO DH-2',
                 filter: '8-98165071-0 / Baldwin B7452',
-                warning: 'Los motores Isuzu 4JJ1/4JJ3 requieren excelente control de hollín y estabilidad al cizallamiento para proteger la cadena de distribución y el turbocompresor VGS.'
+                warning: 'Los motores Isuzu 4JJ1/4JJ3 demandan alta estabilidad al cizallamiento y control de hollín para proteger la cadena de distribución y el turbocompresor VGS.'
             };
         } else if (q.includes('ranger') || q.includes('bi-turbo') || q.includes('everest')) {
             spec = {
                 title: query,
                 subtitle: 'Motor Ford EcoBlue / Puma Turbodiésel 4x4',
-                categoryLabel: 'PICKUP 4X4 TURBODIÉSEL',
+                categoryLabel: 'Pickup 4x4 Turbodiésel',
                 viscosity: '5W-30',
                 capacity: '6.8 a 8.6 Litros (según motor 2.0L / 3.2L)',
                 norm: 'Ford WSS-M2C913-D / ACEA C2/A5/B5',
                 filter: 'JU2Z-6731-A / Mann HU 7002 z',
-                warning: 'En motores Ford 2.0L Bi-Turbo con faja bañada en aceite (wet belt), es crítico usar únicamente lubricante 100% sintético de baja fricción y respetar el intervalo.'
+                warning: 'En motores Ford 2.0L Bi-Turbo con faja húmeda (wet belt), es indispensable utilizar lubricante 100% sintético formulado para baja fricción y respetar rigurosamente el intervalo.'
             };
         } else if (q.includes('l200') || q.includes('montero') || q.includes('4n15') || q.includes('mitsubishi')) {
             spec = {
                 title: query,
                 subtitle: 'Motor Mitsubishi 2.4L MIVEC Turbodiésel (4N15) / 2.5L DID',
-                categoryLabel: 'PICKUP / SUV 4X4 DIÉSEL',
+                categoryLabel: 'Pickup / SUV 4x4 Diésel',
                 viscosity: '5W-30 / 15W-40',
                 capacity: '8.3 Litros (8.8 Qt) con filtro',
                 norm: 'API CK-4 / ACEA C3 / JASO DL-1',
                 filter: '1230A182 / Mann W 930/26',
-                warning: 'El motor 4N15 con bloque de aluminio y alzado variable MIVEC requiere rápida lubricación en frío y limpieza extrema en los conductos hidráulicos.'
+                warning: 'El motor 4N15 con bloque de aluminio y sistema MIVEC requiere fluidez inmediata en arranque y máxima limpieza en los actuadores hidráulicos.'
             };
         } else if (q.includes('rav4') || q.includes('prius') || q.includes('hibrid') || q.includes('hybrid') || q.includes('corolla')) {
             spec = {
                 title: query,
                 subtitle: 'Sistema Híbrido / Gasolina Dynamic Force Ciclo Atkinson',
-                categoryLabel: 'VEHÍCULO HÍBRIDO / GASOLINA MODERNO',
+                categoryLabel: 'Vehículo Híbrido / Gasolina Moderno',
                 viscosity: '0W-16 (o 0W-20)',
                 capacity: '4.5 Litros (4.8 Qt) con filtro',
                 norm: 'API SP / ILSAC GF-6B',
-                filter: '90915-YZZN1 / AMSOIL EA15K09',
-                warning: 'Los motores híbridos experimentan constantes arranques y paradas en frío (Stop/Start), generando condensación de agua y dilución por combustible. Usar AMSOIL Hybrid 0W-16 o Signature Series.'
+                filter: '90915-YZZN1',
+                warning: 'Los motores híbridos operan con ciclos constantes de paro y arranque que generan condensación de humedad y dilución de combustible. AMSOIL 100% Synthetic Hybrid Motor Oil neutraliza la corrosión y protege al instante.'
             };
         } else if (q.includes('cr-v') || q.includes('crv') || q.includes('civic') || q.includes('tucson') || q.includes('turbo')) {
             spec = {
                 title: query,
                 subtitle: 'Motor Gasolina Inyección Directa Turbo (GDI / T-GDI)',
-                categoryLabel: 'SUV / SEDÁN TURBO GASOLINA',
+                categoryLabel: 'SUV / Sedán Turbo Gasolina',
                 viscosity: '0W-20 / 5W-30',
                 capacity: '3.7 a 4.8 Litros con filtro',
-                norm: 'API SP / ILSAC GF-6A / dexos1 Gen 3',
-                filter: '15400-PLM-A02 / AMSOIL EA15K13',
-                warning: 'Los motores Turbo de inyección directa son propensos a pre-ignición a baja velocidad (LSPI) y dilución de gasolina en el cárter. AMSOIL Signature Series ofrece 100% de protección contra LSPI.'
+                norm: 'API SP / ILSAC GF-6A / GM dexos1 Gen 3',
+                filter: '15400-PLM-A02',
+                warning: 'Los motores Turbo de inyección directa exigen protección total contra la pre-ignición a baja velocidad (LSPI). AMSOIL Signature Series alcanzó 100% de protección contra LSPI en pruebas ASTM.'
             };
         } else if (q.includes('moto') || q.includes('yamaha') || q.includes('yz') || q.includes('ktm') || q.includes('crf') || q.includes('enduro') || q.includes('4t')) {
             spec = {
                 title: query,
                 subtitle: 'Motor 4 Tiempos de Alta Revolución con Embrague Húmedo Integrado',
-                categoryLabel: 'MOTOCICLETA / ENDURO / ATV 4T',
+                categoryLabel: 'Motocicleta / Enduro / ATV 4T',
                 viscosity: '10W-40 (o 10W-50 / 20W-50)',
                 capacity: '1.1 a 2.8 Litros (según cilindrada)',
                 norm: 'JASO MA / MA2 • API SG/SL/CF',
                 filter: 'HF140 / HF204',
-                warning: 'No utilizar aceites de automóvil con modificadores de fricción en motocicletas con embrague bañado en aceite. Utilizar AMSOIL Metric o DIRT 4T certificado JASO MA2.'
+                warning: 'Emplear exclusivamente lubricantes formulados sin modificadores de fricción para embrague húmedo JASO MA2, garantizando cambios precisos y máxima resistencia al calor.'
             };
         } else if (q.includes('cat') || q.includes('caterpillar') || q.includes('320') || q.includes('john deere') || q.includes('freightliner') || q.includes('cummins') || q.includes('mack')) {
             spec = {
                 title: query,
-                subtitle: 'Motor Turbodiésel de Servicio Pesado / Maquinaria Amarilla',
-                categoryLabel: 'MAQUINARIA PESADA & FLOTAS DIÉSEL',
+                subtitle: 'Motor Turbodiésel de Servicio Pesado / Flota y Maquinaria',
+                categoryLabel: 'Flotas Pesadas y Maquinaria Diésel',
                 viscosity: '15W-40',
                 capacity: '28.0 a 38.0 Litros (según configuración)',
                 norm: 'API CK-4 / CAT ECF-3 / Cummins CES 20086',
                 filter: '1R-1808 / Donaldson P551808',
-                warning: 'En operación pesada por horas en clima tropical, controlar la oxidación térmica, dilución por azufre y retención de TBN con AMSOIL Signature Series Max-Duty 15W-40.'
+                warning: 'Formulado para reducir el costo total de propiedad (TCO) en operación continua bajo carga severa, manteniendo la retención de TBN y entregando 6X más protección contra desgaste en Detroit Diesel DD13.'
             };
         }
 
-        const isDiesel = spec.categoryLabel.includes('DIÉSEL') || spec.categoryLabel.includes('PESADO');
-        const isMoto = spec.categoryLabel.includes('MOTO');
+        const isDiesel = spec.categoryLabel.toUpperCase().includes('DIÉSEL') || spec.categoryLabel.toUpperCase().includes('PESADO');
+        const isMoto = spec.categoryLabel.toUpperCase().includes('MOTO');
 
         if (isMoto) {
             spec.tiers = [
                 {
-                    badge: 'RECOMENDADO POWERSPORTS',
-                    title: 'AMSOIL 100% Synthetic Metric Motorcycle Oil 10W-40',
+                    badge: 'Recomendado Powersports',
+                    title: 'AMSOIL 10W-40 100% Synthetic Metric Motorcycle Oil',
                     code: 'MCF',
-                    interval: 'Hasta 2X el intervalo OEM',
-                    rationale: 'Máxima resistencia al cizallamiento en caja de cambios y acople firme de embrague húmedo JASO MA2.'
+                    lineSubtitle: 'Certificación JASO MA2 • Embrague Húmedo',
+                    interval: 'Cambios Suaves y Precisos',
+                    rationale: 'Diseñado específicamente para proteger engranajes y embragues húmedos frente al calor extremo y altas RPM.'
                 },
                 {
-                    badge: 'ESPECIAL ENDURO / MOTOCROSS',
-                    title: 'AMSOIL DIRT 10W-40 Synthetic Dirt Bike Oil',
+                    badge: 'Enduro y Motocross',
+                    title: 'AMSOIL 10W-40 100% Synthetic Dirt Bike Oil',
                     code: 'DB40',
-                    interval: 'Competencia y Barro Severo',
-                    rationale: 'Diseñado específicamente para arranques de competencia y control de temperatura en senderos técnicos.'
+                    lineSubtitle: 'Competencia Off-Road • JASO MA',
+                    interval: 'Sensación Consistente de Embrague',
+                    rationale: 'Formulado para arranques explosivos en pista y máxima resistencia al desgaste en barro y senderos exigentes.'
                 },
                 {
-                    badge: 'ALTA CILINDRADA / V-TWIN',
-                    title: 'AMSOIL 20W-50 Synthetic V-Twin Motorcycle Oil',
+                    badge: 'Alta Cilindrada / V-Twin',
+                    title: 'AMSOIL 20W-50 100% Synthetic V-Twin Motorcycle Oil',
                     code: 'MCV',
-                    interval: 'Servicio Extendido Ruta',
-                    rationale: 'Película gruesa para motores enfriados por aire o de gran torque sometidos a calor intenso.'
+                    lineSubtitle: 'Motores Enfriados por Aire • JASO MA2',
+                    interval: '6X Mayor Resistencia a Degradación',
+                    rationale: 'Película sintética robusta para motores V-Twin de alto torque sometidos a temperaturas extremas.'
                 }
             ];
             spec.fluids = [
-                { category: 'Transmisión / Primaria Moto', product: 'AMSOIL Synthetic Dirt Bike Transmission Fluid (DBTF)', note: 'Para motos con compartimento de transmisión separado.' },
-                { category: 'Aditivo de Combustible Moto', product: 'AMSOIL Motorcycle Octane Boost (MOB)', note: 'Maximiza la potencia y limpia el sistema de combustible en motores 4T y 2T.' },
-                { category: 'Cadena y Suspensión', product: 'AMSOIL Chain Lube (ACL) & Shock Therapy® (STM)', note: 'No salpica ni atrae arena o barro en rutas de Costa Rica.' }
+                { category: 'Transmisión Separada Moto', product: 'AMSOIL 100% Synthetic Dirt Bike Transmission Fluid', code: 'DBTF', note: 'Protección especializada para cajas de cambios de 2 y 4 tiempos.' },
+                { category: 'Aditivo de Combustible Moto', product: 'AMSOIL Motorcycle Octane Boost', code: 'MOB', note: 'Maximiza la potencia, ayuda a eliminar el cascabeleo y limpia depósitos.' },
+                { category: 'Suspensión de Alto Rendimiento', product: 'AMSOIL Shock Therapy® #10 Medium Suspension Fluid', code: 'STM', note: 'Controla la fricción y evita la pérdida de amortiguación por espuma.' }
             ];
         } else if (isDiesel) {
+            const primaryDieselVisc = spec.viscosity.split('/')[0].trim();
             spec.tiers = [
                 {
-                    badge: 'RECOMENDADO MAX-DUTY DIESEL',
-                    title: `AMSOIL Signature Series Max-Duty ${spec.viscosity.split('/')[0].trim()} Synthetic Diesel`,
-                    code: spec.viscosity.includes('5W-30') ? 'DHD' : 'DME',
-                    interval: '6X Protección Desgaste',
-                    rationale: '6 veces más protección contra el desgaste del motor que el estándar Detroit Diesel DD13 y control total de hollín.'
+                    badge: 'Máxima Protección Max-Duty',
+                    title: `AMSOIL Signature Series Max-Duty ${primaryDieselVisc} 100% Synthetic Diesel Oil`,
+                    code: primaryDieselVisc.includes('5W-30') ? 'DHD' : 'DME',
+                    lineSubtitle: 'API CK-4 • Serie Insignia Turbodiésel',
+                    interval: '6X Más Protección Contra Desgaste',
+                    rationale: 'Entrega 6 veces más protección contra el desgaste del motor que el estándar Detroit Diesel DD13 y mantiene los turbos limpios.'
                 },
                 {
-                    badge: 'SERVICIO PESADO HEAVY-DUTY',
-                    title: 'AMSOIL Heavy-Duty 100% Synthetic Diesel Oil 15W-40',
+                    badge: 'Servicio Pesado Heavy-Duty',
+                    title: 'AMSOIL Heavy-Duty 15W-40 100% Synthetic Diesel Oil',
                     code: 'ADP',
-                    interval: 'Trabajo Pesado Continuo',
-                    rationale: 'Excelente protección térmica para turbocompresores y motores con alto kilometraje bajo carga.'
+                    lineSubtitle: 'API CK-4 • Trabajo Continuo',
+                    interval: '4X Más Protección Contra Desgaste',
+                    rationale: 'Estabilidad térmica superior y bajo consumo de aceite para pickups de carga, camiones y maquinaria.'
                 },
                 {
-                    badge: 'ESPECIALIZADO DPF LOW-SAPS',
-                    title: 'AMSOIL European 5W-30 Low-SAPS Synthetic',
+                    badge: 'Especializado DPF Euro V/VI',
+                    title: 'AMSOIL European Car Formula 5W-30 LS 100% Synthetic Motor Oil',
                     code: 'AEL',
-                    interval: 'Norma ACEA C2/C3',
-                    rationale: 'Para unidades diésel modernas Euro V / Euro VI equipadas con filtros de partículas DPF sensibles.'
+                    lineSubtitle: 'Low-SAPS • ACEA C3',
+                    interval: 'Protección Avanzada de DPF',
+                    rationale: 'Formulación baja en cenizas sulfatadas diseñada para proteger filtros de partículas diésel modernos.'
                 }
             ];
             spec.fluids = [
-                { category: 'Transmisión Automática / Manual', product: 'AMSOIL Signature Series Synthetic ATF (ATF)', note: 'Evita sobrecalentamiento de caja en ascensos con remolque o carga 4x4.' },
-                { category: 'Diferenciales Delantero y Trasero 4x4', product: 'AMSOIL SEVERE GEAR® 75W-90 Easy-Pack (SVG)', note: 'Protección de presión extrema GL-5 frente a barro, agua y alto torque.' },
-                { category: 'Sistema de Inyección Diésel', product: 'AMSOIL Diesel Injector Clean + Cetane Boost (ADS)', note: 'Lubrica la bomba e inyectores Common-Rail, limpia depósitos y eleva el cetano.' },
-                { category: 'Lavado Interno Preventivo', product: 'AMSOIL Engine and Transmission Flush (FLSH)', note: 'Disuelve depósitos de hollín y barniz antes de instalar aceite 100% sintético.' },
-                { category: 'Engrase de Chasis y Crucetas 4x4', product: 'AMSOIL Synthetic Polymeric Off-Road Grease (GPOR2)', note: 'Con disulfuro de molibdeno; resiste el lavado por agua en ríos y lluvia.' },
-                { category: 'Sistema de Frenos y Enfriamiento', product: 'AMSOIL DOT 3 & DOT 4 Synthetic Brake Fluid (BFLV)', note: 'Punto de ebullición superior para descensos prolongados de montaña.' }
+                { category: 'Transmisión Automática', product: 'AMSOIL Signature Series Multi-Vehicle 100% Synthetic ATF (Red)', code: 'ATF', note: 'Resiste el calor severo al remolcar o ascender pendientes pronunciadas.' },
+                { category: 'Diferenciales 4x4', product: 'AMSOIL SEVERE GEAR® 75W-90 100% Synthetic Gear Lube', code: 'SVG', note: 'Película de presión extrema en envase flexible Easy-Pack para cambios limpios.' },
+                { category: 'Inyección Common-Rail', product: 'AMSOIL Diesel Injector Clean + Cetane Boost', code: 'ADS', note: 'Limpia inyectores diésel, lubrica bombas de alta presión y eleva el cetano hasta en 8 puntos.' },
+                { category: 'Lavado Interno Preventivo', product: 'AMSOIL Engine & Transmission Flush', code: 'FLSH', note: 'Disuelve lodos y depósitos de hollín antes de instalar lubricante 100% sintético.' },
+                { category: 'Chasis y Crucetas Off-Road', product: 'AMSOIL NLGI #2 100% Synthetic Polymeric Off-Road Grease', code: 'GPOR2', note: 'Reforzada contra impacto extremo y lavado por agua o barro.' },
+                { category: 'Sistema de Frenos', product: 'AMSOIL DOT 3 & DOT 4 100% Synthetic Brake Fluid', code: 'BFLV', note: 'Alto punto de ebullición para frenadas firmes y seguras con carga en montaña.' }
             ];
         } else {
             const primaryVisc = spec.viscosity.split('(')[0].split('/')[0].trim();
-            const sigCode = primaryVisc === '0W-16' ? 'ASB' : (primaryVisc === '0W-20' ? 'ASM' : 'ASL');
+            const sigCode = primaryVisc === '0W-16' ? 'HE016' : (primaryVisc === '0W-20' ? 'ASM' : 'ASL');
             spec.tiers = [
                 {
-                    badge: 'LÍNEA INSIGNIA SIGNATURE SERIES',
-                    title: `AMSOIL Signature Series ${primaryVisc} 100% Synthetic`,
+                    badge: 'Línea Insignia Signature Series',
+                    title: primaryVisc === '0W-16'
+                        ? 'AMSOIL 0W-16 100% Synthetic Hybrid Motor Oil'
+                        : `AMSOIL Signature Series ${primaryVisc} 100% Synthetic Motor Oil`,
                     code: sigCode,
-                    interval: '75% Más Protección',
-                    rationale: '75% más protección contra pérdida de potencia y desgaste. Máxima limpieza de pistones y turbo.'
+                    lineSubtitle: 'API SP / ILSAC GF-6 • Máximo Rendimiento',
+                    interval: '75% Más Protección Contra Desgaste',
+                    rationale: 'Ingenierizado para máxima protección y rendimiento: 75% más protección contra desgaste y 40% pistones más limpios en pruebas ASTM.'
                 },
                 {
-                    badge: isHighMileage ? 'RECOMENDADO ALTO KILOMETRAJE (+100K KM)' : 'LÍNEA EXTENDIDA XL / HYBRID',
+                    badge: isHighMileage ? 'Especializado Alto Kilometraje' : 'Protección Extendida XL / Hybrid',
                     title: isHighMileage
-                        ? `AMSOIL High-Mileage ${primaryVisc} 100% Synthetic`
-                        : `AMSOIL XL / Hybrid ${primaryVisc} 100% Synthetic`,
-                    code: isHighMileage ? 'HM530' : (primaryVisc === '0W-16' ? 'HE016' : 'XLF'),
-                    interval: 'Protección Extendida',
+                        ? `AMSOIL ${primaryVisc === '0W-16' ? '5W-30' : primaryVisc} 100% Synthetic High-Mileage Motor Oil`
+                        : (primaryVisc === '0W-20'
+                            ? 'AMSOIL 0W-20 100% Synthetic Hybrid Motor Oil'
+                            : 'AMSOIL XL 5W-30 100% Synthetic Motor Oil'),
+                    code: isHighMileage ? 'HM530' : (primaryVisc === '0W-20' ? 'HE020' : 'XLF'),
+                    lineSubtitle: isHighMileage ? 'Acondicionadores de Sellos Activos' : 'Resistencia Térmica Reforzada',
+                    interval: 'Protección Comprobada',
                     rationale: isHighMileage
-                        ? 'Formulado con acondicionadores de sellos que revitalizan retenes resecos, previenen fugas y reducen el consumo en motores con más de 100,000 km.'
-                        : 'Protección reforzada contra degradación térmica y arranques frecuentes en ciudad.'
+                        ? 'Formulado para motores con más de 100,000 km: revitaliza retenes, previene fugas y combate la degradación.'
+                        : 'Neutraliza ácidos y protege frente a ciclos constantes de arranque y tráfico urbano.'
                 },
                 {
-                    badge: 'LÍNEA OE (MANTENIMIENTO DE FÁBRICA)',
-                    title: `AMSOIL OE ${primaryVisc} 100% Synthetic Motor Oil`,
-                    code: primaryVisc === '0W-16' ? 'OES' : (primaryVisc === '0W-20' ? 'OEZ' : 'OEF'),
-                    interval: 'Intervalo OEM Oficial',
-                    rationale: 'Protección 100% sintética pura para cambios en el intervalo estándar del fabricante.'
+                    badge: 'Mantenimiento OEM',
+                    title: `AMSOIL OE ${primaryVisc === '0W-16' ? '0W-20' : primaryVisc} 100% Synthetic Motor Oil`,
+                    code: primaryVisc === '0W-20' || primaryVisc === '0W-16' ? 'OEZ' : 'OEF',
+                    lineSubtitle: 'API SP / ILSAC GF-6 • Intervalo OEM',
+                    interval: '100% Sintético Puro',
+                    rationale: 'Protección superior contra desgaste y LSPI durante todo el intervalo recomendado por el fabricante.'
                 }
             ];
             spec.fluids = [
-                { category: 'Transmisión Automática / CVT', product: 'AMSOIL Signature Fuel-Efficient ATF (ATL) / CVT (CVT)', note: 'Protección contra fricción y calor en cajas automáticas modernas y CVT.' },
-                { category: 'Diferencial / AWD (Si aplica)', product: 'AMSOIL SEVERE GEAR® 75W-90 Easy-Pack (SVG)', note: 'Para versiones 4WD / AWD con diferencial trasero o caja de transferencia.' },
-                { category: 'Limpieza de Inyectores Gasolina', product: 'AMSOIL P.i.® Performance Improver (API)', note: 'Limpia inyectores directos GDI, válvulas y cámara de combustión en un solo tanque.' },
-                { category: 'Lavado Interno de Motor', product: 'AMSOIL Engine and Transmission Flush (FLSH)', note: 'Recomendado especialmente en motores con alto kilometraje para liberar anillos.' },
-                { category: 'Líquido de Frenos Sintético', product: 'AMSOIL DOT 3 & DOT 4 Brake Fluid (BFLV)', note: 'Evita la sensación de pedal esponjoso en bajadas de montaña.' },
-                { category: 'Refrigerante / Anticongelante', product: 'AMSOIL Passenger Car Antifreeze & Coolant (ANTPC)', note: 'Fórmula de larga duración para radiadores de aluminio modernos.' }
+                { category: 'Transmisión Automática / CVT', product: 'AMSOIL Signature Series Fuel-Efficient 100% Synthetic ATF (Blue)', code: 'ATL', note: 'Cambios suaves y máxima estabilidad frente al calor en transmisiones modernas.' },
+                { category: 'Diferencial / AWD', product: 'AMSOIL SEVERE GEAR® 75W-90 100% Synthetic Gear Lube', code: 'SVG', note: 'Protección extrema para diferenciales traseros y cajas de transferencia AWD/4WD.' },
+                { category: 'Sistema de Combustible Gasolina', product: 'AMSOIL P.i.® Performance Improver Gasoline Additive', code: 'API', note: 'Elimina depósitos difíciles en inyectores y válvulas para restaurar potencia y economía de combustible.' },
+                { category: 'Lavado Interno de Motor', product: 'AMSOIL Engine & Transmission Flush', code: 'FLSH', note: 'Limpia depósitos acumulados y libera anillos en un solo servicio.' },
+                { category: 'Líquido de Frenos Sintético', product: 'AMSOIL DOT 3 & DOT 4 100% Synthetic Brake Fluid', code: 'BFLV', note: 'Respuesta firme del pedal y protección contra corrosión interna.' },
+                { category: 'Sistema de Enfriamiento', product: 'AMSOIL Passenger Car & Light Truck Antifreeze & Coolant 50/50', code: 'ANTPC', note: 'Fórmula premezclada de larga duración para bloques y radiadores de aluminio.' }
             ];
         }
 
         let mileageAdvice = null;
         if (km !== null && km > 0) {
             if (isHighMileage) {
-                mileageAdvice = `Kilometraje registrado: ${km.toLocaleString('es-CR')} km. Por superar los 100,000 km, se recomienda lavado interno previo con AMSOIL Engine Flush y considerar AMSOIL High-Mileage o Signature Series para proteger sellos y retenes.`;
+                mileageAdvice = `Kilometraje registrado: ${km.toLocaleString('es-CR')} km. Para motores sobre 100,000 km recomendamos realizar limpieza previa con AMSOIL Engine & Transmission Flush y proteger con AMSOIL 100% Synthetic High-Mileage Motor Oil o AMSOIL Signature Series.`;
             } else {
-                mileageAdvice = `Kilometraje registrado: ${km.toLocaleString('es-CR')} km. El motor mantiene tolerancias óptimas de fábrica; aplicar viscosidad OEM original con AMSOIL 100% Sintético.`;
+                mileageAdvice = `Kilometraje registrado: ${km.toLocaleString('es-CR')} km. Mantén la viscosidad OEM de fábrica con lubricación 100% sintética AMSOIL para conservar los componentes internos limpios y sin desgaste.`;
             }
         }
 
@@ -623,7 +657,7 @@ document.addEventListener('DOMContentLoaded', () => {
         aiResultPanel.style.display = 'block';
 
         if (resVehicleTitle) resVehicleTitle.textContent = data.title || fallbackQuery;
-        if (resVehicleSubtitle) resVehicleSubtitle.textContent = data.subtitle || 'Especificación técnica verificada por el Asesor AMSOIL Costa Rica';
+        if (resVehicleSubtitle) resVehicleSubtitle.textContent = data.subtitle || 'Especificación técnica verificada por AMSOIL Costa Rica';
         if (resViscosity) resViscosity.textContent = data.viscosity || '5W-30';
         if (resCapacity) resCapacity.textContent = data.capacity || 'Consultar manual';
         if (resNorm) resNorm.textContent = data.norm || 'API SP / OEM';
@@ -631,20 +665,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (resWarning) resWarning.textContent = data.warning || 'Utilizar siempre lubricación 100% sintética certificada.';
 
         const catMap = {
-            turismo_gasolina: 'AUTOMOTRIZ GASOLINA / TURBO',
-            turismo_hibrido: 'TECNOLOGÍA HÍBRIDA (HEV / PHEV)',
-            turismo_diesel: 'PICKUP / SUV TURBODIÉSEL 4X4',
-            pesado_flota: 'TRANSPORTE PESADO & FLOTAS',
-            maquinaria: 'MAQUINARIA PESADA & AGRO'
+            turismo_gasolina: 'Automotriz Gasolina / Turbo',
+            turismo_hibrido: 'Tecnología Híbrida (HEV / PHEV)',
+            turismo_diesel: 'Pickup / SUV Turbodiésel 4x4',
+            pesado_flota: 'Transporte Pesado y Flotas',
+            maquinaria: 'Maquinaria Pesada y Agro'
         };
         if (resCategoryBadge) {
-            resCategoryBadge.textContent = data.categoryLabel || catMap[data.vehicleCategory] || 'APLICACIÓN AMSOIL VERIFICADA';
+            resCategoryBadge.textContent = data.categoryLabel || catMap[data.vehicleCategory] || 'Guía de Aplicación AMSOIL';
         }
 
         if (resMileageBadge) {
             if (data.isHighMileage) {
                 resMileageBadge.style.display = 'inline-block';
-                resMileageBadge.textContent = `ALTO KILOMETRAJE (${(data.reportedMileage || 100000).toLocaleString('es-CR')} KM)`;
+                resMileageBadge.textContent = `Alto Kilometraje (${(data.reportedMileage || 100000).toLocaleString('es-CR')} km)`;
             } else {
                 resMileageBadge.style.display = 'none';
             }
@@ -670,24 +704,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
             tiersList.forEach((tier, idx) => {
                 const catItem = findCatalogItemByCodeOrText(tier.code, tier.title);
+                const displayTitle = catItem ? catItem.display_name : (tier.title || '');
+                const subLine = tier.lineSubtitle || (catItem ? catItem.line_name : 'Lubricante Sintético Especializado');
                 const photoSrc = getPrimaryPhotoForCode(tier.code || (catItem ? catItem.amsoil_code : 'ASL'));
                 const card = document.createElement('div');
                 card.className = `guide-tier-box ${idx === 0 ? 'recommended' : ''}`;
                 card.innerHTML = `
                     <div>
-                        <span class="tier-kicker">${tier.badge || 'OPCIÓN AMSOIL'}</span>
+                        <span class="tier-kicker">${tier.badge || 'Recomendación AMSOIL'}</span>
                         <div class="guide-tier-img-wrap">
-                            <img src="${photoSrc}" alt="${tier.title || 'AMSOIL'}">
+                            <img src="${photoSrc}" alt="${displayTitle}">
                             <div>
-                                <h4>${tier.title || ''}</h4>
-                                <span style="font-size:0.78rem; font-weight:700; color:var(--amsoil-blue);">Código: ${tier.code || 'AMSOIL'}</span>
+                                <h4>${displayTitle}</h4>
+                                <span style="font-size:0.76rem; font-weight:700; color:var(--amsoil-blue);">${subLine}</span>
                             </div>
                         </div>
                         <p>${tier.rationale || ''}</p>
                     </div>
-                    <div class="guide-tier-meta" style="align-items:center;">
-                        <span style="color:var(--amsoil-red);">${tier.interval || '100% Sintético'}</span>
-                        ${catItem ? `<button type="button" class="pres-switch-btn" data-open-pds="${catItem.id}">📋 Ver Ficha PDS</button>` : ''}
+                    <div class="guide-tier-meta">
+                        <span style="color:var(--amsoil-red);">${tier.interval || 'Protección Comprobada'}</span>
+                        ${catItem ? `<button type="button" class="pres-switch-btn" data-open-pds="${catItem.id}">${ICON_DOC_SVG} Ficha PDS</button>` : ''}
                     </div>
                 `;
                 resAmsoilTiersGrid.appendChild(card);
@@ -704,14 +740,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             fluidsList.forEach((fl) => {
-                const catItem = findCatalogItemByCodeOrText(fl.product, fl.product);
+                const catItem = findCatalogItemByCodeOrText(fl.code || fl.product, fl.product);
+                const cleanProdTitle = catItem ? catItem.display_name : (fl.product || '').replace(/\s*\([A-Z0-9-]{2,8}\)\s*$/g, '');
                 const fCard = document.createElement('div');
                 fCard.className = 'guide-fluid-card';
                 fCard.innerHTML = `
-                    <span>${fl.category || 'FLUIDO COMPLEMENTARIO'}</span>
-                    <h5>${fl.product || ''}</h5>
+                    <span>${fl.category || 'Fluido Complementario'}</span>
+                    <h5>${cleanProdTitle}</h5>
                     <p>${fl.note || ''}</p>
-                    ${catItem ? `<button type="button" class="pres-switch-btn" style="margin-top:6px;" data-open-pds="${catItem.id}">📋 Ver Ficha Técnica</button>` : ''}
+                    ${catItem ? `<button type="button" class="pres-switch-btn" style="margin-top:8px;" data-open-pds="${catItem.id}">${ICON_DOC_SVG} Ver Ficha Técnica</button>` : ''}
                 `;
                 resFluidPackageGrid.appendChild(fCard);
             });
@@ -743,7 +780,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
         } catch (err) {
-            // Fallback instantáneo
+            // Respaldo instantáneo local
         }
 
         setTimeout(() => {
@@ -781,7 +818,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================================================
-    // 5. FILTRO EN PÁGINAS INTERNAS DE CATEGORÍA (Sidebar Filter + URL ?filter=)
+    // 5. FILTRO EN PÁGINAS DE CATEGORÍA (?filter=...)
     // =========================================================================
     const sidebarFilterLinks = document.querySelectorAll('[data-subfilter]');
     const catProductTiles = document.querySelectorAll('[data-subcat]');
@@ -807,20 +844,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (mainContainer && !filterBanner) {
             filterBanner = document.createElement('div');
             filterBanner.id = 'activeSubfilterBanner';
-            filterBanner.style.cssText = 'display:none; align-items:center; justify-content:space-between; gap:12px; background:#F4F5F7; border-left:4px solid #CC262F; padding:12px 18px; margin-bottom:20px; border-radius:2px;';
+            filterBanner.style.cssText = 'display:none; align-items:center; justify-content:space-between; gap:12px; background:var(--bg-light); border:1px solid var(--border-gray); border-left:4px solid var(--amsoil-red); padding:12px 18px; margin-bottom:20px; border-radius:2px;';
             mainContainer.insertBefore(filterBanner, mainContainer.firstChild);
         }
         if (filterBanner) {
             if (tLower === 'all') {
                 filterBanner.style.display = 'none';
             } else {
-                const displayLabel = labelText || target.toUpperCase();
+                const displayLabel = labelText || target;
                 filterBanner.style.display = 'flex';
                 filterBanner.innerHTML = `
-                    <div style="font-size:0.92rem; color:#0F1416;">
-                        Filtro activo: <strong style="color:#CC262F;">${displayLabel}</strong> <span>(${visibleCount} ${visibleCount === 1 ? 'producto' : 'productos'})</span>
+                    <div style="font-size:0.92rem; color:var(--text-primary);">
+                        Filtro activo: <strong style="color:var(--amsoil-red);">${displayLabel}</strong> <span>(${visibleCount} ${visibleCount === 1 ? 'producto' : 'productos'})</span>
                     </div>
-                    <button type="button" class="pres-switch-btn" id="clearSubfilterBtn" style="background:#0F1416; color:#FFFFFF; border-color:#0F1416;">
+                    <button type="button" class="pres-switch-btn" id="clearSubfilterBtn" style="background:var(--amsoil-black); color:var(--amsoil-white); border-color:var(--amsoil-black);">
                         ✕ Ver todos los productos (${catProductTiles.length})
                     </button>
                 `;
@@ -850,13 +887,12 @@ document.addEventListener('DOMContentLoaded', () => {
             applySubfilter(paramFilter, matchingMenuLink ? matchingMenuLink.textContent.trim() : paramFilter);
         }
 
-        // Interceptar clics del mega-menú o franja azul cuando ya estamos en esa misma página de categoría
         document.addEventListener('click', (e) => {
             const link = e.target.closest('a[href*="?filter="]');
             if (!link) return;
             const href = link.getAttribute('href') || '';
             const [pagePart, queryPart] = href.split('?');
-            const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+            const currentFile = window.location.pathname.split('/').pop() || CATALOG_HOME;
             if (pagePart === currentFile && queryPart) {
                 const sp = new URLSearchParams(queryPart);
                 const flt = sp.get('filter');
@@ -931,14 +967,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const zone = document.getElementById('contactZone')?.value || 'Costa Rica';
             if (contactFeedback) {
                 contactFeedback.style.display = 'block';
-                contactFeedback.textContent = `✓ Gracias ${name}. Hemos recibido tu mensaje desde ${zone}. Nuestro equipo de AMSOIL Costa Rica te contactará a la brevedad.`;
+                contactFeedback.textContent = `✓ Gracias ${name}. Hemos recibido tu consulta desde ${zone}. Un especialista técnico de AMSOIL Costa Rica te responderá a la brevedad.`;
             }
             contactForm.reset();
         });
     }
 
     // =========================================================================
-    // 7. BANNER TRANSITORIO PRINCIPAL (CARRUSEL HERO ESTILO AMSOIL.COM)
+    // 7. CARRUSEL PRINCIPAL DE PRODUCTOS Y RENDIMIENTO
     // =========================================================================
     const heroCarousel = document.getElementById('amsoilHeroCarousel');
     if (heroCarousel) {
@@ -1013,4 +1049,3 @@ document.addEventListener('DOMContentLoaded', () => {
         startTimer();
     }
 });
-

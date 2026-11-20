@@ -1,4 +1,3 @@
-// Catálogo Oficial AMSOIL Costa Rica (104 Referencias)
 window.AMSOIL_CATALOG = [
   {
     "index": 1,
@@ -117,7 +116,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_cb01ecf1570a4ea18a13f4a0e546cc8e~mv2.jpg",
         "bytes": 38993,
-        "short_label": "Vista Catálogo (OEZ-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -139,7 +138,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-oe-0w-20-synthetic-motor-oil.webp",
         "bytes": 33178,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -261,7 +260,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_a37f30c2969d4878983082198fd86f1e~mv2.jpg",
         "bytes": 37836,
-        "short_label": "Vista Catálogo (OEM-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -283,7 +282,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-oe-5w-20-synthetic-motor-oil.webp",
         "bytes": 33146,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -417,7 +416,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_7e1ad48d3bbb41909243e1689ef81fae~mv2.jpg",
         "bytes": 30902,
-        "short_label": "Vista Catálogo (OEF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -439,7 +438,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-oe-5w-30-synthetic-motor-oil.webp",
         "bytes": 33566,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -500,7 +499,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_21dca255eaf94f218180a2327fd396e1~mv2.jpg",
         "bytes": 30638,
-        "short_label": "Vista Catálogo (OEB-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -641,7 +640,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_80651c486d0c44e39baef78319212f57~mv2.jpg",
         "bytes": 31026,
-        "short_label": "Vista Catálogo (OET-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -663,7 +662,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-oe-10w-30-synthetic-motor-oil.webp",
         "bytes": 33932,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -724,7 +723,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_246c8e47829f4b0ab7d4366c953e438a~mv2.png",
         "bytes": 163343,
-        "short_label": "Vista Catálogo (OEH-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -802,7 +801,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_c2e8070f76684bb58bcf7a9264343bd7~mv2.png",
         "bytes": 156839,
-        "short_label": "Vista Catálogo (OER-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -935,7 +934,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_1f7ca44f09e245f686493ca12abe406f~mv2.jpg",
         "bytes": 41525,
-        "short_label": "Vista Catálogo (XLF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -957,7 +956,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-extended-life-5w-30-synthetic-motor-oil.webp",
         "bytes": 32480,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1079,7 +1078,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_4b65136e95084b3f99229c9b8d14a90d~mv2.jpg",
         "bytes": 41277,
-        "short_label": "Vista Catálogo (XLT-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -1101,7 +1100,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-extended-life-10w-30-synthetic-motor-oil.webp",
         "bytes": 29498,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1192,7 +1191,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ebb050b31bcd4796bd11185d1afb4154~mv2.png",
         "bytes": 150587,
-        "short_label": "Vista Catálogo (EZT-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -1214,7 +1213,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-0w-20-ls-vw-synthetic-european-motor-oil.webp",
         "bytes": 27354,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1305,7 +1304,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_807c9de4d29245d9813adfc9340a4e49~mv2.png",
         "bytes": 153572,
-        "short_label": "Vista Catálogo (AFE-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -1327,7 +1326,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-0w-20-ls-synthetic-european-motor-oil.webp",
         "bytes": 27324,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1418,7 +1417,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_204da3418dd7400996c3671ec7ddb193~mv2.jpg",
         "bytes": 407724,
-        "short_label": "Vista Catálogo (EOT-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -1440,7 +1439,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-0w-30-ms-synthetic-european-motor-oil.webp",
         "bytes": 28100,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1516,7 +1515,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_e30b480c036a4d4bbec218750f4d4311~mv2.png",
         "bytes": 144961,
-        "short_label": "Vista Catálogo (EFO-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -1538,7 +1537,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-0w-40-fs-synthetic-european-motor-oil.webp",
         "bytes": 29034,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1643,7 +1642,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_750bb580f9fe4933b4b629679e7bdcd4~mv2.png",
         "bytes": 153332,
-        "short_label": "Vista Catálogo (AEL-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -1665,7 +1664,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-30-ls-synthetic-european-motor-oil.webp",
         "bytes": 28536,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1797,7 +1796,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-40-fs-synthetic-european-motor-oil.webp",
         "bytes": 27896,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1890,7 +1889,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_b45619a98e344adc813735b9c2123df7~mv2.png",
         "bytes": 157023,
-        "short_label": "Vista Catálogo (AFL-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -1912,7 +1911,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-40-ms-synthetic-european-motor-oil.webp",
         "bytes": 28870,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -1988,7 +1987,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_e48c710cf9494e158d07b9457c929050~mv2.jpg",
         "bytes": 28469,
-        "short_label": "Vista Catálogo (HE016-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -2010,7 +2009,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-0w-16-synthetic-hybrid-motor-oil.webp",
         "bytes": 27814,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2086,7 +2085,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_0fbd2573b3df46278d2d9b2ad2ba4863~mv2.jpg",
         "bytes": 28753,
-        "short_label": "Vista Catálogo (HE020-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -2108,7 +2107,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-0w-20-synthetic-hybrid-motor-oil.webp",
         "bytes": 28534,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2213,7 +2212,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_c02c131c21ee4303bbe0e1be4c5101a9~mv2.png",
         "bytes": 181883,
-        "short_label": "Vista Catálogo (ASM-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -2235,7 +2234,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-0w-20-synthetic-motor-oil.webp",
         "bytes": 31048,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2342,7 +2341,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_b891fce8f90845c18a8c21e301eb5204~mv2.png",
         "bytes": 185059,
-        "short_label": "Vista Catálogo (AZF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -2364,7 +2363,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-0w-40-synthetic-motor-oil.webp",
         "bytes": 31870,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2469,7 +2468,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_519558d0e75e46bfbfbc49e17eaf8d15~mv2.png",
         "bytes": 171096,
-        "short_label": "Vista Catálogo (ALM-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -2491,7 +2490,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-5w-20-synthetic-motor-oil.webp",
         "bytes": 29034,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2619,7 +2618,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_566b8a624c6d45cc9b1f4b698d6a3e4b~mv2.jpg",
         "bytes": 33910,
-        "short_label": "Vista Catálogo (ASL-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -2641,7 +2640,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-5w-30-synthetic-motor-oil.webp",
         "bytes": 31236,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2744,7 +2743,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-5w-50-synthetic-motor-oil.webp",
         "bytes": 30370,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2877,7 +2876,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-10w-30-synthetic-motor-oil.webp",
         "bytes": 30254,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2890,9 +2889,9 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motor Gasolina",
     "category_icon": "🚗",
     "line": "racing-zrod-dominator",
-    "line_name": "Serie Racing, Z-ROD y Motores de Alto Desempeño",
+    "line_name": "Serie Racing, Z-ROD® y Motores de Alto Desempeño",
     "item_slug": "z-rod-10w-30",
-    "display_name": "AMSOIL Z-ROD 10W-30 100% Synthetic Motor Oil",
+    "display_name": "AMSOIL Z-ROD® 10W-30 100% Synthetic Motor Oil",
     "viscosity": "10W-30",
     "amsoil_code": "ZRT",
     "als_codes": [
@@ -2907,14 +2906,14 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "01-motor-gasolina/racing-zrod-dominator/z-rod-10w-30",
     "tech_sheet": {
-      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR), autos clásicos/modificados con árboles de levas planos (Z-ROD) y motores 4T de competencia (Briggs & Stratton).",
+      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR®), autos clásicos/modificados con árboles de levas planos (Z-ROD®) y motores 4T de competencia (Briggs & Stratton).",
       "benefits": [
         "Alto nivel de ZDDP (Zinc y Fósforo) para máxima protección en levas planas (flat-tappet), balancines y cojinetes sometidos a cargas extremas.",
-        "Z-ROD incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
-        "DOMINATOR soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
+        "Z-ROD® incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
+        "DOMINATOR® soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
       ],
       "specs": "Formulaciones de alto Zinc (ZDDP) para competencia, Hot-Rods, Muscle Cars y motores modificados.",
-      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD)."
+      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD®)."
     },
     "available_packages_official": [
       {
@@ -2953,7 +2952,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_354a4757e7f84ecf9f690fefe31dae4a~mv2.png",
         "bytes": 185855,
-        "short_label": "Vista Catálogo (ZRT-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -2975,7 +2974,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-z-rod-10w-30-synthetic-motor-oil.webp",
         "bytes": 33580,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -2988,9 +2987,9 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motor Gasolina",
     "category_icon": "🚗",
     "line": "racing-zrod-dominator",
-    "line_name": "Serie Racing, Z-ROD y Motores de Alto Desempeño",
+    "line_name": "Serie Racing, Z-ROD® y Motores de Alto Desempeño",
     "item_slug": "z-rod-10w-40",
-    "display_name": "AMSOIL Z-ROD 10W-40 100% Synthetic Motor Oil",
+    "display_name": "AMSOIL Z-ROD® 10W-40 100% Synthetic Motor Oil",
     "viscosity": "10W-40",
     "amsoil_code": "ZRD",
     "als_codes": [
@@ -3005,14 +3004,14 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "01-motor-gasolina/racing-zrod-dominator/z-rod-10w-40",
     "tech_sheet": {
-      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR), autos clásicos/modificados con árboles de levas planos (Z-ROD) y motores 4T de competencia (Briggs & Stratton).",
+      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR®), autos clásicos/modificados con árboles de levas planos (Z-ROD®) y motores 4T de competencia (Briggs & Stratton).",
       "benefits": [
         "Alto nivel de ZDDP (Zinc y Fósforo) para máxima protección en levas planas (flat-tappet), balancines y cojinetes sometidos a cargas extremas.",
-        "Z-ROD incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
-        "DOMINATOR soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
+        "Z-ROD® incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
+        "DOMINATOR® soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
       ],
       "specs": "Formulaciones de alto Zinc (ZDDP) para competencia, Hot-Rods, Muscle Cars y motores modificados.",
-      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD)."
+      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD®)."
     },
     "available_packages_official": [
       {
@@ -3051,7 +3050,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_b946225af95c4cc7b0024413ee4908f5~mv2.png",
         "bytes": 159853,
-        "short_label": "Vista Catálogo (ZRD-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -3073,7 +3072,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-z-rod-10w-40-synthetic-motor-oil.webp",
         "bytes": 33022,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -3086,9 +3085,9 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motor Gasolina",
     "category_icon": "🚗",
     "line": "racing-zrod-dominator",
-    "line_name": "Serie Racing, Z-ROD y Motores de Alto Desempeño",
+    "line_name": "Serie Racing, Z-ROD® y Motores de Alto Desempeño",
     "item_slug": "z-rod-20w-50",
-    "display_name": "AMSOIL Z-ROD 20W-50 100% Synthetic Motor Oil",
+    "display_name": "AMSOIL Z-ROD® 20W-50 100% Synthetic Motor Oil",
     "viscosity": "20W-50",
     "amsoil_code": "ZRF",
     "als_codes": [
@@ -3103,14 +3102,14 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "01-motor-gasolina/racing-zrod-dominator/z-rod-20w-50",
     "tech_sheet": {
-      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR), autos clásicos/modificados con árboles de levas planos (Z-ROD) y motores 4T de competencia (Briggs & Stratton).",
+      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR®), autos clásicos/modificados con árboles de levas planos (Z-ROD®) y motores 4T de competencia (Briggs & Stratton).",
       "benefits": [
         "Alto nivel de ZDDP (Zinc y Fósforo) para máxima protección en levas planas (flat-tappet), balancines y cojinetes sometidos a cargas extremas.",
-        "Z-ROD incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
-        "DOMINATOR soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
+        "Z-ROD® incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
+        "DOMINATOR® soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
       ],
       "specs": "Formulaciones de alto Zinc (ZDDP) para competencia, Hot-Rods, Muscle Cars y motores modificados.",
-      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD)."
+      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD®)."
     },
     "available_packages_official": [
       {
@@ -3149,7 +3148,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_22186a679f4a46c6a5bae4f4f37e27ed~mv2.png",
         "bytes": 189947,
-        "short_label": "Vista Catálogo (ZRF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -3171,7 +3170,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-z-rod-20w-50-synthetic-motor-oil.webp",
         "bytes": 34626,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -3184,7 +3183,7 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motor Gasolina",
     "category_icon": "🚗",
     "line": "racing-zrod-dominator",
-    "line_name": "Serie Racing, Z-ROD y Motores de Alto Desempeño",
+    "line_name": "Serie Racing, Z-ROD® y Motores de Alto Desempeño",
     "item_slug": "briggs-stratton-4t-racing",
     "display_name": "AMSOIL 100% Synthetic 4T Racing Oil (Briggs & Stratton)",
     "viscosity": "Especialidad",
@@ -3201,14 +3200,14 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "01-motor-gasolina/racing-zrod-dominator/briggs-stratton-4t-racing",
     "tech_sheet": {
-      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR), autos clásicos/modificados con árboles de levas planos (Z-ROD) y motores 4T de competencia (Briggs & Stratton).",
+      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR®), autos clásicos/modificados con árboles de levas planos (Z-ROD®) y motores 4T de competencia (Briggs & Stratton).",
       "benefits": [
         "Alto nivel de ZDDP (Zinc y Fósforo) para máxima protección en levas planas (flat-tappet), balancines y cojinetes sometidos a cargas extremas.",
-        "Z-ROD incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
-        "DOMINATOR soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
+        "Z-ROD® incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
+        "DOMINATOR® soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
       ],
       "specs": "Formulaciones de alto Zinc (ZDDP) para competencia, Hot-Rods, Muscle Cars y motores modificados.",
-      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD)."
+      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD®)."
     },
     "available_packages_official": [],
     "images": [
@@ -3220,7 +3219,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_3c6caef60bb94360b012c8a2add26812~mv2.jpg",
         "bytes": 309726,
-        "short_label": "Vista Catálogo (GBS-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       }
     ]
@@ -3233,9 +3232,9 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motor Gasolina",
     "category_icon": "🚗",
     "line": "racing-zrod-dominator",
-    "line_name": "Serie Racing, Z-ROD y Motores de Alto Desempeño",
+    "line_name": "Serie Racing, Z-ROD® y Motores de Alto Desempeño",
     "item_slug": "dominator-10w-40",
-    "display_name": "AMSOIL DOMINATOR 10W-40 100% Synthetic Racing Oil",
+    "display_name": "AMSOIL DOMINATOR® 10W-40 100% Synthetic Racing Oil",
     "viscosity": "10W-40",
     "amsoil_code": "RD40",
     "als_codes": [
@@ -3250,14 +3249,14 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "01-motor-gasolina/racing-zrod-dominator/dominator-10w-40",
     "tech_sheet": {
-      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR), autos clásicos/modificados con árboles de levas planos (Z-ROD) y motores 4T de competencia (Briggs & Stratton).",
+      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR®), autos clásicos/modificados con árboles de levas planos (Z-ROD®) y motores 4T de competencia (Briggs & Stratton).",
       "benefits": [
         "Alto nivel de ZDDP (Zinc y Fósforo) para máxima protección en levas planas (flat-tappet), balancines y cojinetes sometidos a cargas extremas.",
-        "Z-ROD incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
-        "DOMINATOR soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
+        "Z-ROD® incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
+        "DOMINATOR® soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
       ],
       "specs": "Formulaciones de alto Zinc (ZDDP) para competencia, Hot-Rods, Muscle Cars y motores modificados.",
-      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD)."
+      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD®)."
     },
     "available_packages_official": [
       {
@@ -3296,7 +3295,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_a287a5c0703248f4a6178fc9dfbbcf1b~mv2.jpg",
         "bytes": 506281,
-        "short_label": "Vista Catálogo (RD40-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -3318,7 +3317,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-dominator-10w-40-synthetic-racing-oil.webp",
         "bytes": 39230,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -3331,9 +3330,9 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motor Gasolina",
     "category_icon": "🚗",
     "line": "racing-zrod-dominator",
-    "line_name": "Serie Racing, Z-ROD y Motores de Alto Desempeño",
+    "line_name": "Serie Racing, Z-ROD® y Motores de Alto Desempeño",
     "item_slug": "dominator-15w-50",
-    "display_name": "AMSOIL DOMINATOR 15W-50 100% Synthetic Racing Oil",
+    "display_name": "AMSOIL DOMINATOR® 15W-50 100% Synthetic Racing Oil",
     "viscosity": "15W-50",
     "amsoil_code": "RD50",
     "als_codes": [
@@ -3348,14 +3347,14 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "01-motor-gasolina/racing-zrod-dominator/dominator-15w-50",
     "tech_sheet": {
-      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR), autos clásicos/modificados con árboles de levas planos (Z-ROD) y motores 4T de competencia (Briggs & Stratton).",
+      "summary": "Lubricantes 100% sintéticos de alta película lubricante y alto contenido de Zinc/Fósforo (ZDDP) para motores de competencia (DOMINATOR®), autos clásicos/modificados con árboles de levas planos (Z-ROD®) y motores 4T de competencia (Briggs & Stratton).",
       "benefits": [
         "Alto nivel de ZDDP (Zinc y Fósforo) para máxima protección en levas planas (flat-tappet), balancines y cojinetes sometidos a cargas extremas.",
-        "Z-ROD incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
-        "DOMINATOR soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
+        "Z-ROD® incluye inhibidores especiales contra el óxido para proteger motores durante almacenamientos prolongados.",
+        "DOMINATOR® soporta altas RPM, temperaturas extremas y dilución por combustible en pista."
       ],
       "specs": "Formulaciones de alto Zinc (ZDDP) para competencia, Hot-Rods, Muscle Cars y motores modificados.",
-      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD)."
+      "service_life": "Según régimen de competencia o hasta 5,000 millas / 1 año en vehículos clásicos (Z-ROD®)."
     },
     "available_packages_official": [
       {
@@ -3424,7 +3423,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_f1a3e06ac936412bb14876531906628c~mv2.jpg",
         "bytes": 38551,
-        "short_label": "Vista Catálogo (RD50-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -3446,7 +3445,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-dominator-15w-50-synthetic-racing-oil.webp",
         "bytes": 36742,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -3539,7 +3538,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-30-synthetic-high-mileage-motor-oil.webp",
         "bytes": 28474,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -3641,7 +3640,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-10w-30-synthetic-high-mileage-motor-oil.webp",
         "bytes": 28832,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -3769,7 +3768,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ef6f5ba10bd741d3bd609ab1644c8126~mv2.jpg",
         "bytes": 33876,
-        "short_label": "Vista Catálogo (ADO-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -3780,7 +3779,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_fcca34ba8e3c492089ea30f17f615d06~mv2.png",
         "bytes": 125030,
-        "short_label": "Vista Catálogo (ADO-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -3791,7 +3790,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-heavy-duty-5w-40-synthetic-diesel-oil.webp",
         "bytes": 28582,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -3931,7 +3930,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_9d43ec859ac24a168f59c0270941bfd7~mv2.jpg",
         "bytes": 28576,
-        "short_label": "Vista Catálogo (ADN-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -3942,7 +3941,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ff4d78f280364ab9affefc11e955bf42~mv2.png",
         "bytes": 140918,
-        "short_label": "Vista Catálogo (ADN-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -3964,7 +3963,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-10w-30-heavy-duty-synthetic-diesel-oil.webp",
         "bytes": 28048,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -4130,7 +4129,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_5a679497cab04d399b192bf127efbd75~mv2.jpg",
         "bytes": 33611,
-        "short_label": "Vista Catálogo (ADP-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4141,7 +4140,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_c1604a4979a54aaa97c61f66264ba202~mv2.png",
         "bytes": 154496,
-        "short_label": "Vista Catálogo (ADP-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4152,7 +4151,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_4eaee56516be4ca4b33bec79afe9657f~mv2.jpg",
         "bytes": 77244,
-        "short_label": "Vista Catálogo (ADP-3)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4174,7 +4173,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-15w-40-heavy-duty-synthetic-diesel-oil.webp",
         "bytes": 28018,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -4265,7 +4264,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_cb131de7a2f34768b3501defcc60df78~mv2.png",
         "bytes": 165941,
-        "short_label": "Vista Catálogo (DP020-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4276,7 +4275,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-0w-20-synthetic-diesel-oil.webp",
         "bytes": 32774,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -4367,7 +4366,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ca14300ac0c8467fb6c4ac1b68b89ec8~mv2.png",
         "bytes": 165832,
-        "short_label": "Vista Catálogo (DP530-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4378,7 +4377,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-30-synthetic-diesel-oil.webp",
         "bytes": 32792,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -4527,7 +4526,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ce9247a539b847a4beb54688bcb257a9~mv2.jpg",
         "bytes": 34464,
-        "short_label": "Vista Catálogo (DHD-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4538,7 +4537,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_b2282f843bb3411bbe32af41b849bcd8~mv2.jpg",
         "bytes": 2856394,
-        "short_label": "Vista Catálogo (DHD-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4549,7 +4548,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-5w-30-synthetic-max-duty-diesel-oil.webp",
         "bytes": 33768,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -4671,7 +4670,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_cb010d36cc91467c93bd4aeb9a5423db~mv2.jpg",
         "bytes": 34227,
-        "short_label": "Vista Catálogo (DEO-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4682,7 +4681,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_8ec3d50f6e55456b962f0fd985714310~mv2.png",
         "bytes": 604851,
-        "short_label": "Vista Catálogo (DEO-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4693,7 +4692,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-5w-40-synthetic-max-duty-diesel-oil.webp",
         "bytes": 33802,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -4821,7 +4820,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_286bfdedd548477cbd5a3d8daf461068~mv2.jpg",
         "bytes": 128702,
-        "short_label": "Vista Catálogo (DTT-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4832,7 +4831,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_6dde2926eade44ab88ffbb9775cb4061~mv2.jpg",
         "bytes": 470435,
-        "short_label": "Vista Catálogo (DTT-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4843,7 +4842,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-10w-30-synthetic-max-duty-diesel-oil.webp",
         "bytes": 34192,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -4986,7 +4985,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_134974ca20654f0aa47de1554b37023b~mv2.jpg",
         "bytes": 34861,
-        "short_label": "Vista Catálogo (DME-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -4997,7 +4996,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_81fb5c2caf434a14835ba3cb6d754c7f~mv2.jpg",
         "bytes": 932347,
-        "short_label": "Vista Catálogo (DME-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5008,7 +5007,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_0071b13f90fd45079e097b8e0064b6d1~mv2.jpg",
         "bytes": 448629,
-        "short_label": "Vista Catálogo (DME-3)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5019,7 +5018,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-15w-40-synthetic-max-duty-diesel-oil.webp",
         "bytes": 33512,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5034,7 +5033,7 @@ window.AMSOIL_CATALOG = [
     "line": "severe-gear-y-diferenciales",
     "line_name": "Lubricantes Sintéticos para Diferenciales y Transmisiones Manuales",
     "item_slug": "severe-gear-75w-85",
-    "display_name": "AMSOIL SEVERE GEAR 75W-85 100% Synthetic Gear Lube",
+    "display_name": "AMSOIL SEVERE GEAR® 75W-85 100% Synthetic Gear Lube",
     "viscosity": "75W-85",
     "amsoil_code": "SVL",
     "als_codes": [
@@ -5051,12 +5050,12 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.",
       "benefits": [
-        "SEVERE GEAR mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
+        "SEVERE GEAR® mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
         "Previene la ruptura térmica y el desgaste por picadura (pitting) en coronas y piñones bajo remolque extremo.",
         "Compatible con la mayoría de diferenciales de deslizamiento limitado (Limited-Slip).",
         "Disponible en práctico envase flexible Easy-Pack para cambios rápidos y limpios en lugares de difícil acceso."
       ],
-      "specs": "API GL-5 / MT-1 (Severe Gear & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
+      "specs": "API GL-5 / MT-1 (SEVERE GEAR® & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
       "service_life": "Hasta 100,000 millas en servicio normal o 50,000 millas en servicio severo/remolque."
     },
     "available_packages_official": [],
@@ -5091,7 +5090,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_f1afbde1a3324905bf6cad6d6a16ac18~mv2.jpg",
         "bytes": 436036,
-        "short_label": "Vista Catálogo (SVL-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5102,7 +5101,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-severe-gear-75w-85-synthetic-gear-lube.webp",
         "bytes": 46320,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5117,7 +5116,7 @@ window.AMSOIL_CATALOG = [
     "line": "severe-gear-y-diferenciales",
     "line_name": "Lubricantes Sintéticos para Diferenciales y Transmisiones Manuales",
     "item_slug": "severe-gear-75w-90",
-    "display_name": "AMSOIL SEVERE GEAR 75W-90 100% Synthetic Gear Lube",
+    "display_name": "AMSOIL SEVERE GEAR® 75W-90 100% Synthetic Gear Lube",
     "viscosity": "75W-90",
     "amsoil_code": "SVG",
     "als_codes": [
@@ -5134,12 +5133,12 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.",
       "benefits": [
-        "SEVERE GEAR mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
+        "SEVERE GEAR® mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
         "Previene la ruptura térmica y el desgaste por picadura (pitting) en coronas y piñones bajo remolque extremo.",
         "Compatible con la mayoría de diferenciales de deslizamiento limitado (Limited-Slip).",
         "Disponible en práctico envase flexible Easy-Pack para cambios rápidos y limpios en lugares de difícil acceso."
       ],
-      "specs": "API GL-5 / MT-1 (Severe Gear & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
+      "specs": "API GL-5 / MT-1 (SEVERE GEAR® & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
       "service_life": "Hasta 100,000 millas en servicio normal o 50,000 millas en servicio severo/remolque."
     },
     "available_packages_official": [],
@@ -5218,7 +5217,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ffb0c6f9c95d43cb89b5a218e907e436~mv2.png",
         "bytes": 280263,
-        "short_label": "Vista Catálogo (SVG-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5229,7 +5228,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-severe-gear-75w-90-synthetic-gear-lube.webp",
         "bytes": 43162,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5244,7 +5243,7 @@ window.AMSOIL_CATALOG = [
     "line": "severe-gear-y-diferenciales",
     "line_name": "Lubricantes Sintéticos para Diferenciales y Transmisiones Manuales",
     "item_slug": "severe-gear-75w-140",
-    "display_name": "AMSOIL SEVERE GEAR 75W-140 100% Synthetic Gear Lube",
+    "display_name": "AMSOIL SEVERE GEAR® 75W-140 100% Synthetic Gear Lube",
     "viscosity": "75W-140",
     "amsoil_code": "SVO",
     "als_codes": [
@@ -5261,12 +5260,12 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.",
       "benefits": [
-        "SEVERE GEAR mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
+        "SEVERE GEAR® mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
         "Previene la ruptura térmica y el desgaste por picadura (pitting) en coronas y piñones bajo remolque extremo.",
         "Compatible con la mayoría de diferenciales de deslizamiento limitado (Limited-Slip).",
         "Disponible en práctico envase flexible Easy-Pack para cambios rápidos y limpios en lugares de difícil acceso."
       ],
-      "specs": "API GL-5 / MT-1 (Severe Gear & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
+      "specs": "API GL-5 / MT-1 (SEVERE GEAR® & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
       "service_life": "Hasta 100,000 millas en servicio normal o 50,000 millas en servicio severo/remolque."
     },
     "available_packages_official": [],
@@ -5356,7 +5355,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_dfa0d6e2d751452ea32f82bf09b72dba~mv2.jpg",
         "bytes": 120188,
-        "short_label": "Vista Catálogo (SVO-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5367,7 +5366,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-severe-gear-75w-140-synthetic-gear-lube.webp",
         "bytes": 44364,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5382,7 +5381,7 @@ window.AMSOIL_CATALOG = [
     "line": "severe-gear-y-diferenciales",
     "line_name": "Lubricantes Sintéticos para Diferenciales y Transmisiones Manuales",
     "item_slug": "severe-gear-80w-90",
-    "display_name": "AMSOIL SEVERE GEAR 80W-90 100% Synthetic Gear Lube",
+    "display_name": "AMSOIL SEVERE GEAR® 80W-90 100% Synthetic Gear Lube",
     "viscosity": "80W-90",
     "amsoil_code": "AGL",
     "als_codes": [
@@ -5399,12 +5398,12 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.",
       "benefits": [
-        "SEVERE GEAR mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
+        "SEVERE GEAR® mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
         "Previene la ruptura térmica y el desgaste por picadura (pitting) en coronas y piñones bajo remolque extremo.",
         "Compatible con la mayoría de diferenciales de deslizamiento limitado (Limited-Slip).",
         "Disponible en práctico envase flexible Easy-Pack para cambios rápidos y limpios en lugares de difícil acceso."
       ],
-      "specs": "API GL-5 / MT-1 (Severe Gear & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
+      "specs": "API GL-5 / MT-1 (SEVERE GEAR® & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
       "service_life": "Hasta 100,000 millas en servicio normal o 50,000 millas en servicio severo/remolque."
     },
     "available_packages_official": [],
@@ -5494,7 +5493,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ab9d97abe98f4ae8b7b1c6be383d375c~mv2.png",
         "bytes": 283283,
-        "short_label": "Vista Catálogo (AGL-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5505,7 +5504,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-severe-gear-80w-90-synthetic-gear-lube.webp",
         "bytes": 47570,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5537,12 +5536,12 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.",
       "benefits": [
-        "SEVERE GEAR mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
+        "SEVERE GEAR® mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
         "Previene la ruptura térmica y el desgaste por picadura (pitting) en coronas y piñones bajo remolque extremo.",
         "Compatible con la mayoría de diferenciales de deslizamiento limitado (Limited-Slip).",
         "Disponible en práctico envase flexible Easy-Pack para cambios rápidos y limpios en lugares de difícil acceso."
       ],
-      "specs": "API GL-5 / MT-1 (Severe Gear & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
+      "specs": "API GL-5 / MT-1 (SEVERE GEAR® & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
       "service_life": "Hasta 100,000 millas en servicio normal o 50,000 millas en servicio severo/remolque."
     },
     "available_packages_official": [
@@ -5657,7 +5656,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_e289d0a870f84e20b3411e3aa64de4da~mv2.jpg",
         "bytes": 43856,
-        "short_label": "Vista Catálogo (FGR-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5668,7 +5667,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-75w-90-long-life-synthetic-gear-lube.webp",
         "bytes": 27302,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5700,12 +5699,12 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.",
       "benefits": [
-        "SEVERE GEAR mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
+        "SEVERE GEAR® mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
         "Previene la ruptura térmica y el desgaste por picadura (pitting) en coronas y piñones bajo remolque extremo.",
         "Compatible con la mayoría de diferenciales de deslizamiento limitado (Limited-Slip).",
         "Disponible en práctico envase flexible Easy-Pack para cambios rápidos y limpios en lugares de difícil acceso."
       ],
-      "specs": "API GL-5 / MT-1 (Severe Gear & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
+      "specs": "API GL-5 / MT-1 (SEVERE GEAR® & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
       "service_life": "Hasta 100,000 millas en servicio normal o 50,000 millas en servicio severo/remolque."
     },
     "available_packages_official": [],
@@ -5773,7 +5772,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_8a7468b142394d0fa1e0c1921859b004~mv2.png",
         "bytes": 143667,
-        "short_label": "Vista Catálogo (MTG-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5784,7 +5783,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-75w-90-manual-transmission-transaxle-gear-lube.webp",
         "bytes": 48490,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5816,12 +5815,12 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.",
       "benefits": [
-        "SEVERE GEAR mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
+        "SEVERE GEAR® mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
         "Previene la ruptura térmica y el desgaste por picadura (pitting) en coronas y piñones bajo remolque extremo.",
         "Compatible con la mayoría de diferenciales de deslizamiento limitado (Limited-Slip).",
         "Disponible en práctico envase flexible Easy-Pack para cambios rápidos y limpios en lugares de difícil acceso."
       ],
-      "specs": "API GL-5 / MT-1 (Severe Gear & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
+      "specs": "API GL-5 / MT-1 (SEVERE GEAR® & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
       "service_life": "Hasta 100,000 millas en servicio normal o 50,000 millas en servicio severo/remolque."
     },
     "available_packages_official": [
@@ -5887,7 +5886,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_84906629881249879e6a22c128d436f8~mv2.jpg",
         "bytes": 39148,
-        "short_label": "Vista Catálogo (MTF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -5898,7 +5897,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-30-manual-synchromesh-transmission-fluid.webp",
         "bytes": 27858,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5913,7 +5912,7 @@ window.AMSOIL_CATALOG = [
     "line": "severe-gear-y-diferenciales",
     "line_name": "Lubricantes Sintéticos para Diferenciales y Transmisiones Manuales",
     "item_slug": "slip-lock-differential-additive",
-    "display_name": "AMSOIL Slip Lock Differential Additive",
+    "display_name": "AMSOIL Slip Lock® Differential Additive",
     "viscosity": "Especialidad",
     "amsoil_code": "ADA",
     "als_codes": [
@@ -5930,12 +5929,12 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de extrema presión (GL-5 y GL-4) diseñados para diferenciales hipoidales, ejes de arrastre pesado, vehículos 4x4, todoterreno y cajas de transmisión manual o sincronizadas.",
       "benefits": [
-        "SEVERE GEAR mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
+        "SEVERE GEAR® mantiene su viscosidad sin cizallarse (20% más protección en película fría y caliente que la competencia).",
         "Previene la ruptura térmica y el desgaste por picadura (pitting) en coronas y piñones bajo remolque extremo.",
         "Compatible con la mayoría de diferenciales de deslizamiento limitado (Limited-Slip).",
         "Disponible en práctico envase flexible Easy-Pack para cambios rápidos y limpios en lugares de difícil acceso."
       ],
-      "specs": "API GL-5 / MT-1 (Severe Gear & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
+      "specs": "API GL-5 / MT-1 (SEVERE GEAR® & Long Life), API GL-4 (Manual Transaxle 75W-90), Synchromesh (GM / Honda / Chrysler)",
       "service_life": "Hasta 100,000 millas en servicio normal o 50,000 millas en servicio severo/remolque."
     },
     "available_packages_official": [
@@ -5975,7 +5974,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-slip-lock-differential-additive.webp",
         "bytes": 47526,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -5990,7 +5989,7 @@ window.AMSOIL_CATALOG = [
     "line": "transmision-automatica-atf-cvt-dct",
     "line_name": "Fluidos 100% Sintéticos para Transmisión Automática (ATF, CVT, DCT)",
     "item_slug": "torque-drive-atf",
-    "display_name": "AMSOIL Torque-Drive 100% Synthetic Automatic Transmission Fluid",
+    "display_name": "AMSOIL Torque-Drive® 100% Synthetic Automatic Transmission Fluid",
     "viscosity": "ATF",
     "amsoil_code": "ATD",
     "als_codes": [
@@ -6017,7 +6016,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/torque-drive-atf",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -6108,7 +6107,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_b70a0617eb1b4469baf9be00aa7a213a~mv2.jpg",
         "bytes": 37287,
-        "short_label": "Vista Catálogo (ATD-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -6119,7 +6118,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-torque-drive-synthetic-automatic-transmission-fluid.webp",
         "bytes": 38778,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -6161,7 +6160,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/oe-multi-vehicle-atf-red",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -6267,7 +6266,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_a7c77aeb53da4d4ab9beec649e3020da~mv2.jpg",
         "bytes": 34922,
-        "short_label": "Vista Catálogo (OTF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -6278,7 +6277,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-oe-multi-vehicle-synthetic-automatic-transmission-fluid.webp",
         "bytes": 38726,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -6308,7 +6307,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/signature-series-multi-vehicle-atf-red",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -6415,7 +6414,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_40ec78a8bfc74ef5ac0213aea94d453b~mv2.png",
         "bytes": 178574,
-        "short_label": "Vista Catálogo (ATF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -6426,7 +6425,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-multi-vehicle-synthetic-atf.webp",
         "bytes": 31366,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -6462,7 +6461,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/oe-fuel-efficient-atf-blue",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -6568,7 +6567,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_a9eaf09f584c4904bef7168ea1282bdb~mv2.jpg",
         "bytes": 37451,
-        "short_label": "Vista Catálogo (OTL-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -6579,7 +6578,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-oe-fuel-efficient-synthetic-automatic-transmission-fluid.webp",
         "bytes": 39272,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -6609,7 +6608,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/signature-series-fuel-efficient-atf-blue",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -6705,7 +6704,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_38dbef9a12e8457c83b7c0ca20e3b30b~mv2.png",
         "bytes": 179000,
-        "short_label": "Vista Catálogo (ATL-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -6716,7 +6715,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-fuel-efficient-synthetic-atf.webp",
         "bytes": 44804,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -6746,7 +6745,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/cvt-fluid",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -6822,7 +6821,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-cvt-fluid.webp",
         "bytes": 27024,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -6852,7 +6851,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/dct-fluid",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -6898,7 +6897,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-dct-fluid.webp",
         "bytes": 27946,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -6928,7 +6927,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/signature-series-ulv-atf",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -7004,7 +7003,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_18b9b67d6d754e88abfb3b02afd8f494~mv2.jpg",
         "bytes": 436538,
-        "short_label": "Vista Catálogo (ULV-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7015,7 +7014,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-signature-series-ulv-synthetic-automatic-transmission-fluid.webp",
         "bytes": 49010,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -7030,7 +7029,7 @@ window.AMSOIL_CATALOG = [
     "line": "transmision-automatica-atf-cvt-dct",
     "line_name": "Fluidos 100% Sintéticos para Transmisión Automática (ATF, CVT, DCT)",
     "item_slug": "super-shift-racing-atf",
-    "display_name": "AMSOIL Super Shift Racing Transmission Fluid",
+    "display_name": "AMSOIL Super Shift® Racing Transmission Fluid",
     "viscosity": "ATF",
     "amsoil_code": "ART",
     "als_codes": [
@@ -7045,7 +7044,7 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "03-transmision-y-diferenciales/transmision-automatica-atf-cvt-dct/super-shift-racing-atf",
     "tech_sheet": {
-      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive).",
+      "summary": "Gama completa de fluidos 100% sintéticos para cajas automáticas modernas de múltiples velocidades (6, 8, 9 y 10 cambios), transmisiones continuamente variables (CVT), doble embrague (DCT) y transmisiones de servicio pesado (Torque-Drive®).",
       "benefits": [
         "Excepcional resistencia al calor extremo y a la formación de barniz en cuerpos de válvulas y solenoides.",
         "Cambios suaves y precisos sin vibración (shudder) del convertidor de par.",
@@ -7106,7 +7105,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-super-shift-racing-transmission-fluid.webp",
         "bytes": 30016,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -7139,10 +7138,10 @@ window.AMSOIL_CATALOG = [
       "summary": "Fluidos sintéticos de alto punto de ebullición para sistemas de frenos (DOT 3/4 y Racing DOT 4), dirección hidráulica multi-vehículo, aceite de asentamiento de motores (Break-In), compresores (ISO 68), ensamblaje de motores y limpieza interna (Flush).",
       "benefits": [
         "Líquidos de frenos con altísimo punto de ebullición en seco y húmedo para evitar el pedal esponjoso (brake fade).",
-        "SABER Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
+        "SABER® Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
         "Engine & Transmission Flush disuelve lodos de forma segura en 15 minutos antes del cambio de aceite."
       ],
-      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER 2T)",
+      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER® 2T)",
       "service_life": "Según aplicación y programa de mantenimiento preventivo."
     },
     "available_packages_official": [
@@ -7182,7 +7181,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_10196ca9c53b4f71a397a944a2f4a566~mv2.jpg",
         "bytes": 50987,
-        "short_label": "Vista Catálogo (BFLV-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7193,7 +7192,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-dot-3-and-dot-4-synthetic-brake-fluid.webp",
         "bytes": 41588,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -7208,7 +7207,7 @@ window.AMSOIL_CATALOG = [
     "line": "fluidos-frenos-direccion-varios",
     "line_name": "Fluidos de Frenos, Dirección Hidráulica, Compresores y Especialidades",
     "item_slug": "dominator-dot-4-racing-brake-fluid",
-    "display_name": "AMSOIL DOMINATOR DOT 4 100% Synthetic Racing Brake Fluid",
+    "display_name": "AMSOIL DOMINATOR® DOT 4 100% Synthetic Racing Brake Fluid",
     "viscosity": "DOT 4",
     "amsoil_code": "BFR",
     "als_codes": [
@@ -7226,10 +7225,10 @@ window.AMSOIL_CATALOG = [
       "summary": "Fluidos sintéticos de alto punto de ebullición para sistemas de frenos (DOT 3/4 y Racing DOT 4), dirección hidráulica multi-vehículo, aceite de asentamiento de motores (Break-In), compresores (ISO 68), ensamblaje de motores y limpieza interna (Flush).",
       "benefits": [
         "Líquidos de frenos con altísimo punto de ebullición en seco y húmedo para evitar el pedal esponjoso (brake fade).",
-        "SABER Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
+        "SABER® Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
         "Engine & Transmission Flush disuelve lodos de forma segura en 15 minutos antes del cambio de aceite."
       ],
-      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER 2T)",
+      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER® 2T)",
       "service_life": "Según aplicación y programa de mantenimiento preventivo."
     },
     "available_packages_official": [
@@ -7269,7 +7268,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_8c9f5ccf82184c5da3d389ff85392e33~mv2.jpg",
         "bytes": 44701,
-        "short_label": "Vista Catálogo (BFR-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7280,7 +7279,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-dominator-dot-4-synthetic-racing-brake-fluid.webp",
         "bytes": 40604,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -7313,10 +7312,10 @@ window.AMSOIL_CATALOG = [
       "summary": "Fluidos sintéticos de alto punto de ebullición para sistemas de frenos (DOT 3/4 y Racing DOT 4), dirección hidráulica multi-vehículo, aceite de asentamiento de motores (Break-In), compresores (ISO 68), ensamblaje de motores y limpieza interna (Flush).",
       "benefits": [
         "Líquidos de frenos con altísimo punto de ebullición en seco y húmedo para evitar el pedal esponjoso (brake fade).",
-        "SABER Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
+        "SABER® Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
         "Engine & Transmission Flush disuelve lodos de forma segura en 15 minutos antes del cambio de aceite."
       ],
-      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER 2T)",
+      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER® 2T)",
       "service_life": "Según aplicación y programa de mantenimiento preventivo."
     },
     "available_packages_official": [
@@ -7386,7 +7385,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-multi-vehicle-power-steering-fluid.webp",
         "bytes": 25700,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -7419,10 +7418,10 @@ window.AMSOIL_CATALOG = [
       "summary": "Fluidos sintéticos de alto punto de ebullición para sistemas de frenos (DOT 3/4 y Racing DOT 4), dirección hidráulica multi-vehículo, aceite de asentamiento de motores (Break-In), compresores (ISO 68), ensamblaje de motores y limpieza interna (Flush).",
       "benefits": [
         "Líquidos de frenos con altísimo punto de ebullición en seco y húmedo para evitar el pedal esponjoso (brake fade).",
-        "SABER Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
+        "SABER® Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
         "Engine & Transmission Flush disuelve lodos de forma segura en 15 minutos antes del cambio de aceite."
       ],
-      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER 2T)",
+      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER® 2T)",
       "service_life": "Según aplicación y programa de mantenimiento preventivo."
     },
     "available_packages_official": [
@@ -7462,7 +7461,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-engine-assembly-lube.webp",
         "bytes": 46146,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -7495,10 +7494,10 @@ window.AMSOIL_CATALOG = [
       "summary": "Fluidos sintéticos de alto punto de ebullición para sistemas de frenos (DOT 3/4 y Racing DOT 4), dirección hidráulica multi-vehículo, aceite de asentamiento de motores (Break-In), compresores (ISO 68), ensamblaje de motores y limpieza interna (Flush).",
       "benefits": [
         "Líquidos de frenos con altísimo punto de ebullición en seco y húmedo para evitar el pedal esponjoso (brake fade).",
-        "SABER Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
+        "SABER® Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
         "Engine & Transmission Flush disuelve lodos de forma segura en 15 minutos antes del cambio de aceite."
       ],
-      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER 2T)",
+      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER® 2T)",
       "service_life": "Según aplicación y programa de mantenimiento preventivo."
     },
     "available_packages_official": [
@@ -7538,7 +7537,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_97765544ab0841e29b8a25716088ffbd~mv2.jpg",
         "bytes": 37782,
-        "short_label": "Vista Catálogo (BRK-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7549,7 +7548,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-sae-30-break-in-oil.webp",
         "bytes": 35922,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -7582,10 +7581,10 @@ window.AMSOIL_CATALOG = [
       "summary": "Fluidos sintéticos de alto punto de ebullición para sistemas de frenos (DOT 3/4 y Racing DOT 4), dirección hidráulica multi-vehículo, aceite de asentamiento de motores (Break-In), compresores (ISO 68), ensamblaje de motores y limpieza interna (Flush).",
       "benefits": [
         "Líquidos de frenos con altísimo punto de ebullición en seco y húmedo para evitar el pedal esponjoso (brake fade).",
-        "SABER Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
+        "SABER® Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
         "Engine & Transmission Flush disuelve lodos de forma segura en 15 minutos antes del cambio de aceite."
       ],
-      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER 2T)",
+      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER® 2T)",
       "service_life": "Según aplicación y programa de mantenimiento preventivo."
     },
     "available_packages_official": [
@@ -7670,7 +7669,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_3705911197344bf0b17cadcd812103b0~mv2.jpg",
         "bytes": 4285891,
-        "short_label": "Vista Catálogo (PCJ-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7681,7 +7680,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-iso-68-synthetic-compressor-oil.webp",
         "bytes": 28854,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -7696,7 +7695,7 @@ window.AMSOIL_CATALOG = [
     "line": "fluidos-frenos-direccion-varios",
     "line_name": "Fluidos de Frenos, Dirección Hidráulica, Compresores y Especialidades",
     "item_slug": "saber-professional-2-stroke",
-    "display_name": "AMSOIL SABER Professional 100% Synthetic 2-Stroke Oil",
+    "display_name": "AMSOIL SABER® Professional 100% Synthetic 2-Stroke Oil",
     "viscosity": "2-Tiempos",
     "amsoil_code": "ATP",
     "als_codes": [
@@ -7714,10 +7713,10 @@ window.AMSOIL_CATALOG = [
       "summary": "Fluidos sintéticos de alto punto de ebullición para sistemas de frenos (DOT 3/4 y Racing DOT 4), dirección hidráulica multi-vehículo, aceite de asentamiento de motores (Break-In), compresores (ISO 68), ensamblaje de motores y limpieza interna (Flush).",
       "benefits": [
         "Líquidos de frenos con altísimo punto de ebullición en seco y húmedo para evitar el pedal esponjoso (brake fade).",
-        "SABER Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
+        "SABER® Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
         "Engine & Transmission Flush disuelve lodos de forma segura en 15 minutos antes del cambio de aceite."
       ],
-      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER 2T)",
+      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER® 2T)",
       "service_life": "Según aplicación y programa de mantenimiento preventivo."
     },
     "available_packages_official": [
@@ -7833,7 +7832,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_d06c1ab51d8e499cb8e6cae823b1e701~mv2.png",
         "bytes": 74532,
-        "short_label": "Vista Catálogo (ATP-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7844,7 +7843,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_5122860b78ca48b886d825b3a5f970fc~mv2.png",
         "bytes": 78732,
-        "short_label": "Vista Catálogo (ATP-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7855,7 +7854,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_94565dc346f54c9eb6463e8b6772891b~mv2.png",
         "bytes": 82857,
-        "short_label": "Vista Catálogo (ATP-3)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7866,7 +7865,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_64a95426d87d4c8287aab686932390ea~mv2.png",
         "bytes": 108108,
-        "short_label": "Vista Catálogo (ATP-4)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7877,7 +7876,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_4f897aa60a014e3889e766390a29e7a4~mv2.png",
         "bytes": 104656,
-        "short_label": "Vista Catálogo (ATP-5)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7888,7 +7887,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ec6e715a175b46bca7ec86f9707e2d03~mv2.png",
         "bytes": 127120,
-        "short_label": "Vista Catálogo (ATP-6)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7899,7 +7898,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_9547b92fad1d41129bdc94e05be122f4~mv2.png",
         "bytes": 1082004,
-        "short_label": "Vista Catálogo (ATP-7)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7910,7 +7909,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_640165170be44c75bd4417165575a4a0~mv2.png",
         "bytes": 192491,
-        "short_label": "Vista Catálogo (ATP-8)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -7921,7 +7920,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-saber-professional-synthetic-2-stroke-oil.webp",
         "bytes": 44436,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       },
       {
@@ -7998,10 +7997,10 @@ window.AMSOIL_CATALOG = [
       "summary": "Fluidos sintéticos de alto punto de ebullición para sistemas de frenos (DOT 3/4 y Racing DOT 4), dirección hidráulica multi-vehículo, aceite de asentamiento de motores (Break-In), compresores (ISO 68), ensamblaje de motores y limpieza interna (Flush).",
       "benefits": [
         "Líquidos de frenos con altísimo punto de ebullición en seco y húmedo para evitar el pedal esponjoso (brake fade).",
-        "SABER Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
+        "SABER® Professional 2-Stroke elimina el humo y estabiliza el combustible a cualquier proporción (hasta 100:1).",
         "Engine & Transmission Flush disuelve lodos de forma segura en 15 minutos antes del cambio de aceite."
       ],
-      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER 2T)",
+      "specs": "FMVSS 116 DOT 3 / DOT 4, ISO VG 68 (Compresores), JASO FD / ISO-L-EGD (SABER® 2T)",
       "service_life": "Según aplicación y programa de mantenimiento preventivo."
     },
     "available_packages_official": [
@@ -8056,7 +8055,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_45eaabda459344adb10a488a29f3be98~mv2.png",
         "bytes": 98954,
-        "short_label": "Vista Catálogo (FLSH-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8067,7 +8066,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-engine-and-transmission-flush.webp",
         "bytes": 26484,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -8099,10 +8098,10 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Tratamientos concentrados de grado profesional para limpiar inyectores, cámaras de combustión y válvulas, lubricar la parte superior del cilindro y elevar el índice de octano o cetano.",
       "benefits": [
-        "P.i. Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
+        "P.i.® Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
         "Diesel Injector Clean + Cetane Boost limpia inyectores diésel, lubrica bombas de alta presión y eleva el cetano hasta en 8 puntos.",
         "Upper Cylinder Lubricant reduce en 18% el desgaste de anillos y cilindros en cada tanqueada.",
-        "DOMINATOR Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
+        "DOMINATOR® Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
       ],
       "specs": "Seguros para convertidores catalíticos, sensores de oxígeno, turbos y filtros de partículas diésel (DPF).",
       "service_life": "Uso continuo en cada tanqueada o tratamiento periódico cada 4,000 millas."
@@ -8182,7 +8181,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_3f71a76a855c4da0ba5195416dba7967~mv2.jpg",
         "bytes": 29655,
-        "short_label": "Vista Catálogo (ADS-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8193,7 +8192,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_ae13a4101f6c4544a18326521b365452~mv2.jpg",
         "bytes": 67877,
-        "short_label": "Vista Catálogo (ADS-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8204,7 +8203,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-diesel-injector-clean-cetane-boost-fuel-additive.webp",
         "bytes": 27130,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -8236,10 +8235,10 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Tratamientos concentrados de grado profesional para limpiar inyectores, cámaras de combustión y válvulas, lubricar la parte superior del cilindro y elevar el índice de octano o cetano.",
       "benefits": [
-        "P.i. Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
+        "P.i.® Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
         "Diesel Injector Clean + Cetane Boost limpia inyectores diésel, lubrica bombas de alta presión y eleva el cetano hasta en 8 puntos.",
         "Upper Cylinder Lubricant reduce en 18% el desgaste de anillos y cilindros en cada tanqueada.",
-        "DOMINATOR Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
+        "DOMINATOR® Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
       ],
       "specs": "Seguros para convertidores catalíticos, sensores de oxígeno, turbos y filtros de partículas diésel (DPF).",
       "service_life": "Uso continuo en cada tanqueada o tratamiento periódico cada 4,000 millas."
@@ -8276,7 +8275,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-upper-cylinder-lubricant-corrosion-inhibitor.webp",
         "bytes": 21406,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -8291,7 +8290,7 @@ window.AMSOIL_CATALOG = [
     "line": "aditivos-combustible",
     "line_name": "Aditivos Sintéticos de Combustible (Diésel y Gasolina)",
     "item_slug": "dominator-octane-boost",
-    "display_name": "AMSOIL DOMINATOR Octane Boost",
+    "display_name": "AMSOIL DOMINATOR® Octane Boost",
     "viscosity": "Especialidad",
     "amsoil_code": "AOB",
     "als_codes": [
@@ -8308,10 +8307,10 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Tratamientos concentrados de grado profesional para limpiar inyectores, cámaras de combustión y válvulas, lubricar la parte superior del cilindro y elevar el índice de octano o cetano.",
       "benefits": [
-        "P.i. Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
+        "P.i.® Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
         "Diesel Injector Clean + Cetane Boost limpia inyectores diésel, lubrica bombas de alta presión y eleva el cetano hasta en 8 puntos.",
         "Upper Cylinder Lubricant reduce en 18% el desgaste de anillos y cilindros en cada tanqueada.",
-        "DOMINATOR Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
+        "DOMINATOR® Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
       ],
       "specs": "Seguros para convertidores catalíticos, sensores de oxígeno, turbos y filtros de partículas diésel (DPF).",
       "service_life": "Uso continuo en cada tanqueada o tratamiento periódico cada 4,000 millas."
@@ -8353,7 +8352,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_458d4bff6da1426b86651e498981f1ec~mv2.jpg",
         "bytes": 28428,
-        "short_label": "Vista Catálogo (AOB-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8364,7 +8363,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-dominator-octane-boost.webp",
         "bytes": 29634,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -8379,7 +8378,7 @@ window.AMSOIL_CATALOG = [
     "line": "aditivos-combustible",
     "line_name": "Aditivos Sintéticos de Combustible (Diésel y Gasolina)",
     "item_slug": "pi-performance-improver",
-    "display_name": "AMSOIL P.i. Performance Improver Gasoline Additive",
+    "display_name": "AMSOIL P.i.® Performance Improver Gasoline Additive",
     "viscosity": "Especialidad",
     "amsoil_code": "API",
     "als_codes": [
@@ -8396,10 +8395,10 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Tratamientos concentrados de grado profesional para limpiar inyectores, cámaras de combustión y válvulas, lubricar la parte superior del cilindro y elevar el índice de octano o cetano.",
       "benefits": [
-        "P.i. Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
+        "P.i.® Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
         "Diesel Injector Clean + Cetane Boost limpia inyectores diésel, lubrica bombas de alta presión y eleva el cetano hasta en 8 puntos.",
         "Upper Cylinder Lubricant reduce en 18% el desgaste de anillos y cilindros en cada tanqueada.",
-        "DOMINATOR Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
+        "DOMINATOR® Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
       ],
       "specs": "Seguros para convertidores catalíticos, sensores de oxígeno, turbos y filtros de partículas diésel (DPF).",
       "service_life": "Uso continuo en cada tanqueada o tratamiento periódico cada 4,000 millas."
@@ -8436,7 +8435,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_a82f47fc76414455af4e4a5bd9798695~mv2.png",
         "bytes": 99912,
-        "short_label": "Vista Catálogo (API-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8447,7 +8446,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-p-i-performance-improver-gasoline-additive.webp",
         "bytes": 23480,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -8479,10 +8478,10 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Tratamientos concentrados de grado profesional para limpiar inyectores, cámaras de combustión y válvulas, lubricar la parte superior del cilindro y elevar el índice de octano o cetano.",
       "benefits": [
-        "P.i. Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
+        "P.i.® Performance Improver restaura hasta el 14% de la potencia y limpia inyectores GDI y de puerto en un solo tanque.",
         "Diesel Injector Clean + Cetane Boost limpia inyectores diésel, lubrica bombas de alta presión y eleva el cetano hasta en 8 puntos.",
         "Upper Cylinder Lubricant reduce en 18% el desgaste de anillos y cilindros en cada tanqueada.",
-        "DOMINATOR Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
+        "DOMINATOR® Octane Boost eleva el octanaje hasta en 4 números para eliminar el cascabeleo (knock)."
       ],
       "specs": "Seguros para convertidores catalíticos, sensores de oxígeno, turbos y filtros de partículas diésel (DPF).",
       "service_life": "Uso continuo en cada tanqueada o tratamiento periódico cada 4,000 millas."
@@ -8524,7 +8523,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_6bbdeedbc7df45838f407f23935917ad~mv2.jpg",
         "bytes": 19071,
-        "short_label": "Vista Catálogo (MOB-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8535,7 +8534,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-motorcycle-octane-boost.webp",
         "bytes": 35980,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -8550,7 +8549,7 @@ window.AMSOIL_CATALOG = [
     "line": "grasas-y-lubricantes",
     "line_name": "Grasas 100% Sintéticas de Complejo de Litio y Lubricantes de Cadena",
     "item_slug": "polymeric-off-road-grease-nlgi-2",
-    "display_name": "AMSOIL NLGI #2 Synthetic Polymeric Off-Road Grease",
+    "display_name": "AMSOIL NLGI #2 100% Synthetic Polymeric Off-Road Grease",
     "viscosity": "NLGI #2",
     "amsoil_code": "GPOR2",
     "als_codes": [
@@ -8649,7 +8648,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_3c5191f345904bad815fd0af33650238~mv2.jpg",
         "bytes": 37188,
-        "short_label": "Vista Catálogo (GPOR2-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8660,7 +8659,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-nlgi-2-synthetic-polymeric-off-road-grease.webp",
         "bytes": 33980,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       },
       {
@@ -8773,7 +8772,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_a4727ff0c346423e89c380098e530a2a~mv2.png",
         "bytes": 289758,
-        "short_label": "Vista Catálogo (ACL-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8784,7 +8783,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-chain-lube.webp",
         "bytes": 41276,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -8799,7 +8798,7 @@ window.AMSOIL_CATALOG = [
     "line": "grasas-y-lubricantes",
     "line_name": "Grasas 100% Sintéticas de Complejo de Litio y Lubricantes de Cadena",
     "item_slug": "multi-purpose-grease-nlgi-2",
-    "display_name": "AMSOIL Synthetic Multi-Purpose Grease NLGI #2",
+    "display_name": "AMSOIL NLGI #2 100% Synthetic Multi-Purpose Grease",
     "viscosity": "NLGI #2",
     "amsoil_code": "GLC",
     "als_codes": [
@@ -8898,7 +8897,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_30aea2458d0b4ea28d8b44ffc89648ea~mv2.jpg",
         "bytes": 449032,
-        "short_label": "Vista Catálogo (GLC-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -8909,7 +8908,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-multi-purpose-grease.webp",
         "bytes": 22650,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       },
       {
@@ -8946,7 +8945,7 @@ window.AMSOIL_CATALOG = [
     "line": "grasas-y-lubricantes",
     "line_name": "Grasas 100% Sintéticas de Complejo de Litio y Lubricantes de Cadena",
     "item_slug": "red-grease-120-lbs",
-    "display_name": "AMSOIL 100% Synthetic Red Grease (Cuñete 120 lbs / Línea GLC)",
+    "display_name": "AMSOIL NLGI #2 100% Synthetic Multi-Purpose Red Grease (120 lb)",
     "viscosity": "Especialidad",
     "amsoil_code": "GLC",
     "als_codes": [
@@ -9045,7 +9044,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_1edb04c809fc4b379d61c4abb15a6f00~mv2.jpg",
         "bytes": 40891,
-        "short_label": "Vista Catálogo (GLC-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -9056,7 +9055,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-multi-purpose-grease.webp",
         "bytes": 22650,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       },
       {
@@ -9108,11 +9107,11 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "05-aditivos-grasas-coolant-varios/coolant-anticongelante/passenger-car-antifreeze-50-50-yellow",
     "tech_sheet": {
-      "summary": "Refrigerantes pre-diluidos 50/50 de ácidos orgánicos híbridos (HOAT) libres de fosfatos, boratos y aminas para vehículos livianos, equipo pesado diésel y motocicletas/ATV, además del aditivo reductor de temperatura DOMINATOR Coolant Boost.",
+      "summary": "Refrigerantes pre-diluidos 50/50 de ácidos orgánicos híbridos (HOAT) libres de fosfatos, boratos y aminas para vehículos livianos, equipo pesado diésel y motocicletas/ATV, además del aditivo reductor de temperatura DOMINATOR® Coolant Boost.",
       "benefits": [
         "Protección superior contra la cavitación de camisas húmedas, corrosión galvánica y formación de incrustaciones.",
         "Compatible con todos los colores y tipos de anticongelantes etilenglicol y propilenglicol.",
-        "DOMINATOR Coolant Boost reduce la temperatura del motor hasta en 25 °F (14 °C) y acelera el calentamiento."
+        "DOMINATOR® Coolant Boost reduce la temperatura del motor hasta en 25 °F (14 °C) y acelera el calentamiento."
       ],
       "specs": "ASTM D3306, D4985, D6210, Cummins, Caterpillar EC-1, Detroit Diesel, Mack, Paccar, OEM Automotriz",
       "service_life": "Hasta 150,000 millas (5 años) en autos livianos y hasta 1,000,000 de millas (8 años) en servicio pesado."
@@ -9171,7 +9170,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-passenger-car-light-truck-antifreeze-coolant.webp",
         "bytes": 50218,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -9201,11 +9200,11 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "05-aditivos-grasas-coolant-varios/coolant-anticongelante/heavy-duty-antifreeze-50-50-red",
     "tech_sheet": {
-      "summary": "Refrigerantes pre-diluidos 50/50 de ácidos orgánicos híbridos (HOAT) libres de fosfatos, boratos y aminas para vehículos livianos, equipo pesado diésel y motocicletas/ATV, además del aditivo reductor de temperatura DOMINATOR Coolant Boost.",
+      "summary": "Refrigerantes pre-diluidos 50/50 de ácidos orgánicos híbridos (HOAT) libres de fosfatos, boratos y aminas para vehículos livianos, equipo pesado diésel y motocicletas/ATV, además del aditivo reductor de temperatura DOMINATOR® Coolant Boost.",
       "benefits": [
         "Protección superior contra la cavitación de camisas húmedas, corrosión galvánica y formación de incrustaciones.",
         "Compatible con todos los colores y tipos de anticongelantes etilenglicol y propilenglicol.",
-        "DOMINATOR Coolant Boost reduce la temperatura del motor hasta en 25 °F (14 °C) y acelera el calentamiento."
+        "DOMINATOR® Coolant Boost reduce la temperatura del motor hasta en 25 °F (14 °C) y acelera el calentamiento."
       ],
       "specs": "ASTM D3306, D4985, D6210, Cummins, Caterpillar EC-1, Detroit Diesel, Mack, Paccar, OEM Automotriz",
       "service_life": "Hasta 150,000 millas (5 años) en autos livianos y hasta 1,000,000 de millas (8 años) en servicio pesado."
@@ -9264,7 +9263,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_58290ac32eea43d5a71bae799ff2e193~mv2.jpg",
         "bytes": 36991,
-        "short_label": "Vista Catálogo (ANTHD-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -9275,7 +9274,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-heavy-duty-antifreeze-coolant.webp",
         "bytes": 49460,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -9305,11 +9304,11 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "05-aditivos-grasas-coolant-varios/coolant-anticongelante/powersports-antifreeze-coolant",
     "tech_sheet": {
-      "summary": "Refrigerantes pre-diluidos 50/50 de ácidos orgánicos híbridos (HOAT) libres de fosfatos, boratos y aminas para vehículos livianos, equipo pesado diésel y motocicletas/ATV, además del aditivo reductor de temperatura DOMINATOR Coolant Boost.",
+      "summary": "Refrigerantes pre-diluidos 50/50 de ácidos orgánicos híbridos (HOAT) libres de fosfatos, boratos y aminas para vehículos livianos, equipo pesado diésel y motocicletas/ATV, además del aditivo reductor de temperatura DOMINATOR® Coolant Boost.",
       "benefits": [
         "Protección superior contra la cavitación de camisas húmedas, corrosión galvánica y formación de incrustaciones.",
         "Compatible con todos los colores y tipos de anticongelantes etilenglicol y propilenglicol.",
-        "DOMINATOR Coolant Boost reduce la temperatura del motor hasta en 25 °F (14 °C) y acelera el calentamiento."
+        "DOMINATOR® Coolant Boost reduce la temperatura del motor hasta en 25 °F (14 °C) y acelera el calentamiento."
       ],
       "specs": "ASTM D3306, D4985, D6210, Cummins, Caterpillar EC-1, Detroit Diesel, Mack, Paccar, OEM Automotriz",
       "service_life": "Hasta 150,000 millas (5 años) en autos livianos y hasta 1,000,000 de millas (8 años) en servicio pesado."
@@ -9351,7 +9350,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_713dca1d07b4483dabc7714d25ab86b0~mv2.png",
         "bytes": 194492,
-        "short_label": "Vista Catálogo (PSAF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -9362,7 +9361,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-powersports-antifreeze-coolant.webp",
         "bytes": 32736,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -9377,7 +9376,7 @@ window.AMSOIL_CATALOG = [
     "line": "coolant-anticongelante",
     "line_name": "Anticongelantes / Coolants de Larga Duración y Mejoradores Térmicos",
     "item_slug": "dominator-coolant-boost",
-    "display_name": "AMSOIL DOMINATOR Coolant Boost",
+    "display_name": "AMSOIL DOMINATOR® Coolant Boost",
     "viscosity": "Especialidad",
     "amsoil_code": "RDCB",
     "als_codes": [
@@ -9392,11 +9391,11 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "05-aditivos-grasas-coolant-varios/coolant-anticongelante/dominator-coolant-boost",
     "tech_sheet": {
-      "summary": "Refrigerantes pre-diluidos 50/50 de ácidos orgánicos híbridos (HOAT) libres de fosfatos, boratos y aminas para vehículos livianos, equipo pesado diésel y motocicletas/ATV, además del aditivo reductor de temperatura DOMINATOR Coolant Boost.",
+      "summary": "Refrigerantes pre-diluidos 50/50 de ácidos orgánicos híbridos (HOAT) libres de fosfatos, boratos y aminas para vehículos livianos, equipo pesado diésel y motocicletas/ATV, además del aditivo reductor de temperatura DOMINATOR® Coolant Boost.",
       "benefits": [
         "Protección superior contra la cavitación de camisas húmedas, corrosión galvánica y formación de incrustaciones.",
         "Compatible con todos los colores y tipos de anticongelantes etilenglicol y propilenglicol.",
-        "DOMINATOR Coolant Boost reduce la temperatura del motor hasta en 25 °F (14 °C) y acelera el calentamiento."
+        "DOMINATOR® Coolant Boost reduce la temperatura del motor hasta en 25 °F (14 °C) y acelera el calentamiento."
       ],
       "specs": "ASTM D3306, D4985, D6210, Cummins, Caterpillar EC-1, Detroit Diesel, Mack, Paccar, OEM Automotriz",
       "service_life": "Hasta 150,000 millas (5 años) en autos livianos y hasta 1,000,000 de millas (8 años) en servicio pesado."
@@ -9438,7 +9437,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_20dd3b4fe8344426a26b9ff67007eda2~mv2.jpg",
         "bytes": 36137,
-        "short_label": "Vista Catálogo (RDCB-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -9449,7 +9448,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-dominator-coolant-boost.webp",
         "bytes": 29208,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -9479,11 +9478,11 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "04-motocicletas-atv-marino/4t-motorcycle/10w-30",
     "tech_sheet": {
-      "summary": "Aceite 100% sintético diseñado para motocicletas de 4 tiempos enfriadas por aire o líquido con motor, caja de cambios y embrague húmedo integrados, junto con el fluido sintético de suspensión Shock Therapy.",
+      "summary": "Aceite 100% sintético diseñado para motocicletas de 4 tiempos enfriadas por aire o líquido con motor, caja de cambios y embrague húmedo integrados, junto con el fluido sintético de suspensión Shock Therapy®.",
       "benefits": [
         "Fricción optimizada sin modificadores resbaladizos para un acople firme del embrague húmedo (JASO MA2).",
         "Alta estabilidad al cizallamiento en los engranajes de la transmisión.",
-        "Shock Therapy controla la fricción y evita la aireación/espuma en horquillas y amortiguadores."
+        "Shock Therapy® controla la fricción y evita la aireación/espuma en horquillas y amortiguadores."
       ],
       "specs": "API SN / SM, JASO MA / MA2",
       "service_life": "Hasta 2X el intervalo recomendado por el fabricante de la motocicleta."
@@ -9509,7 +9508,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_2e12ca52584a4417afd36c5a397c289c~mv2.jpg",
         "bytes": 30231,
-        "short_label": "Vista Catálogo (MC3-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       }
     ]
@@ -9545,11 +9544,11 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "04-motocicletas-atv-marino/4t-motorcycle/10w-40",
     "tech_sheet": {
-      "summary": "Aceite 100% sintético diseñado para motocicletas de 4 tiempos enfriadas por aire o líquido con motor, caja de cambios y embrague húmedo integrados, junto con el fluido sintético de suspensión Shock Therapy.",
+      "summary": "Aceite 100% sintético diseñado para motocicletas de 4 tiempos enfriadas por aire o líquido con motor, caja de cambios y embrague húmedo integrados, junto con el fluido sintético de suspensión Shock Therapy®.",
       "benefits": [
         "Fricción optimizada sin modificadores resbaladizos para un acople firme del embrague húmedo (JASO MA2).",
         "Alta estabilidad al cizallamiento en los engranajes de la transmisión.",
-        "Shock Therapy controla la fricción y evita la aireación/espuma en horquillas y amortiguadores."
+        "Shock Therapy® controla la fricción y evita la aireación/espuma en horquillas y amortiguadores."
       ],
       "specs": "API SN / SM, JASO MA / MA2",
       "service_life": "Hasta 2X el intervalo recomendado por el fabricante de la motocicleta."
@@ -9575,7 +9574,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_0d37a06995c7400fb229caf29325cbb8~mv2.jpg",
         "bytes": 29664,
-        "short_label": "Vista Catálogo (MC4-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       }
     ]
@@ -9605,11 +9604,11 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "04-motocicletas-atv-marino/4t-motorcycle/20w-50",
     "tech_sheet": {
-      "summary": "Aceite 100% sintético diseñado para motocicletas de 4 tiempos enfriadas por aire o líquido con motor, caja de cambios y embrague húmedo integrados, junto con el fluido sintético de suspensión Shock Therapy.",
+      "summary": "Aceite 100% sintético diseñado para motocicletas de 4 tiempos enfriadas por aire o líquido con motor, caja de cambios y embrague húmedo integrados, junto con el fluido sintético de suspensión Shock Therapy®.",
       "benefits": [
         "Fricción optimizada sin modificadores resbaladizos para un acople firme del embrague húmedo (JASO MA2).",
         "Alta estabilidad al cizallamiento en los engranajes de la transmisión.",
-        "Shock Therapy controla la fricción y evita la aireación/espuma en horquillas y amortiguadores."
+        "Shock Therapy® controla la fricción y evita la aireación/espuma en horquillas y amortiguadores."
       ],
       "specs": "API SN / SM, JASO MA / MA2",
       "service_life": "Hasta 2X el intervalo recomendado por el fabricante de la motocicleta."
@@ -9635,7 +9634,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_a2a611857a4c4e1e8c0283e577731ae8~mv2.jpg",
         "bytes": 29702,
-        "short_label": "Vista Catálogo (MC5-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       }
     ]
@@ -9650,7 +9649,7 @@ window.AMSOIL_CATALOG = [
     "line": "4t-motorcycle",
     "line_name": "Serie 4T Performance para Motocicletas y Suspensión",
     "item_slug": "shock-therapy-suspension-fluid-10",
-    "display_name": "AMSOIL Shock Therapy #10 Medium Suspension Fluid",
+    "display_name": "AMSOIL Shock Therapy® #10 Medium Suspension Fluid",
     "viscosity": "Especialidad",
     "amsoil_code": "STM",
     "als_codes": [
@@ -9665,11 +9664,11 @@ window.AMSOIL_CATALOG = [
     ],
     "folder": "04-motocicletas-atv-marino/4t-motorcycle/shock-therapy-suspension-fluid-10",
     "tech_sheet": {
-      "summary": "Aceite 100% sintético diseñado para motocicletas de 4 tiempos enfriadas por aire o líquido con motor, caja de cambios y embrague húmedo integrados, junto con el fluido sintético de suspensión Shock Therapy.",
+      "summary": "Aceite 100% sintético diseñado para motocicletas de 4 tiempos enfriadas por aire o líquido con motor, caja de cambios y embrague húmedo integrados, junto con el fluido sintético de suspensión Shock Therapy®.",
       "benefits": [
         "Fricción optimizada sin modificadores resbaladizos para un acople firme del embrague húmedo (JASO MA2).",
         "Alta estabilidad al cizallamiento en los engranajes de la transmisión.",
-        "Shock Therapy controla la fricción y evita la aireación/espuma en horquillas y amortiguadores."
+        "Shock Therapy® controla la fricción y evita la aireación/espuma en horquillas y amortiguadores."
       ],
       "specs": "API SN / SM, JASO MA / MA2",
       "service_life": "Hasta 2X el intervalo recomendado por el fabricante de la motocicleta."
@@ -9741,7 +9740,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_f7e20549256b4ac9b95e32c43f9e8449~mv2.png",
         "bytes": 113161,
-        "short_label": "Vista Catálogo (STM-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -9752,7 +9751,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-shock-therapy-10-medium-suspension-fluid.webp",
         "bytes": 31572,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -9828,7 +9827,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_b37e1c3fb12e4fc29417debcd83576d0~mv2.jpg",
         "bytes": 121106,
-        "short_label": "Vista Catálogo (MCS-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -9839,7 +9838,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-sae-60-synthetic-v-twin-motorcycle-oil.webp",
         "bytes": 38104,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -9915,7 +9914,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_726319a6154643de85af368ba2d79331~mv2.jpg",
         "bytes": 104312,
-        "short_label": "Vista Catálogo (MSV-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -9926,7 +9925,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-15w-60-synthetic-v-twin-motorcycle-oil.webp",
         "bytes": 42428,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10017,7 +10016,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_b04747dfa4a946528053c899e5daa109~mv2.jpg",
         "bytes": 101973,
-        "short_label": "Vista Catálogo (MVI-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10028,7 +10027,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-20w-40-synthetic-v-twin-motorcycle-oil.webp",
         "bytes": 42328,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10149,7 +10148,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_a674b19604b74cdca99e6e0467aeec43~mv2.jpg",
         "bytes": 116196,
-        "short_label": "Vista Catálogo (MCV-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10160,7 +10159,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_86b9c802f55541248c77cb2e92988136~mv2.jpg",
         "bytes": 26126,
-        "short_label": "Vista Catálogo (MCV-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10171,7 +10170,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-20w-50-synthetic-v-twin-motorcycle-oil.webp",
         "bytes": 34726,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10236,7 +10235,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_9351800d3a1842219d44bbf5f997dd83~mv2.jpg",
         "bytes": 29561,
-        "short_label": "Vista Catálogo (MVP-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10247,7 +10246,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-v-twin-primary-fluid.webp",
         "bytes": 36830,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10323,7 +10322,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-v-twin-transmission-fluid.webp",
         "bytes": 37826,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10336,9 +10335,9 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motos, ATV y Marino",
     "category_icon": "🏍️",
     "line": "2-stroke",
-    "line_name": "Serie 2-Tiempos 100% Sintética (INTERCEPTOR y DOMINATOR)",
+    "line_name": "Serie 2-Tiempos 100% Sintética (INTERCEPTOR® y DOMINATOR®)",
     "item_slug": "dominator-2-stroke-racing",
-    "display_name": "AMSOIL DOMINATOR 100% Synthetic 2-Stroke Racing Oil",
+    "display_name": "AMSOIL DOMINATOR® 100% Synthetic 2-Stroke Racing Oil",
     "viscosity": "2-Tiempos",
     "amsoil_code": "TDR",
     "als_codes": [
@@ -10355,8 +10354,8 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de combustión limpia para motores de 2 tiempos de alto desempeño, motocross, enduro, karts, motos de agua y nieve, tanto en sistemas de inyección como en pre-mezcla.",
       "benefits": [
-        "INTERCEPTOR evita que las válvulas de escape (power valves / RAVE) se peguen por carbón.",
-        "DOMINATOR 2T entrega una película lubricante reforzada para motores de carreras modificados y altas RPM.",
+        "INTERCEPTOR® evita que las válvulas de escape (power valves / RAVE) se peguen por carbón.",
+        "DOMINATOR® 2T entrega una película lubricante reforzada para motores de carreras modificados y altas RPM.",
         "Combustión limpia con mínima emisión de humo."
       ],
       "specs": "API TC, JASO FD, ISO-L-EGD",
@@ -10444,7 +10443,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_9c817dd9ff144e759bd10e87ed88e860~mv2.jpg",
         "bytes": 27504,
-        "short_label": "Vista Catálogo (TDR-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10455,7 +10454,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_2ad82a0be0a744988458e68ee1cbbce3~mv2.png",
         "bytes": 196527,
-        "short_label": "Vista Catálogo (TDR-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10466,7 +10465,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-dominator-synthetic-2-stroke-racing-oil.webp",
         "bytes": 40664,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10479,9 +10478,9 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motos, ATV y Marino",
     "category_icon": "🏍️",
     "line": "2-stroke",
-    "line_name": "Serie 2-Tiempos 100% Sintética (INTERCEPTOR y DOMINATOR)",
+    "line_name": "Serie 2-Tiempos 100% Sintética (INTERCEPTOR® y DOMINATOR®)",
     "item_slug": "interceptor-2-stroke",
-    "display_name": "AMSOIL INTERCEPTOR 100% Synthetic 2-Stroke Oil",
+    "display_name": "AMSOIL INTERCEPTOR® 100% Synthetic 2-Stroke Oil",
     "viscosity": "2-Tiempos",
     "amsoil_code": "AIT",
     "als_codes": [
@@ -10498,8 +10497,8 @@ window.AMSOIL_CATALOG = [
     "tech_sheet": {
       "summary": "Aceites 100% sintéticos de combustión limpia para motores de 2 tiempos de alto desempeño, motocross, enduro, karts, motos de agua y nieve, tanto en sistemas de inyección como en pre-mezcla.",
       "benefits": [
-        "INTERCEPTOR evita que las válvulas de escape (power valves / RAVE) se peguen por carbón.",
-        "DOMINATOR 2T entrega una película lubricante reforzada para motores de carreras modificados y altas RPM.",
+        "INTERCEPTOR® evita que las válvulas de escape (power valves / RAVE) se peguen por carbón.",
+        "DOMINATOR® 2T entrega una película lubricante reforzada para motores de carreras modificados y altas RPM.",
         "Combustión limpia con mínima emisión de humo."
       ],
       "specs": "API TC, JASO FD, ISO-L-EGD",
@@ -10602,7 +10601,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_331cbe9ac77d4e66b61d3e5b34e13108~mv2.jpg",
         "bytes": 28140,
-        "short_label": "Vista Catálogo (AIT-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10613,7 +10612,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_fc0008a12cf54232b9f7f515209c2b4b~mv2.png",
         "bytes": 159927,
-        "short_label": "Vista Catálogo (AIT-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10624,7 +10623,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-interceptor-synthetic-2-stroke-oil.webp",
         "bytes": 32468,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10700,7 +10699,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_905eaad1ee5f427980c26a78e72b4365~mv2.jpg",
         "bytes": 30545,
-        "short_label": "Vista Catálogo (AUV54-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10711,7 +10710,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-40-synthetic-atv-utv-motor-oil.webp",
         "bytes": 34108,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10802,7 +10801,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_fb533c5d319744bbaa6eb140df6ada0e~mv2.jpg",
         "bytes": 30796,
-        "short_label": "Vista Catálogo (AUV50-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -10813,7 +10812,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-50-synthetic-atv-utv-motor-oil.webp",
         "bytes": 40602,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10889,7 +10888,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-10w-40-synthetic-atv-utv-motor-oil.webp",
         "bytes": 39518,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -10965,7 +10964,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-atv-utv-dual-clutch-transmission-fluid.webp",
         "bytes": 32420,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11056,7 +11055,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_5a3574d12ca64b8595c7b39987a552b6~mv2.jpg",
         "bytes": 8258881,
-        "short_label": "Vista Catálogo (AUDT-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11067,7 +11066,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-atv-utv-transmission-differential-fluid.webp",
         "bytes": 57162,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11143,7 +11142,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_cd5e98df8fbd414aa7d3d1b70ee6eb01~mv2.jpg",
         "bytes": 27987,
-        "short_label": "Vista Catálogo (DB40-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11154,7 +11153,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-10w-40-synthetic-dirt-bike-oil.webp",
         "bytes": 32240,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11230,7 +11229,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_e33a497a98134a96b9f771cc6e14289c~mv2.jpg",
         "bytes": 28490,
-        "short_label": "Vista Catálogo (DB50-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11241,7 +11240,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-10w-50-synthetic-dirt-bike-oil.webp",
         "bytes": 33606,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11306,7 +11305,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-synthetic-dirt-bike-transmission-fluid.webp",
         "bytes": 31354,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11382,7 +11381,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_410936b8c8854914862b228ac45bc9b6~mv2.jpg",
         "bytes": 497381,
-        "short_label": "Vista Catálogo (MMF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11393,7 +11392,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-5w-40-synthetic-metric-motorcycle-oil.webp",
         "bytes": 33204,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11480,7 +11479,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_b9ae50401e594de0a5b4b5a16fac9fe8~mv2.jpg",
         "bytes": 24628,
-        "short_label": "Vista Catálogo (MCT-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11491,7 +11490,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-10w-30-synthetic-metric-motorcycle-oil.webp",
         "bytes": 29944,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11597,7 +11596,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_8c6efa8d68064f51b508f5dce221bda4~mv2.jpg",
         "bytes": 26132,
-        "short_label": "Vista Catálogo (MCF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11608,7 +11607,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_1308dec10d874c3db3c79a1d76a23b29~mv2.png",
         "bytes": 147613,
-        "short_label": "Vista Catálogo (MCF-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11619,7 +11618,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-10w-40-synthetic-motorcycle-oil.webp",
         "bytes": 35780,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11695,7 +11694,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_2f685d0fb8b54e2d8fba1f8b7a72e8cb~mv2.jpg",
         "bytes": 29039,
-        "short_label": "Vista Catálogo (MFF-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11706,7 +11705,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-15w-50-synthetic-motorcycle-oil.webp",
         "bytes": 31976,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]
@@ -11719,9 +11718,9 @@ window.AMSOIL_CATALOG = [
     "category_short": "Motos, ATV y Marino",
     "category_icon": "🏍️",
     "line": "marino",
-    "line_name": "Serie Marina 100% Sintética (HP Marine 2-Stroke)",
+    "line_name": "Serie Marina 100% Sintética (HP Marine® 2-Stroke)",
     "item_slug": "hp-marine-2-stroke",
-    "display_name": "AMSOIL HP Marine 100% Synthetic 2-Stroke Oil",
+    "display_name": "AMSOIL HP Marine® 100% Synthetic 2-Stroke Oil",
     "viscosity": "2-Tiempos",
     "amsoil_code": "HPM",
     "als_codes": [
@@ -11827,7 +11826,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_45f5f89c192749ce96defc12ca2b0259~mv2.jpg",
         "bytes": 39636,
-        "short_label": "Vista Catálogo (HPM-1)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11838,7 +11837,7 @@ window.AMSOIL_CATALOG = [
         "source": "amsoilpr_wix",
         "source_url": "https://static.wixstatic.com/media/4adaa4_5629cfa2fe674f8a83309c56d2ceef11~mv2.jpg",
         "bytes": 2850851,
-        "short_label": "Vista Catálogo (HPM-2)",
+        "short_label": "Vista de Catálogo",
         "is_container": false
       },
       {
@@ -11849,7 +11848,7 @@ window.AMSOIL_CATALOG = [
         "source": "tunedyota_cutout",
         "source_url": "https://tunedyota.com/images/pdp/amsoil/amsoil-hp-marine-synthetic-2-stroke-oil.webp",
         "bytes": 29506,
-        "short_label": "Vista Recorte PNG/WebP",
+        "short_label": "Envase Oficial",
         "is_container": false
       }
     ]

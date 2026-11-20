@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>AMSOIL Costa Rica | En Construcción</title>
-    <meta name="description" content="Sitio oficial de AMSOIL Costa Rica (American Lubricants Supply S.A.). Próximamente disponible.">
-    <meta name="theme-color" content="#0F1416">
+    <meta name="description" content="Sitio oficial de AMSOIL Costa Rica — American Lubricants Supply S.A. Próximamente disponible.">
+    <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="assets/logos/amsoil-insignia.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
+        /* ==========================================================================
+           PALETA CORPORATIVA OFICIAL — AMSOIL INC. BRAND STYLE GUIDE (PÁG. 25)
+           ========================================================================== */
         :root {
-            --amsoil-red: #CC262F;
-            --amsoil-blue: #004B87;
-            --amsoil-dark: #0F1416;
-            --amsoil-charcoal: #1C2329;
+            --amsoil-blue: #005BAA;      /* Pantone 286 | RGB(0, 91, 170) */
+            --amsoil-red: #ED1C24;       /* Pantone 485 | RGB(237, 28, 36) */
+            --amsoil-gray: #BCBEC0;      /* Pantone Cool Gray 6 | RGB(188, 190, 192) */
+            --amsoil-black: #000000;     /* Process Black | RGB(0, 0, 0) */
+            --amsoil-white: #FFFFFF;     /* Pure White | RGB(255, 255, 255) */
         }
 
         * {
@@ -26,7 +35,9 @@
             width: 100%;
             min-height: 100vh;
             min-height: 100dvh;
-            background-color: var(--amsoil-dark);
+            background-color: var(--amsoil-black);
+            color: var(--amsoil-white);
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             overflow-x: hidden;
             touch-action: pan-y;
         }
@@ -36,10 +47,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-image: 
-                radial-gradient(circle at 50% 15%, rgba(0, 75, 135, 0.16) 0%, transparent 65%),
-                radial-gradient(circle at 50% 85%, rgba(204, 38, 47, 0.12) 0%, transparent 65%),
-                linear-gradient(180deg, #0F1416 0%, #080A0C 100%);
+            background-color: var(--amsoil-black);
         }
 
         /* CONTENEDOR FULL-WIDTH RESPONSIVO (EDGE TO EDGE) */
@@ -89,9 +97,9 @@
             <!-- VERSIÓN MÓVIL: iPhone / Android (pantallas hasta 768px) -->
             <source media="(max-width: 768px)" srcset="assets/banners/amsoil-cr-mobile-en-construccion.jpg?v=9">
             <!-- VERSIÓN ESCRITORIO / TABLETS (pantallas mayores a 768px) -->
-            <img 
-                src="assets/banners/amsoil-cr-completo-en-construccion.jpg?v=9" 
-                alt="AMSOIL Costa Rica - En Construcción"
+            <img
+                src="assets/banners/amsoil-cr-completo-en-construccion.jpg?v=9"
+                alt="AMSOIL Costa Rica — En Construcción"
                 class="showcase-img"
                 width="1920"
                 height="1580"

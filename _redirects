@@ -1,4 +1,4 @@
-# Reglas de redirección de Cloudflare Pages para Amsoil Costa Rica
+# Reglas de redirección de Cloudflare Pages para AMSOIL Costa Rica
 /portal   https://jucarsalrd.github.io/jucarsasuite/ 302
 /suite    https://jucarsalrd.github.io/jucarsasuite/ 302
 /app      https://jucarsalrd.github.io/jucarsasuite/ 302
